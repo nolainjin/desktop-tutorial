@@ -324,15 +324,20 @@ export function saveConnections(ideaId, connections) {
 
 // 연결 찾기 (Mock - 실제로는 API 호출)
 export async function findConnectionsForIdea(ideaId) {
+  console.log('📡 findConnectionsForIdea 호출됨, ideaId:', ideaId);
+  console.log('📚 사용 가능한 Mock 데이터 키:', Object.keys(mockConnections));
+
   // 로딩 시뮬레이션
   await new Promise(resolve => setTimeout(resolve, 1500));
 
   // Mock 데이터 반환
   if (mockConnections[ideaId]) {
+    console.log(`✅ ideaId ${ideaId}에 대한 ${mockConnections[ideaId].length}개의 연결을 찾았습니다`);
     return mockConnections[ideaId];
   }
 
   // 새 아이디어의 경우 빈 배열 반환
+  console.log(`⚠️ ideaId ${ideaId}에 대한 Mock 데이터가 없습니다`);
   return [];
 }
 

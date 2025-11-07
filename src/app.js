@@ -40,6 +40,8 @@ const elements = {
 
 // 앱 초기화
 function init() {
+  console.log('💡 IdeaConnect 앱 초기화 시작');
+
   // DOM 요소 캐싱
   elements.homeView = document.getElementById('home-view');
   elements.editView = document.getElementById('edit-view');
@@ -55,12 +57,21 @@ function init() {
   elements.backBtn = document.getElementById('back-btn');
   elements.findConnectionsBtn = document.getElementById('find-connections-btn');
 
+  // 필수 요소 확인
+  if (!elements.findConnectionsBtn) {
+    console.error('❌ 연결 찾기 버튼을 찾을 수 없습니다');
+  } else {
+    console.log('✅ 연결 찾기 버튼 찾음');
+  }
+
   // 이벤트 리스너 등록
   setupEventListeners();
 
   // 초기 화면 렌더링
   showView('home');
   refreshIdeaList();
+
+  console.log('✅ IdeaConnect 앱 초기화 완료');
 }
 
 // 이벤트 리스너 설정
@@ -85,7 +96,15 @@ function setupEventListeners() {
   elements.ideaForm.addEventListener('submit', handleFormSubmit);
 
   // 연결 찾기 버튼
-  elements.findConnectionsBtn.addEventListener('click', handleFindConnections);
+  if (elements.findConnectionsBtn) {
+    elements.findConnectionsBtn.addEventListener('click', () => {
+      console.log('🔘 연결 찾기 버튼 클릭됨');
+      handleFindConnections();
+    });
+    console.log('✅ 연결 찾기 이벤트 리스너 등록됨');
+  } else {
+    console.error('❌ 연결 찾기 버튼이 없어서 이벤트 리스너를 등록할 수 없습니다');
+  }
 
   // 커스텀 이벤트 리스너
   document.addEventListener('idea-view', (e) => {
@@ -208,8 +227,14 @@ async function handleFormSubmit(e) {
 
 // 연결 찾기 처리
 async function handleFindConnections() {
+  console.log('🔍 연결 찾기 시작');
   const ideaId = state.currentIdeaId;
-  if (!ideaId) return;
+  console.log('현재 아이디어 ID:', ideaId);
+
+  if (!ideaId) {
+    console.error('아이디어 ID가 없습니다');
+    return;
+  }
 
   // 버튼 비활성화
   elements.findConnectionsBtn.disabled = true;
@@ -221,8 +246,10 @@ async function handleFindConnections() {
   showLoading(elements.loadingIndicator);
 
   try {
+    console.log('findConnectionsForIdea 호출 중...');
     // 연결 찾기 (Mock API)
     const connections = await findConnectionsForIdea(ideaId);
+    console.log('찾은 연결 수:', connections.length);
 
     // 결과 저장
     if (connections.length > 0) {
