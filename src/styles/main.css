@@ -1,10 +1,16 @@
 /* ========== 기본 설정 ========== */
 :root {
   /* 타입별 색상 */
-  --color-quote: #4F46E5; /* 인디고 */
-  --color-web: #10B981; /* 초록 */
-  --color-movie: #EF4444; /* 빨강 */
-  --color-memo: #8B5CF6; /* 보라 */
+  --color-movie: #EF4444; /* 빨강 - 영화 */
+  --color-drama: #EC4899; /* 핑크 - 드라마 */
+  --color-animation: #F59E0B; /* 주황 - 애니메이션 */
+  --color-book: #3B82F6; /* 파랑 - 책 */
+  --color-essay: #06B6D4; /* 시안 - 에세이 */
+  --color-famous-quote: #8B5CF6; /* 보라 - 위인 명언 */
+  --color-proverb: #4F46E5; /* 인디고 - 고전 속담 */
+  --color-academic: #10B981; /* 초록 - 학문적 내용 */
+  --color-web: #14B8A6; /* 틸 - 웹 자료 */
+  --color-memo: #6366F1; /* 남색 - 내 메모 */
 
   /* 기본 색상 */
   --color-primary: #3B82F6;
@@ -502,16 +508,40 @@ textarea.form-control {
 }
 
 /* 타입별 색상 */
-.connection-card--quote {
-  border-left-color: var(--color-quote);
+.connection-card--movie {
+  border-left-color: var(--color-movie);
+}
+
+.connection-card--drama {
+  border-left-color: var(--color-drama);
+}
+
+.connection-card--animation {
+  border-left-color: var(--color-animation);
+}
+
+.connection-card--book {
+  border-left-color: var(--color-book);
+}
+
+.connection-card--essay {
+  border-left-color: var(--color-essay);
+}
+
+.connection-card--famous-quote {
+  border-left-color: var(--color-famous-quote);
+}
+
+.connection-card--proverb {
+  border-left-color: var(--color-proverb);
+}
+
+.connection-card--academic {
+  border-left-color: var(--color-academic);
 }
 
 .connection-card--web {
   border-left-color: var(--color-web);
-}
-
-.connection-card--movie {
-  border-left-color: var(--color-movie);
 }
 
 .connection-card--memo {
@@ -532,16 +562,40 @@ textarea.form-control {
   letter-spacing: 0.05em;
 }
 
-.connection-card--quote .connection-card__type {
-  color: var(--color-quote);
+.connection-card--movie .connection-card__type {
+  color: var(--color-movie);
+}
+
+.connection-card--drama .connection-card__type {
+  color: var(--color-drama);
+}
+
+.connection-card--animation .connection-card__type {
+  color: var(--color-animation);
+}
+
+.connection-card--book .connection-card__type {
+  color: var(--color-book);
+}
+
+.connection-card--essay .connection-card__type {
+  color: var(--color-essay);
+}
+
+.connection-card--famous-quote .connection-card__type {
+  color: var(--color-famous-quote);
+}
+
+.connection-card--proverb .connection-card__type {
+  color: var(--color-proverb);
+}
+
+.connection-card--academic .connection-card__type {
+  color: var(--color-academic);
 }
 
 .connection-card--web .connection-card__type {
   color: var(--color-web);
-}
-
-.connection-card--movie .connection-card__type {
-  color: var(--color-movie);
 }
 
 .connection-card--memo .connection-card__type {

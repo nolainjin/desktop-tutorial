@@ -3,26 +3,44 @@ import { validateConnection } from '../utils/validation.js';
 
 // 타입별 아이콘
 const TYPE_ICONS = {
-  quote: '💬',
-  web: '🌐',
-  movie: '🎬',
-  memo: '📝'
+  'movie': '🎬',
+  'drama': '📺',
+  'animation': '🎨',
+  'book': '📚',
+  'essay': '✍️',
+  'famous-quote': '💭',
+  'proverb': '📜',
+  'academic': '🎓',
+  'web': '🌐',
+  'memo': '📝'
 };
 
 // 타입별 레이블
 const TYPE_LABELS = {
-  quote: '명언/속담',
-  web: '웹 자료',
-  movie: '영화 대사',
-  memo: '내 메모'
+  'movie': '영화 대사',
+  'drama': '드라마 대사',
+  'animation': '애니메이션 대사',
+  'book': '책',
+  'essay': '에세이 문구',
+  'famous-quote': '위인 명언',
+  'proverb': '고전 속담',
+  'academic': '학문적 내용',
+  'web': '웹 자료',
+  'memo': '내 메모'
 };
 
 // 타입별 색상 클래스
 const TYPE_CLASSES = {
-  quote: 'connection-card--quote',
-  web: 'connection-card--web',
-  movie: 'connection-card--movie',
-  memo: 'connection-card--memo'
+  'movie': 'connection-card--movie',
+  'drama': 'connection-card--drama',
+  'animation': 'connection-card--animation',
+  'book': 'connection-card--book',
+  'essay': 'connection-card--essay',
+  'famous-quote': 'connection-card--famous-quote',
+  'proverb': 'connection-card--proverb',
+  'academic': 'connection-card--academic',
+  'web': 'connection-card--web',
+  'memo': 'connection-card--memo'
 };
 
 // 연결 카드 렌더링
@@ -108,21 +126,128 @@ function renderSourceBox(source, type) {
 
   // 타입별 출처 정보 구성
   switch (type) {
-    case 'quote':
-      if (source.author) {
-        items.push(renderSourceItem('✍️', '저자', source.author));
-      } else {
-        items.push(renderSourceItem('⚠️', '저자', '출처 불명', true));
-      }
-
+    case 'movie':
       if (source.title) {
-        items.push(renderSourceItem('📚', '출처', source.title));
-      } else if (source.category) {
-        items.push(renderSourceItem('🏷️', '분류', source.category));
+        items.push(renderSourceItem('🎬', '영화', source.title));
       }
-
+      if (source.author) {
+        items.push(renderSourceItem('👤', '인물', source.author));
+      }
       if (source.year) {
         items.push(renderSourceItem('📅', '연도', source.year));
+      }
+      if (source.category) {
+        items.push(renderSourceItem('🏷️', '장르', source.category));
+      }
+      break;
+
+    case 'drama':
+      if (source.title) {
+        items.push(renderSourceItem('📺', '드라마', source.title));
+      }
+      if (source.author) {
+        items.push(renderSourceItem('✍️', '작가', source.author));
+      }
+      if (source.year) {
+        items.push(renderSourceItem('📅', '연도', source.year));
+      }
+      if (source.category) {
+        items.push(renderSourceItem('🏷️', '장르', source.category));
+      }
+      break;
+
+    case 'animation':
+      if (source.title) {
+        items.push(renderSourceItem('🎨', '애니메이션', source.title));
+      }
+      if (source.author) {
+        items.push(renderSourceItem('👤', '제작자', source.author));
+      }
+      if (source.year) {
+        items.push(renderSourceItem('📅', '연도', source.year));
+      }
+      if (source.category) {
+        items.push(renderSourceItem('🏷️', '장르', source.category));
+      }
+      break;
+
+    case 'book':
+      if (source.author) {
+        items.push(renderSourceItem('✍️', '저자', source.author));
+      }
+      if (source.title) {
+        items.push(renderSourceItem('📚', '책 제목', source.title));
+      }
+      if (source.year) {
+        items.push(renderSourceItem('📅', '출판연도', source.year));
+      }
+      if (source.url) {
+        items.push(renderSourceLink('🔗', '링크', source.url, source.platform));
+      }
+      if (source.category) {
+        items.push(renderSourceItem('🏷️', '분류', source.category));
+      }
+      break;
+
+    case 'essay':
+      if (source.author) {
+        items.push(renderSourceItem('✍️', '작가', source.author));
+      }
+      if (source.title) {
+        items.push(renderSourceItem('📄', '에세이', source.title));
+      }
+      if (source.year) {
+        items.push(renderSourceItem('📅', '연도', source.year));
+      }
+      if (source.category) {
+        items.push(renderSourceItem('🏷️', '분류', source.category));
+      }
+      break;
+
+    case 'famous-quote':
+      if (source.author) {
+        items.push(renderSourceItem('💭', '위인', source.author));
+      } else {
+        items.push(renderSourceItem('⚠️', '위인', '출처 불명', true));
+      }
+      if (source.year) {
+        items.push(renderSourceItem('📅', '생몰년', source.year));
+      }
+      if (source.category) {
+        items.push(renderSourceItem('🏷️', '분류', source.category));
+      }
+      break;
+
+    case 'proverb':
+      if (source.author) {
+        items.push(renderSourceItem('📜', '출처', source.author));
+      }
+      if (source.title) {
+        items.push(renderSourceItem('📚', '문헌', source.title));
+      }
+      if (source.year) {
+        items.push(renderSourceItem('📅', '시대', source.year));
+      }
+      if (source.category) {
+        items.push(renderSourceItem('🏷️', '분류', source.category));
+      }
+      break;
+
+    case 'academic':
+      if (source.author) {
+        items.push(renderSourceItem('🎓', '저자', source.author));
+      }
+      if (source.title) {
+        items.push(renderSourceItem('📄', '논문/연구', source.title));
+      }
+      if (source.year) {
+        items.push(renderSourceItem('📅', '발표년도', source.year));
+      }
+      if (source.url) {
+        items.push(renderSourceLink('🔗', '링크', source.url, source.platform));
+      }
+      if (source.category) {
+        items.push(renderSourceItem('🏷️', '분야', source.category));
       }
       break;
 
@@ -130,41 +255,19 @@ function renderSourceBox(source, type) {
       if (source.author) {
         items.push(renderSourceItem('✍️', '저자', source.author));
       }
-
       if (source.title) {
         items.push(renderSourceItem('📚', '제목', source.title));
       }
-
       if (source.year) {
         items.push(renderSourceItem('📅', '연도', source.year));
       }
-
       if (source.url) {
         items.push(renderSourceLink('🔗', '링크', source.url, source.platform));
       } else {
         items.push(renderSourceItem('⚠️', '링크', '링크 없음', true));
       }
-
       if (source.category) {
         items.push(renderSourceItem('🏷️', '분류', source.category));
-      }
-      break;
-
-    case 'movie':
-      if (source.title) {
-        items.push(renderSourceItem('🎥', '영화', source.title));
-      }
-
-      if (source.author) {
-        items.push(renderSourceItem('👤', '인물', source.author));
-      }
-
-      if (source.year) {
-        items.push(renderSourceItem('📅', '연도', source.year));
-      }
-
-      if (source.category) {
-        items.push(renderSourceItem('🏷️', '장르', source.category));
       }
       break;
 
