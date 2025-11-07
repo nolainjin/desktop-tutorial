@@ -45,8 +45,8 @@ const TYPE_CLASSES = {
 
 // 연결 카드 렌더링
 export function renderConnectionCard(connection) {
-  // 검증
-  validateConnection(connection);
+  // 검증 (경고 표시 안 함)
+  // validateConnection(connection);
 
   const icon = TYPE_ICONS[connection.type] || '📄';
   const label = TYPE_LABELS[connection.type] || connection.type;
@@ -86,8 +86,6 @@ export function renderConnectionCard(connection) {
       <div class="reasoning-label">💭 연결 이유</div>
       <div class="reasoning-content">${connection.reasoning}</div>
     </div>
-
-    ${connection.incomplete ? renderWarning(connection.warnings) : ''}
 
     <div class="connection-card__feedback">
       <button class="feedback-btn feedback-btn--up ${upActive}" data-action="up">

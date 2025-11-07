@@ -18,14 +18,42 @@
     <main class="container">
       <!-- 홈 화면: 아이디어 목록 -->
       <section id="home-view" class="view active">
-        <div class="section-header">
-          <h2>내 아이디어</h2>
-          <button id="new-idea-btn" class="btn btn-primary">
-            ➕ 새 아이디어 작성
+        <!-- 탭 메뉴 -->
+        <div class="tab-menu">
+          <button class="tab-btn active" data-tab="list">
+            📝 목록 보기
+          </button>
+          <button class="tab-btn" data-tab="graph">
+            🔗 그래프 보기
           </button>
         </div>
-        <div id="idea-list" class="idea-grid">
-          <!-- 아이디어 카드들이 동적으로 삽입됩니다 -->
+
+        <!-- 목록 탭 -->
+        <div id="list-tab" class="tab-content active">
+          <div class="section-header">
+            <h2>내 아이디어</h2>
+            <button id="new-idea-btn" class="btn btn-primary">
+              ➕ 새 아이디어 작성
+            </button>
+          </div>
+          <div id="idea-list" class="idea-grid">
+            <!-- 아이디어 카드들이 동적으로 삽입됩니다 -->
+          </div>
+        </div>
+
+        <!-- 그래프 탭 -->
+        <div id="graph-tab" class="tab-content">
+          <div class="section-header">
+            <h2>연결 그래프</h2>
+            <div class="graph-controls">
+              <button id="refresh-graph-btn" class="btn btn-secondary">
+                🔄 새로고침
+              </button>
+            </div>
+          </div>
+          <div id="graph-container" class="graph-container">
+            <!-- 그래프가 동적으로 삽입됩니다 -->
+          </div>
         </div>
       </section>
 

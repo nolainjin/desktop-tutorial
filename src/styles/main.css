@@ -101,6 +101,114 @@ body {
   opacity: 0.9;
 }
 
+/* ========== 탭 메뉴 ========== */
+.tab-menu {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  border-bottom: 2px solid var(--border-light);
+}
+
+.tab-btn {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all var(--transition-normal);
+  margin-bottom: -2px;
+}
+
+.tab-btn:hover {
+  color: var(--color-primary);
+  background: var(--bg-gray);
+}
+
+.tab-btn.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* ========== 그래프 컨테이너 ========== */
+.graph-container {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.graph-svg {
+  width: 100%;
+  height: 600px;
+}
+
+.graph-node {
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.graph-node:hover .node-circle {
+  filter: brightness(1.1);
+  transform: scale(1.1);
+}
+
+.node-circle {
+  transition: all var(--transition-normal);
+}
+
+.node-label {
+  font-size: 12px;
+  fill: var(--text-primary);
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.graph-link {
+  stroke: var(--border-gray);
+  stroke-width: 2;
+  fill: none;
+  opacity: 0.6;
+}
+
+.graph-link.hover {
+  stroke: var(--color-primary);
+  opacity: 1;
+  stroke-width: 3;
+}
+
+.graph-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  color: var(--text-muted);
+}
+
+.graph-empty-icon {
+  font-size: 5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.graph-controls {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
 /* ========== 푸터 ========== */
 .app-footer {
   text-align: center;

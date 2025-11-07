@@ -13,12 +13,14 @@ import { validateIdea, parseTags } from './utils/validation.js';
 import { renderIdeaList } from './components/IdeaList.js';
 import { renderIdeaDetail, showLoading, hideLoading, showEmptyState, hideEmptyState } from './components/IdeaDetail.js';
 import { renderConnectionCards } from './components/ConnectionCard.js';
+import { renderGraph } from './components/GraphView.js';
 
 // 앱 상태
 const state = {
   currentView: 'home', // 'home', 'edit', 'detail'
   currentIdeaId: null,
-  editingIdeaId: null
+  editingIdeaId: null,
+  currentTab: 'list' // 'list', 'graph'
 };
 
 // DOM 요소
@@ -106,6 +108,24 @@ function setupEventListeners() {
     console.error('❌ 연결 찾기 버튼이 없어서 이벤트 리스너를 등록할 수 없습니다');
   }
 
+  // 탭 전환 버튼
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tab = btn.getAttribute('data-tab');
+      switchTab(tab);
+    });
+  });
+
+  // 그래프 새로고침 버튼
+  const refreshGraphBtn = document.getElementById('refresh-graph-btn');
+  if (refreshGraphBtn) {
+    refreshGraphBtn.addEventListener('click', () => {
+      const graphContainer = document.getElementById('graph-container');
+      renderGraph(graphContainer);
+    });
+  }
+
   // 커스텀 이벤트 리스너
   document.addEventListener('idea-view', (e) => {
     showDetailView(e.detail.ideaId);
@@ -119,6 +139,36 @@ function setupEventListeners() {
   document.addEventListener('idea-delete', (e) => {
     handleDeleteIdea(e.detail.ideaId);
   });
+}
+
+// 탭 전환
+function switchTab(tabName) {
+  state.currentTab = tabName;
+
+  // 탭 버튼 활성화
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  tabButtons.forEach(btn => {
+    if (btn.getAttribute('data-tab') === tabName) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  // 탭 콘텐츠 표시
+  const listTab = document.getElementById('list-tab');
+  const graphTab = document.getElementById('graph-tab');
+
+  if (tabName === 'list') {
+    listTab.classList.add('active');
+    graphTab.classList.remove('active');
+    refreshIdeaList();
+  } else if (tabName === 'graph') {
+    listTab.classList.remove('active');
+    graphTab.classList.add('active');
+    const graphContainer = document.getElementById('graph-container');
+    renderGraph(graphContainer);
+  }
 }
 
 // 화면 전환

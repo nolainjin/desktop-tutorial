@@ -48,21 +48,35 @@ export async function searchWikipedia(keywords) {
     const response = await fetch(
       `https://ko.wikipedia.org/w/api.php?` +
       `action=opensearch&search=${encodeURIComponent(keywords)}` +
-      `&limit=3&namespace=0&format=json&origin=*`
+      `&limit=5&namespace=0&format=json&origin=*`
     );
 
     if (!response.ok) throw new Error('Wikipedia API failed');
 
     const [, titles, descriptions, urls] = await response.json();
 
-    return titles.slice(0, 2).map((title, idx) => ({
+    // 문장 단위 결과만 필터링 (최소 30자 이상, 온점/문장 포함)
+    const filtered = titles
+      .map((title, idx) => ({
+        title,
+        description: descriptions[idx] || '',
+        url: urls[idx]
+      }))
+      .filter(item => {
+        const desc = item.description;
+        // 최소 30자 이상이고, 온점이나 문장 구조가 있는 것만
+        return desc.length >= 30 && (desc.includes('.') || desc.includes('다') || desc.includes('이다'));
+      })
+      .slice(0, 2);
+
+    return filtered.map((item) => ({
       type: 'academic',
-      content: descriptions[idx] || `${title}에 대한 내용입니다.`,
+      content: item.description,
       source: {
         author: 'Wikipedia',
-        title: title,
+        title: item.title,
         year: new Date().getFullYear().toString(),
-        url: urls[idx],
+        url: item.url,
         category: '백과사전',
         platform: 'Wikipedia'
       },
@@ -149,7 +163,7 @@ export async function searchBooks(keywords) {
   try {
     const response = await fetch(
       `https://www.googleapis.com/books/v1/volumes?` +
-      `q=${encodeURIComponent(keywords)}&langRestrict=ko&maxResults=2&orderBy=relevance`
+      `q=${encodeURIComponent(keywords)}&langRestrict=ko&maxResults=5&orderBy=relevance`
     );
 
     if (!response.ok) throw new Error('Books API failed');
@@ -158,13 +172,23 @@ export async function searchBooks(keywords) {
 
     if (!data.items) return [];
 
-    return data.items.map(item => {
+    // 설명이 있고 의미 있는 내용만 필터링
+    const filtered = data.items
+      .filter(item => {
+        const desc = item.volumeInfo.description;
+        // 최소 50자 이상의 설명이 있어야 함
+        return desc && desc.length >= 50;
+      })
+      .slice(0, 2);
+
+    return filtered.map(item => {
       const volumeInfo = item.volumeInfo;
+      // 설명을 200자로 제한
+      const description = volumeInfo.description.substring(0, 200) + '...';
+
       return {
         type: 'book',
-        content: volumeInfo.description
-          ? volumeInfo.description.substring(0, 150) + '...'
-          : `${volumeInfo.title}에 대한 책입니다.`,
+        content: description,
         source: {
           author: volumeInfo.authors ? volumeInfo.authors.join(', ') : '저자 미상',
           title: volumeInfo.title,
@@ -225,26 +249,60 @@ export async function searchAllSources(ideaText, keywords) {
   }
 }
 
-// 키워드 추출 (간단한 버전)
+// 키워드 추출 (개선된 버전)
 export function extractKeywords(text) {
-  // 주요 키워드 패턴 매칭
+  // 주요 키워드 패턴 매칭 (확장)
   const keywords = [];
 
   const patterns = {
-    '성장': ['성장', '발전', '진보', '개선'],
-    '습관': ['습관', '반복', '루틴'],
-    '실패': ['실패', '좌절', '어려움'],
-    '성공': ['성공', '달성', '이루'],
-    '친구': ['친구', '우정', '동료'],
-    '배움': ['배우', '학습', '공부'],
-    '노력': ['노력', '시도', '도전']
+    '성장': ['성장', '발전', '진보', '개선', '향상', '나아가'],
+    '습관': ['습관', '반복', '루틴', '매일'],
+    '실패': ['실패', '좌절', '어려움', '넘어지', '실수'],
+    '성공': ['성공', '달성', '이루', '이룬', '목표'],
+    '친구': ['친구', '우정', '동료', '관계'],
+    '배움': ['배우', '학습', '공부', '지식', '배움'],
+    '노력': ['노력', '시도', '도전', '과감', '용기'],
+    '변화': ['변화', '바꾸', '달라지', '전환'],
+    '행복': ['행복', '기쁨', '즐거', '만족'],
+    '사랑': ['사랑', '애정', '정'],
+    '자유': ['자유', '해방', '독립'],
+    '창의': ['창의', '창조', '독창'],
+    '지혜': ['지혜', '현명', '슬기'],
+    '꿈': ['꿈', '희망', '바람', '소망'],
+    '용기': ['용기', '담대', '과감', '두려움']
   };
 
+  // 키워드 매칭 및 가중치 계산
+  const keywordScores = {};
+
   for (const [key, words] of Object.entries(patterns)) {
-    if (words.some(w => text.includes(w))) {
-      keywords.push(key);
+    let score = 0;
+    for (const word of words) {
+      // 정확히 포함되면 높은 점수
+      if (text.includes(word)) {
+        score += 2;
+      }
+    }
+    if (score > 0) {
+      keywordScores[key] = score;
     }
   }
 
-  return keywords.length > 0 ? keywords.join(' ') : text.split(' ').slice(0, 3).join(' ');
+  // 점수가 높은 순으로 정렬
+  const sorted = Object.entries(keywordScores)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3)
+    .map(([key]) => key);
+
+  keywords.push(...sorted);
+
+  // 키워드가 하나도 없으면 제목의 주요 명사 추출
+  if (keywords.length === 0) {
+    const words = text.split(/\s+/)
+      .filter(w => w.length >= 2 && w.length <= 10)
+      .slice(0, 3);
+    keywords.push(...words);
+  }
+
+  return keywords.join(' ');
 }
