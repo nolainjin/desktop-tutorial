@@ -1,0 +1,23 @@
+{
+  "name": "idea-connect",
+  "version": "1.0.0",
+  "description": "아이디어 연결 메모 서비스 - AI가 관련 명언, 웹 자료, 영화 대사를 연결해주는 웹 앱",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "memo",
+    "idea",
+    "connection",
+    "ai",
+    "knowledge"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
