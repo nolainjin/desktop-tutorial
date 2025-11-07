@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IdeaConnect - 아이디어 연결 메모</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <div class="container">
+        <h1 class="app-title">💡 IdeaConnect</h1>
+        <p class="app-subtitle">당신의 아이디어를 세상의 지혜와 연결합니다</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- 홈 화면: 아이디어 목록 -->
+      <section id="home-view" class="view active">
+        <div class="section-header">
+          <h2>내 아이디어</h2>
+          <button id="new-idea-btn" class="btn btn-primary">
+            ➕ 새 아이디어 작성
+          </button>
+        </div>
+        <div id="idea-list" class="idea-grid">
+          <!-- 아이디어 카드들이 동적으로 삽입됩니다 -->
+        </div>
+      </section>
+
+      <!-- 아이디어 작성/수정 화면 -->
+      <section id="edit-view" class="view">
+        <div class="edit-form">
+          <h2 id="edit-title">새 아이디어 작성</h2>
+          <form id="idea-form">
+            <div class="form-group">
+              <label for="idea-title">제목</label>
+              <input
+                type="text"
+                id="idea-title"
+                class="form-control"
+                placeholder="아이디어의 핵심을 한 줄로..."
+                required
+              >
+            </div>
+            <div class="form-group">
+              <label for="idea-content">내용</label>
+              <textarea
+                id="idea-content"
+                class="form-control"
+                rows="8"
+                placeholder="생각을 자유롭게 펼쳐보세요..."
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="idea-tags">태그 (쉼표로 구분)</label>
+              <input
+                type="text"
+                id="idea-tags"
+                class="form-control"
+                placeholder="예: 성장, 습관, 동기부여"
+              >
+            </div>
+            <div class="form-actions">
+              <button type="button" id="cancel-btn" class="btn btn-secondary">취소</button>
+              <button type="submit" class="btn btn-primary">저장</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- 아이디어 상세 화면 -->
+      <section id="detail-view" class="view">
+        <div class="detail-container">
+          <button id="back-btn" class="btn btn-text">← 목록으로</button>
+
+          <div id="idea-detail" class="idea-detail">
+            <!-- 아이디어 상세 내용이 동적으로 삽입됩니다 -->
+          </div>
+
+          <div class="connections-section">
+            <div class="section-header">
+              <h3>연결된 지혜</h3>
+              <button id="find-connections-btn" class="btn btn-primary">
+                🔍 연결 찾기
+              </button>
+            </div>
+
+            <div id="loading-indicator" class="loading-indicator" style="display: none;">
+              <div class="spinner"></div>
+              <p>관련된 명언, 웹 자료, 영화를 찾고 있습니다...</p>
+            </div>
+
+            <div id="connections-container" class="connections-grid">
+              <!-- 연결 카드들이 동적으로 삽입됩니다 -->
+            </div>
+
+            <div id="empty-state" class="empty-state">
+              <p>🔍 "연결 찾기" 버튼을 눌러 관련된 지혜를 발견하세요</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <div class="container">
+        <p>Made with Claude Code</p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/app.js"></script>
+</body>
+</html>
