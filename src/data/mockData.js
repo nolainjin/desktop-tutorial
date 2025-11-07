@@ -390,23 +390,83 @@ export function saveConnections(ideaId, connections) {
   localStorage.setItem(STORAGE_KEYS.CONNECTIONS, JSON.stringify(allConnections));
 }
 
-// 연결 찾기 (Mock - 실제로는 API 호출)
+// 연결 찾기 (실제 웹 검색 + Mock 데이터)
 export async function findConnectionsForIdea(ideaId) {
   console.log('📡 findConnectionsForIdea 호출됨, ideaId:', ideaId);
-  console.log('📚 사용 가능한 Mock 데이터 키:', Object.keys(mockConnections));
 
-  // 로딩 시뮬레이션
-  await new Promise(resolve => setTimeout(resolve, 1500));
-
-  // Mock 데이터 반환
-  if (mockConnections[ideaId]) {
-    console.log(`✅ ideaId ${ideaId}에 대한 ${mockConnections[ideaId].length}개의 연결을 찾았습니다`);
-    return mockConnections[ideaId];
+  const idea = getIdea(ideaId);
+  if (!idea) {
+    console.error('아이디어를 찾을 수 없습니다');
+    return [];
   }
 
-  // 새 아이디어의 경우 빈 배열 반환
-  console.log(`⚠️ ideaId ${ideaId}에 대한 Mock 데이터가 없습니다`);
-  return [];
+  console.log('🔍 아이디어 내용:', idea.title, idea.content);
+
+  // 로딩 시뮬레이션 (실제 API 호출 시간)
+  await new Promise(resolve => setTimeout(resolve, 500));
+
+  try {
+    // 실제 웹 검색 수행
+    const { searchAllSources, extractKeywords } = await import('../services/searchService.js');
+
+    // 키워드 추출
+    const keywords = extractKeywords(idea.title + ' ' + idea.content);
+    console.log('📝 추출된 키워드:', keywords);
+
+    // 웹에서 검색
+    const searchResults = await searchAllSources(idea.content, keywords);
+    console.log(`🌐 웹 검색 결과: ${searchResults.length}개`);
+
+    // ideaId 추가
+    const resultsWithIdeaId = searchResults.map(result => ({
+      ...result,
+      ideaId: ideaId
+    }));
+
+    // Mock 데이터 확인
+    let mockResults = [];
+    if (mockConnections[ideaId]) {
+      mockResults = mockConnections[ideaId];
+      console.log(`📚 Mock 데이터: ${mockResults.length}개`);
+    }
+
+    // 웹 검색 결과와 Mock 데이터를 혼합
+    // 웹 검색 결과를 우선하되, Mock 데이터도 일부 포함
+    let combinedResults = [...resultsWithIdeaId];
+
+    // Mock 데이터가 있으면 2-3개 정도 추가
+    if (mockResults.length > 0) {
+      const mockSamples = mockResults.slice(0, 3);
+      combinedResults = [...combinedResults, ...mockSamples];
+    }
+
+    // 유사도 순으로 정렬
+    combinedResults.sort((a, b) => b.similarity - a.similarity);
+
+    // 최대 10개로 제한
+    const finalResults = combinedResults.slice(0, 10);
+
+    console.log(`✅ 총 ${finalResults.length}개의 연결을 반환합니다`);
+    console.log('📊 타입별 분포:',
+      finalResults.reduce((acc, item) => {
+        acc[item.type] = (acc[item.type] || 0) + 1;
+        return acc;
+      }, {})
+    );
+
+    return finalResults;
+
+  } catch (error) {
+    console.error('❌ 검색 중 오류:', error);
+
+    // 오류 발생 시 Mock 데이터만 반환
+    if (mockConnections[ideaId]) {
+      console.log('⚠️ Mock 데이터로 폴백');
+      return mockConnections[ideaId];
+    }
+
+    return [];
+  }
 }
 
 // 연결 삭제
