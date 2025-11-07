@@ -111,9 +111,77 @@
           <div class="connections-section">
             <div class="section-header">
               <h3>연결된 지혜</h3>
-              <button id="find-connections-btn" class="btn btn-primary">
-                🔍 연결 찾기
-              </button>
+              <div class="connection-controls">
+                <button id="find-connections-btn" class="btn btn-primary">
+                  🔍 연결 찾기
+                </button>
+                <button id="toggle-filter-btn" class="btn btn-secondary">
+                  🎯 분류 선택
+                </button>
+              </div>
+            </div>
+
+            <!-- 분류 필터 패널 -->
+            <div id="type-filter-panel" class="type-filter-panel" style="display: none;">
+              <div class="filter-header">
+                <span class="filter-title">🎯 검색할 분류 선택</span>
+                <div class="filter-actions">
+                  <button id="select-all-types" class="filter-action-btn">전체 선택</button>
+                  <button id="deselect-all-types" class="filter-action-btn">전체 해제</button>
+                </div>
+              </div>
+              <div class="filter-options">
+                <label class="filter-option">
+                  <input type="checkbox" name="type-filter" value="movie" checked>
+                  <span class="filter-icon">🎬</span>
+                  <span class="filter-label">영화 대사</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="type-filter" value="drama" checked>
+                  <span class="filter-icon">📺</span>
+                  <span class="filter-label">드라마 대사</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="type-filter" value="animation" checked>
+                  <span class="filter-icon">🎨</span>
+                  <span class="filter-label">애니메이션</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="type-filter" value="book" checked>
+                  <span class="filter-icon">📚</span>
+                  <span class="filter-label">책</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="type-filter" value="essay" checked>
+                  <span class="filter-icon">✍️</span>
+                  <span class="filter-label">에세이</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="type-filter" value="famous-quote" checked>
+                  <span class="filter-icon">💭</span>
+                  <span class="filter-label">위인 명언</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="type-filter" value="proverb" checked>
+                  <span class="filter-icon">📜</span>
+                  <span class="filter-label">고전 속담</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="type-filter" value="academic" checked>
+                  <span class="filter-icon">🎓</span>
+                  <span class="filter-label">학문적 내용</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="type-filter" value="web" checked>
+                  <span class="filter-icon">🌐</span>
+                  <span class="filter-label">웹 자료</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="type-filter" value="memo" checked>
+                  <span class="filter-icon">📝</span>
+                  <span class="filter-label">내 메모</span>
+                </label>
+              </div>
             </div>
 
             <div id="loading-indicator" class="loading-indicator" style="display: none;">

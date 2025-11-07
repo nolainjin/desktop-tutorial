@@ -108,6 +108,39 @@ function setupEventListeners() {
     console.error('❌ 연결 찾기 버튼이 없어서 이벤트 리스너를 등록할 수 없습니다');
   }
 
+  // 분류 필터 토글 버튼
+  const toggleFilterBtn = document.getElementById('toggle-filter-btn');
+  if (toggleFilterBtn) {
+    toggleFilterBtn.addEventListener('click', () => {
+      const filterPanel = document.getElementById('type-filter-panel');
+      if (filterPanel.style.display === 'none') {
+        filterPanel.style.display = 'block';
+        toggleFilterBtn.textContent = '🎯 분류 숨기기';
+      } else {
+        filterPanel.style.display = 'none';
+        toggleFilterBtn.textContent = '🎯 분류 선택';
+      }
+    });
+  }
+
+  // 전체 선택 버튼
+  const selectAllBtn = document.getElementById('select-all-types');
+  if (selectAllBtn) {
+    selectAllBtn.addEventListener('click', () => {
+      const checkboxes = document.querySelectorAll('input[name="type-filter"]');
+      checkboxes.forEach(cb => cb.checked = true);
+    });
+  }
+
+  // 전체 해제 버튼
+  const deselectAllBtn = document.getElementById('deselect-all-types');
+  if (deselectAllBtn) {
+    deselectAllBtn.addEventListener('click', () => {
+      const checkboxes = document.querySelectorAll('input[name="type-filter"]');
+      checkboxes.forEach(cb => cb.checked = false);
+    });
+  }
+
   // 탭 전환 버튼
   const tabButtons = document.querySelectorAll('.tab-btn');
   tabButtons.forEach(btn => {
@@ -286,6 +319,18 @@ async function handleFindConnections() {
     return;
   }
 
+  // 선택된 타입 필터 가져오기
+  const checkboxes = document.querySelectorAll('input[name="type-filter"]:checked');
+  const selectedTypes = Array.from(checkboxes).map(cb => cb.value);
+
+  console.log('🎯 선택된 타입:', selectedTypes);
+
+  // 필터가 하나도 선택되지 않았으면 경고
+  if (selectedTypes.length === 0) {
+    alert('최소 하나 이상의 분류를 선택해주세요!');
+    return;
+  }
+
   // 버튼 비활성화
   elements.findConnectionsBtn.disabled = true;
   elements.findConnectionsBtn.textContent = '🔍 검색 중...';
@@ -297,8 +342,8 @@ async function handleFindConnections() {
 
   try {
     console.log('findConnectionsForIdea 호출 중...');
-    // 연결 찾기 (Mock API)
-    const connections = await findConnectionsForIdea(ideaId);
+    // 연결 찾기 (필터 전달)
+    const connections = await findConnectionsForIdea(ideaId, selectedTypes);
     console.log('찾은 연결 수:', connections.length);
 
     // 결과 저장

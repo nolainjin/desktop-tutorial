@@ -207,35 +207,75 @@ export async function searchBooks(keywords) {
   }
 }
 
-// 5. 통합 검색
-export async function searchAllSources(ideaText, keywords) {
+// 5. 통합 검색 (타입 필터 지원)
+export async function searchAllSources(ideaText, keywords, selectedTypes = null) {
   console.log('🔍 통합 검색 시작:', keywords);
+  console.log('📋 선택된 타입:', selectedTypes);
 
   try {
-    // 모든 검색을 병렬로 실행
-    const [quotes, wiki, proverbs, books] = await Promise.all([
-      searchQuotes(keywords).catch(err => {
-        console.error('명언 검색 오류:', err);
-        return [];
-      }),
-      searchWikipedia(keywords).catch(err => {
-        console.error('위키 검색 오류:', err);
-        return [];
-      }),
-      Promise.resolve(searchKoreanProverbs(keywords)),
-      searchBooks(keywords).catch(err => {
-        console.error('책 검색 오류:', err);
-        return [];
-      })
-    ]);
+    // 타입 필터가 없으면 모든 타입 검색
+    const shouldSearch = {
+      'famous-quote': !selectedTypes || selectedTypes.includes('famous-quote'),
+      'academic': !selectedTypes || selectedTypes.includes('academic'),
+      'proverb': !selectedTypes || selectedTypes.includes('proverb'),
+      'book': !selectedTypes || selectedTypes.includes('book')
+    };
+
+    // 선택된 타입만 검색 (병렬 실행)
+    const searchPromises = [];
+
+    if (shouldSearch['famous-quote']) {
+      searchPromises.push(
+        searchQuotes(keywords).catch(err => {
+          console.error('명언 검색 오류:', err);
+          return [];
+        })
+      );
+    }
+
+    if (shouldSearch['academic']) {
+      searchPromises.push(
+        searchWikipedia(keywords).catch(err => {
+          console.error('위키 검색 오류:', err);
+          return [];
+        })
+      );
+    }
+
+    if (shouldSearch['proverb']) {
+      searchPromises.push(Promise.resolve(searchKoreanProverbs(keywords)));
+    }
+
+    if (shouldSearch['book']) {
+      searchPromises.push(
+        searchBooks(keywords).catch(err => {
+          console.error('책 검색 오류:', err);
+          return [];
+        })
+      );
+    }
+
+    const results = await Promise.all(searchPromises);
 
     // 모든 결과 합치기
-    const allResults = [...proverbs, ...quotes, ...wiki, ...books];
+    const allResults = results.flat();
 
-    // ID 추가
-    const resultsWithIds = allResults.map((item, idx) => ({
+    // 중복 제거 (content 기준)
+    const uniqueResults = [];
+    const seenContents = new Set();
+
+    for (const item of allResults) {
+      const contentKey = item.content.substring(0, 50); // 첫 50자로 비교
+      if (!seenContents.has(contentKey)) {
+        seenContents.add(contentKey);
+        uniqueResults.push(item);
+      }
+    }
+
+    // ID 추가 (타임스탬프 + 랜덤값으로 고유성 보장)
+    const resultsWithIds = uniqueResults.map((item, idx) => ({
       ...item,
-      id: `search-${Date.now()}-${idx}`,
+      id: `search-${Date.now()}-${Math.random().toString(36).substr(2, 9)}-${idx}`,
       ideaId: null,
       userFeedback: null
     }));
