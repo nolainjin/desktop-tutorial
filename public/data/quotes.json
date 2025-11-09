@@ -1,0 +1,362 @@
+[
+  {
+    "id": "q001",
+    "content": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+    "author": "Aristotle",
+    "keywords": ["습관", "반복", "실천", "성장", "노력"],
+    "category": "습관",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q002",
+    "content": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "keywords": ["사랑", "열정", "성공", "목표", "행복"],
+    "category": "성공",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q003",
+    "content": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "author": "Winston Churchill",
+    "keywords": ["성공", "실패", "용기", "노력", "인내"],
+    "category": "용기",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q004",
+    "content": "Believe you can and you're halfway there.",
+    "author": "Theodore Roosevelt",
+    "keywords": ["믿음", "자신감", "성공", "목표", "성장"],
+    "category": "자신감",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q005",
+    "content": "The future belongs to those who believe in the beauty of their dreams.",
+    "author": "Eleanor Roosevelt",
+    "keywords": ["꿈", "미래", "희망", "목표", "성장"],
+    "category": "꿈",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q006",
+    "content": "It does not matter how slowly you go as long as you do not stop.",
+    "author": "Confucius",
+    "keywords": ["인내", "꾸준함", "노력", "성장", "실천"],
+    "category": "인내",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q007",
+    "content": "Everything you've ever wanted is on the other side of fear.",
+    "author": "George Addair",
+    "keywords": ["용기", "두려움", "도전", "성장", "목표"],
+    "category": "용기",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q008",
+    "content": "The best time to plant a tree was 20 years ago. The second best time is now.",
+    "author": "Chinese Proverb",
+    "keywords": ["시작", "실천", "행동", "노력", "시간"],
+    "category": "시작",
+    "type": "proverb",
+    "language": "en"
+  },
+  {
+    "id": "q009",
+    "content": "Your time is limited, don't waste it living someone else's life.",
+    "author": "Steve Jobs",
+    "keywords": ["시간", "자유", "삶", "선택", "자아"],
+    "category": "자유",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q010",
+    "content": "The way to get started is to quit talking and begin doing.",
+    "author": "Walt Disney",
+    "keywords": ["실천", "행동", "시작", "노력", "성공"],
+    "category": "실천",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q011",
+    "content": "Don't watch the clock; do what it does. Keep going.",
+    "author": "Sam Levenson",
+    "keywords": ["인내", "꾸준함", "노력", "시간", "실천"],
+    "category": "인내",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q012",
+    "content": "The only impossible journey is the one you never begin.",
+    "author": "Tony Robbins",
+    "keywords": ["시작", "도전", "용기", "목표", "실천"],
+    "category": "시작",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q013",
+    "content": "Education is the most powerful weapon which you can use to change the world.",
+    "author": "Nelson Mandela",
+    "keywords": ["배움", "교육", "변화", "성장", "지혜"],
+    "category": "배움",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q014",
+    "content": "The mind is everything. What you think you become.",
+    "author": "Buddha",
+    "keywords": ["생각", "마음", "성장", "변화", "자아"],
+    "category": "마음",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q015",
+    "content": "An investment in knowledge pays the best interest.",
+    "author": "Benjamin Franklin",
+    "keywords": ["배움", "지식", "성장", "교육", "지혜"],
+    "category": "배움",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q016",
+    "content": "Life is 10% what happens to you and 90% how you react to it.",
+    "author": "Charles R. Swindoll",
+    "keywords": ["태도", "반응", "삶", "선택", "지혜"],
+    "category": "태도",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q017",
+    "content": "Fall seven times and stand up eight.",
+    "author": "Japanese Proverb",
+    "keywords": ["실패", "인내", "회복", "용기", "노력"],
+    "category": "인내",
+    "type": "proverb",
+    "language": "en"
+  },
+  {
+    "id": "q018",
+    "content": "The secret of getting ahead is getting started.",
+    "author": "Mark Twain",
+    "keywords": ["시작", "실천", "행동", "성공", "노력"],
+    "category": "시작",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q019",
+    "content": "Either you run the day, or the day runs you.",
+    "author": "Jim Rohn",
+    "keywords": ["시간", "주도성", "실천", "계획", "목표"],
+    "category": "시간관리",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q020",
+    "content": "Quality is not an act, it is a habit.",
+    "author": "Aristotle",
+    "keywords": ["습관", "품질", "반복", "실천", "성장"],
+    "category": "습관",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q021",
+    "content": "If you want to lift yourself up, lift up someone else.",
+    "author": "Booker T. Washington",
+    "keywords": ["도움", "나눔", "관계", "성장", "친구"],
+    "category": "관계",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q022",
+    "content": "I have not failed. I've just found 10,000 ways that won't work.",
+    "author": "Thomas Edison",
+    "keywords": ["실패", "배움", "노력", "인내", "성공"],
+    "category": "실패",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q023",
+    "content": "Whether you think you can or you think you can't, you're right.",
+    "author": "Henry Ford",
+    "keywords": ["믿음", "마음", "태도", "성공", "자신감"],
+    "category": "마음",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q024",
+    "content": "The only person you are destined to become is the person you decide to be.",
+    "author": "Ralph Waldo Emerson",
+    "keywords": ["선택", "자아", "결정", "성장", "목표"],
+    "category": "자아",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q025",
+    "content": "I find that the harder I work, the more luck I seem to have.",
+    "author": "Thomas Jefferson",
+    "keywords": ["노력", "행운", "성공", "실천", "열심"],
+    "category": "노력",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q026",
+    "content": "Opportunities don't happen. You create them.",
+    "author": "Chris Grosser",
+    "keywords": ["기회", "창조", "실천", "노력", "주도성"],
+    "category": "기회",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q027",
+    "content": "Practice is the best of all instructors.",
+    "author": "Publilius Syrus",
+    "keywords": ["연습", "실천", "배움", "훈련", "성장"],
+    "category": "연습",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q028",
+    "content": "Knowing is not enough; we must apply. Willing is not enough; we must do.",
+    "author": "Johann Wolfgang von Goethe",
+    "keywords": ["실천", "행동", "실행", "배움", "노력"],
+    "category": "실천",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q029",
+    "content": "Small daily improvements over time lead to stunning results.",
+    "author": "Robin Sharma",
+    "keywords": ["습관", "개선", "반복", "성장", "꾸준함"],
+    "category": "습관",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q030",
+    "content": "A goal without a plan is just a wish.",
+    "author": "Antoine de Saint-Exupéry",
+    "keywords": ["목표", "계획", "실천", "성공", "전략"],
+    "category": "목표",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q031",
+    "content": "The journey of a thousand miles begins with one step.",
+    "author": "Lao Tzu",
+    "keywords": ["시작", "여정", "실천", "노력", "인내"],
+    "category": "시작",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q032",
+    "content": "Success usually comes to those who are too busy to be looking for it.",
+    "author": "Henry David Thoreau",
+    "keywords": ["성공", "노력", "집중", "실천", "열심"],
+    "category": "성공",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q033",
+    "content": "The only limit to our realization of tomorrow will be our doubts of today.",
+    "author": "Franklin D. Roosevelt",
+    "keywords": ["믿음", "미래", "의심", "가능성", "성장"],
+    "category": "믿음",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q034",
+    "content": "Motivation is what gets you started. Habit is what keeps you going.",
+    "author": "Jim Ryun",
+    "keywords": ["습관", "동기", "꾸준함", "인내", "실천"],
+    "category": "습관",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q035",
+    "content": "You miss 100% of the shots you don't take.",
+    "author": "Wayne Gretzky",
+    "keywords": ["도전", "시도", "실천", "용기", "기회"],
+    "category": "도전",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q036",
+    "content": "Repetition is the mother of learning, the father of action, which makes it the architect of accomplishment.",
+    "author": "Zig Ziglar",
+    "keywords": ["반복", "학습", "행동", "성취", "습관"],
+    "category": "반복",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q037",
+    "content": "What we do repeatedly becomes who we are.",
+    "author": "Aristotle",
+    "keywords": ["습관", "반복", "자아", "성장", "실천"],
+    "category": "습관",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q038",
+    "content": "First we make our habits, then our habits make us.",
+    "author": "Charles C. Noble",
+    "keywords": ["습관", "형성", "변화", "성장", "자아"],
+    "category": "습관",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q039",
+    "content": "Learning is not attained by chance, it must be sought for with ardor and diligence.",
+    "author": "Abigail Adams",
+    "keywords": ["배움", "노력", "열정", "부지런함", "성장"],
+    "category": "배움",
+    "type": "famous-quote",
+    "language": "en"
+  },
+  {
+    "id": "q040",
+    "content": "Action is the foundational key to all success.",
+    "author": "Pablo Picasso",
+    "keywords": ["행동", "실천", "성공", "열쇠", "기본"],
+    "category": "실천",
+    "type": "famous-quote",
+    "language": "en"
+  }
+]

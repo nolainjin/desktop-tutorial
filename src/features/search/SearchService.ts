@@ -4,6 +4,7 @@ import { searchQuotes } from './api/QuotableAPI';
 import { searchWikipedia } from './api/WikipediaAPI';
 import { searchBooks } from './api/GoogleBooksAPI';
 import { koreanProverbs } from './api/ProverbsDB';
+import { searchLocalQuotes } from './api/LocalQuotesDB';
 import { extractKeywords } from './KeywordExtractor';
 import { calculateSimilarity } from './SimilarityCalculator';
 import { v4 as uuidv4 } from 'uuid';
@@ -52,9 +53,18 @@ export async function searchAllSources(
     const searchPromises: Promise<Partial<Idea>[]>[] = [];
 
     if (shouldSearch['famous-quote']) {
+      // 로컬 DB 우선 검색 (빠르고 정확)
+      searchPromises.push(
+        searchLocalQuotes(keywords).catch(err => {
+          console.error('로컬 명언 검색 오류:', err);
+          return [];
+        })
+      );
+
+      // 외부 API 검색 (추가 명언)
       searchPromises.push(
         searchQuotes(keywords).catch(err => {
-          console.error('명언 검색 오류:', err);
+          console.error('API 명언 검색 오류:', err);
           return [];
         })
       );
