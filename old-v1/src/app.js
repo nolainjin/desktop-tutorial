@@ -13,12 +13,14 @@ import { validateIdea, parseTags } from './utils/validation.js';
 import { renderIdeaList } from './components/IdeaList.js';
 import { renderIdeaDetail, showLoading, hideLoading, showEmptyState, hideEmptyState } from './components/IdeaDetail.js';
 import { renderConnectionCards } from './components/ConnectionCard.js';
+import { renderGraph } from './components/GraphView.js';
 
 // 앱 상태
 const state = {
   currentView: 'home', // 'home', 'edit', 'detail'
   currentIdeaId: null,
-  editingIdeaId: null
+  editingIdeaId: null,
+  currentTab: 'list' // 'list', 'graph'
 };
 
 // DOM 요소
@@ -40,6 +42,8 @@ const elements = {
 
 // 앱 초기화
 function init() {
+  console.log('💡 IdeaConnect 앱 초기화 시작');
+
   // DOM 요소 캐싱
   elements.homeView = document.getElementById('home-view');
   elements.editView = document.getElementById('edit-view');
@@ -55,12 +59,21 @@ function init() {
   elements.backBtn = document.getElementById('back-btn');
   elements.findConnectionsBtn = document.getElementById('find-connections-btn');
 
+  // 필수 요소 확인
+  if (!elements.findConnectionsBtn) {
+    console.error('❌ 연결 찾기 버튼을 찾을 수 없습니다');
+  } else {
+    console.log('✅ 연결 찾기 버튼 찾음');
+  }
+
   // 이벤트 리스너 등록
   setupEventListeners();
 
   // 초기 화면 렌더링
   showView('home');
   refreshIdeaList();
+
+  console.log('✅ IdeaConnect 앱 초기화 완료');
 }
 
 // 이벤트 리스너 설정
@@ -85,7 +98,66 @@ function setupEventListeners() {
   elements.ideaForm.addEventListener('submit', handleFormSubmit);
 
   // 연결 찾기 버튼
-  elements.findConnectionsBtn.addEventListener('click', handleFindConnections);
+  if (elements.findConnectionsBtn) {
+    elements.findConnectionsBtn.addEventListener('click', () => {
+      console.log('🔘 연결 찾기 버튼 클릭됨');
+      handleFindConnections();
+    });
+    console.log('✅ 연결 찾기 이벤트 리스너 등록됨');
+  } else {
+    console.error('❌ 연결 찾기 버튼이 없어서 이벤트 리스너를 등록할 수 없습니다');
+  }
+
+  // 분류 필터 토글 버튼
+  const toggleFilterBtn = document.getElementById('toggle-filter-btn');
+  if (toggleFilterBtn) {
+    toggleFilterBtn.addEventListener('click', () => {
+      const filterPanel = document.getElementById('type-filter-panel');
+      if (filterPanel.style.display === 'none') {
+        filterPanel.style.display = 'block';
+        toggleFilterBtn.textContent = '🎯 분류 숨기기';
+      } else {
+        filterPanel.style.display = 'none';
+        toggleFilterBtn.textContent = '🎯 분류 선택';
+      }
+    });
+  }
+
+  // 전체 선택 버튼
+  const selectAllBtn = document.getElementById('select-all-types');
+  if (selectAllBtn) {
+    selectAllBtn.addEventListener('click', () => {
+      const checkboxes = document.querySelectorAll('input[name="type-filter"]');
+      checkboxes.forEach(cb => cb.checked = true);
+    });
+  }
+
+  // 전체 해제 버튼
+  const deselectAllBtn = document.getElementById('deselect-all-types');
+  if (deselectAllBtn) {
+    deselectAllBtn.addEventListener('click', () => {
+      const checkboxes = document.querySelectorAll('input[name="type-filter"]');
+      checkboxes.forEach(cb => cb.checked = false);
+    });
+  }
+
+  // 탭 전환 버튼
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tab = btn.getAttribute('data-tab');
+      switchTab(tab);
+    });
+  });
+
+  // 그래프 새로고침 버튼
+  const refreshGraphBtn = document.getElementById('refresh-graph-btn');
+  if (refreshGraphBtn) {
+    refreshGraphBtn.addEventListener('click', () => {
+      const graphContainer = document.getElementById('graph-container');
+      renderGraph(graphContainer);
+    });
+  }
 
   // 커스텀 이벤트 리스너
   document.addEventListener('idea-view', (e) => {
@@ -100,6 +172,36 @@ function setupEventListeners() {
   document.addEventListener('idea-delete', (e) => {
     handleDeleteIdea(e.detail.ideaId);
   });
+}
+
+// 탭 전환
+function switchTab(tabName) {
+  state.currentTab = tabName;
+
+  // 탭 버튼 활성화
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  tabButtons.forEach(btn => {
+    if (btn.getAttribute('data-tab') === tabName) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  // 탭 콘텐츠 표시
+  const listTab = document.getElementById('list-tab');
+  const graphTab = document.getElementById('graph-tab');
+
+  if (tabName === 'list') {
+    listTab.classList.add('active');
+    graphTab.classList.remove('active');
+    refreshIdeaList();
+  } else if (tabName === 'graph') {
+    listTab.classList.remove('active');
+    graphTab.classList.add('active');
+    const graphContainer = document.getElementById('graph-container');
+    renderGraph(graphContainer);
+  }
 }
 
 // 화면 전환
@@ -208,8 +310,26 @@ async function handleFormSubmit(e) {
 
 // 연결 찾기 처리
 async function handleFindConnections() {
+  console.log('🔍 연결 찾기 시작');
   const ideaId = state.currentIdeaId;
-  if (!ideaId) return;
+  console.log('현재 아이디어 ID:', ideaId);
+
+  if (!ideaId) {
+    console.error('아이디어 ID가 없습니다');
+    return;
+  }
+
+  // 선택된 타입 필터 가져오기
+  const checkboxes = document.querySelectorAll('input[name="type-filter"]:checked');
+  const selectedTypes = Array.from(checkboxes).map(cb => cb.value);
+
+  console.log('🎯 선택된 타입:', selectedTypes);
+
+  // 필터가 하나도 선택되지 않았으면 경고
+  if (selectedTypes.length === 0) {
+    alert('최소 하나 이상의 분류를 선택해주세요!');
+    return;
+  }
 
   // 버튼 비활성화
   elements.findConnectionsBtn.disabled = true;
@@ -221,8 +341,10 @@ async function handleFindConnections() {
   showLoading(elements.loadingIndicator);
 
   try {
-    // 연결 찾기 (Mock API)
-    const connections = await findConnectionsForIdea(ideaId);
+    console.log('findConnectionsForIdea 호출 중...');
+    // 연결 찾기 (필터 전달)
+    const connections = await findConnectionsForIdea(ideaId, selectedTypes);
+    console.log('찾은 연결 수:', connections.length);
 
     // 결과 저장
     if (connections.length > 0) {

@@ -29,14 +29,14 @@ export const mockConnections = {
     {
       id: "c1-1",
       ideaId: "1",
-      type: "quote",
+      type: "proverb",
       content: "천리길도 한 걸음부터",
       source: {
         author: "노자",
         title: "도덕경",
         year: "기원전 4세기",
         url: null,
-        category: "철학",
+        category: "고전 속담",
         platform: null
       },
       similarity: 0.85,
@@ -46,14 +46,14 @@ export const mockConnections = {
     {
       id: "c1-2",
       ideaId: "1",
-      type: "web",
+      type: "book",
       content: "습관의 힘: 작은 변화가 만드는 놀라운 결과",
       source: {
         author: "Charles Duhigg",
         title: "The Power of Habit",
         year: "2012",
         url: "https://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X",
-        category: "심리학",
+        category: "심리학 서적",
         platform: "Amazon"
       },
       similarity: 0.92,
@@ -80,14 +80,14 @@ export const mockConnections = {
     {
       id: "c1-4",
       ideaId: "1",
-      type: "quote",
+      type: "famous-quote",
       content: "우리는 반복적으로 하는 행동의 결과다. 그러므로 탁월함은 행동이 아니라 습관이다.",
       source: {
         author: "아리스토텔레스",
         title: null,
-        year: null,
+        year: "기원전 384-322년",
         url: null,
-        category: "철학",
+        category: "위인 명언",
         platform: null
       },
       similarity: 0.88,
@@ -97,18 +97,52 @@ export const mockConnections = {
     {
       id: "c1-5",
       ideaId: "1",
-      type: "web",
+      type: "book",
       content: "Atomic Habits - 1% 개선의 놀라운 효과",
       source: {
         author: "James Clear",
         title: "Atomic Habits",
         year: "2018",
         url: "https://jamesclear.com/atomic-habits",
-        category: "자기계발",
+        category: "자기계발 서적",
         platform: "공식 웹사이트"
       },
       similarity: 0.95,
       reasoning: "하루 1% 개선의 복리 효과를 정확히 설명합니다. 당신이 언급한 '1년 후 37배' 개념의 출처입니다.",
+      userFeedback: null
+    },
+    {
+      id: "c1-6",
+      ideaId: "1",
+      type: "academic",
+      content: "습관 형성에는 평균 66일이 걸린다는 연구 결과",
+      source: {
+        author: "Phillippa Lally",
+        title: "How are habits formed: Modelling habit formation in the real world",
+        year: "2009",
+        url: "https://onlinelibrary.wiley.com/doi/abs/10.1002/ejsp.674",
+        category: "심리학 연구",
+        platform: "European Journal of Social Psychology"
+      },
+      similarity: 0.87,
+      reasoning: "습관이 형성되는 과정을 과학적으로 연구한 논문입니다. 매일 조금씩 실천하면 약 2개월 후 자동화된다는 사실을 보여줍니다.",
+      userFeedback: null
+    },
+    {
+      id: "c1-7",
+      ideaId: "1",
+      type: "animation",
+      content: "인생은 한 방에 바뀌지 않아. 매일 조금씩 변해가는 거야.",
+      source: {
+        author: "마츠야마 히로시",
+        title: "하이큐!!",
+        year: "2014",
+        url: null,
+        category: "스포츠 애니메이션",
+        platform: "애니메이션"
+      },
+      similarity: 0.83,
+      reasoning: "스포츠 애니메이션에서 성장의 본질을 표현한 대사입니다. 매일의 작은 노력이 쌓여 큰 변화를 만든다는 메시지입니다.",
       userFeedback: null
     }
   ],
@@ -116,14 +150,14 @@ export const mockConnections = {
     {
       id: "c2-1",
       ideaId: "2",
-      type: "quote",
+      type: "famous-quote",
       content: "실패는 성공의 어머니다.",
       source: {
         author: "토마스 에디슨",
         title: null,
-        year: null,
+        year: "1847-1931",
         url: null,
-        category: "명언",
+        category: "위인 명언",
         platform: null
       },
       similarity: 0.90,
@@ -140,7 +174,7 @@ export const mockConnections = {
         title: "Batman Begins",
         year: "2005",
         url: null,
-        category: "액션",
+        category: "액션 영화",
         platform: "영화"
       },
       similarity: 0.87,
@@ -150,14 +184,14 @@ export const mockConnections = {
     {
       id: "c2-3",
       ideaId: "2",
-      type: "web",
+      type: "academic",
       content: "실패에서 배우는 기업들: 성공한 기업의 실패 사례 연구",
       source: {
         author: "Harvard Business Review",
         title: "Learning from Failure",
         year: "2011",
         url: "https://hbr.org/2011/04/strategies-for-learning-from-failure",
-        category: "비즈니스",
+        category: "경영학 연구",
         platform: "HBR"
       },
       similarity: 0.83,
@@ -167,18 +201,52 @@ export const mockConnections = {
     {
       id: "c2-4",
       ideaId: "2",
-      type: "quote",
+      type: "famous-quote",
       content: "내가 성공할 수 있었던 이유는 단 한 가지, 실패를 받아들였기 때문이다.",
       source: {
         author: "마이클 조던",
         title: null,
-        year: null,
+        year: "1963-",
         url: null,
-        category: "스포츠",
+        category: "스포츠 명언",
         platform: null
       },
       similarity: 0.89,
       reasoning: "농구 역사상 최고의 선수도 수많은 실패를 경험했습니다. 실패를 두려워하지 않는 태도가 성공의 열쇠라는 메시지입니다.",
+      userFeedback: null
+    },
+    {
+      id: "c2-5",
+      ideaId: "2",
+      type: "drama",
+      content: "실패해도 괜찮아. 중요한 건 다시 일어설 용기야.",
+      source: {
+        author: "김은숙 작가",
+        title: "도깨비",
+        year: "2016",
+        url: null,
+        category: "판타지 드라마",
+        platform: "드라마"
+      },
+      similarity: 0.85,
+      reasoning: "한국 드라마에서 실패를 극복하는 용기에 대해 이야기합니다. 실패 후 재도전의 중요성을 강조합니다.",
+      userFeedback: null
+    },
+    {
+      id: "c2-6",
+      ideaId: "2",
+      type: "essay",
+      content: "실패는 나를 더 강하게 만드는 과정이다",
+      source: {
+        author: "브레네 브라운",
+        title: "Daring Greatly",
+        year: "2012",
+        url: null,
+        category: "자기계발 에세이",
+        platform: null
+      },
+      similarity: 0.88,
+      reasoning: "취약성과 실패를 받아들이는 용기에 대한 에세이입니다. 실패를 성장의 기회로 보는 관점을 제시합니다.",
       userFeedback: null
     }
   ],
@@ -186,7 +254,7 @@ export const mockConnections = {
     {
       id: "c3-1",
       ideaId: "3",
-      type: "quote",
+      type: "proverb",
       content: "진정한 친구란 당신의 과거를 알면서도 미래를 믿어주는 사람이다.",
       source: {
         author: "작자 미상",
@@ -203,15 +271,15 @@ export const mockConnections = {
     {
       id: "c3-2",
       ideaId: "3",
-      type: "movie",
+      type: "animation",
       content: "You've got a friend in me.",
       source: {
         author: "Randy Newman",
         title: "Toy Story",
         year: "1995",
         url: null,
-        category: "애니메이션",
-        platform: "영화"
+        category: "애니메이션 OST",
+        platform: "애니메이션"
       },
       similarity: 0.82,
       reasoning: "무조건적인 우정과 지지를 노래한 명곡입니다. 진정한 친구는 항상 곁에 있다는 메시지입니다.",
@@ -220,14 +288,14 @@ export const mockConnections = {
     {
       id: "c3-3",
       ideaId: "3",
-      type: "web",
+      type: "academic",
       content: "The Science of Friendship: What Makes Deep Connections",
       source: {
         author: "Psychology Today",
         title: "The Science of Friendship",
         year: "2020",
         url: "https://www.psychologytoday.com/us/basics/friends",
-        category: "심리학",
+        category: "심리학 연구",
         platform: "Psychology Today"
       },
       similarity: 0.85,
@@ -322,18 +390,108 @@ export function saveConnections(ideaId, connections) {
   localStorage.setItem(STORAGE_KEYS.CONNECTIONS, JSON.stringify(allConnections));
 }
 
-// 연결 찾기 (Mock - 실제로는 API 호출)
-export async function findConnectionsForIdea(ideaId) {
-  // 로딩 시뮬레이션
-  await new Promise(resolve => setTimeout(resolve, 1500));
+// 연결 찾기 (실제 웹 검색 + Mock 데이터, 타입 필터 지원)
+export async function findConnectionsForIdea(ideaId, selectedTypes = null) {
+  console.log('📡 findConnectionsForIdea 호출됨, ideaId:', ideaId);
+  console.log('🎯 선택된 타입 필터:', selectedTypes);
 
-  // Mock 데이터 반환
-  if (mockConnections[ideaId]) {
-    return mockConnections[ideaId];
+  const idea = getIdea(ideaId);
+  if (!idea) {
+    console.error('아이디어를 찾을 수 없습니다');
+    return [];
   }
 
-  // 새 아이디어의 경우 빈 배열 반환
-  return [];
+  console.log('🔍 아이디어 내용:', idea.title, idea.content);
+
+  // 로딩 시뮬레이션 (실제 API 호출 시간)
+  await new Promise(resolve => setTimeout(resolve, 500));
+
+  try {
+    // 실제 웹 검색 수행
+    const { searchAllSources, extractKeywords } = await import('../services/searchService.js');
+
+    // 키워드 추출
+    const keywords = extractKeywords(idea.title + ' ' + idea.content);
+    console.log('📝 추출된 키워드:', keywords);
+
+    // 웹에서 검색 (필터 전달)
+    const searchResults = await searchAllSources(idea.content, keywords, selectedTypes);
+    console.log(`🌐 웹 검색 결과: ${searchResults.length}개`);
+
+    // ideaId 추가
+    const resultsWithIdeaId = searchResults.map(result => ({
+      ...result,
+      ideaId: ideaId
+    }));
+
+    // Mock 데이터 확인 및 필터링
+    let mockResults = [];
+    if (mockConnections[ideaId]) {
+      mockResults = mockConnections[ideaId];
+
+      // 타입 필터가 있으면 Mock 데이터도 필터링
+      if (selectedTypes && selectedTypes.length > 0) {
+        mockResults = mockResults.filter(item => selectedTypes.includes(item.type));
+      }
+
+      console.log(`📚 Mock 데이터: ${mockResults.length}개`);
+    }
+
+    // 웹 검색 결과와 Mock 데이터를 혼합
+    let combinedResults = [...resultsWithIdeaId];
+
+    // Mock 데이터가 있으면 2-3개 정도 추가
+    if (mockResults.length > 0) {
+      const mockSamples = mockResults.slice(0, 3);
+      combinedResults = [...combinedResults, ...mockSamples];
+    }
+
+    // 중복 제거 (content 첫 50자 기준)
+    const uniqueResults = [];
+    const seenContents = new Set();
+
+    for (const item of combinedResults) {
+      const contentKey = item.content.substring(0, 50);
+      if (!seenContents.has(contentKey)) {
+        seenContents.add(contentKey);
+        uniqueResults.push(item);
+      }
+    }
+
+    // 유사도 순으로 정렬
+    uniqueResults.sort((a, b) => b.similarity - a.similarity);
+
+    // 최대 10개로 제한
+    const finalResults = uniqueResults.slice(0, 10);
+
+    console.log(`✅ 총 ${finalResults.length}개의 연결을 반환합니다`);
+    console.log('📊 타입별 분포:',
+      finalResults.reduce((acc, item) => {
+        acc[item.type] = (acc[item.type] || 0) + 1;
+        return acc;
+      }, {})
+    );
+
+    return finalResults;
+
+  } catch (error) {
+    console.error('❌ 검색 중 오류:', error);
+
+    // 오류 발생 시 Mock 데이터만 반환
+    if (mockConnections[ideaId]) {
+      console.log('⚠️ Mock 데이터로 폴백');
+      let fallbackResults = mockConnections[ideaId];
+
+      // 필터가 있으면 적용
+      if (selectedTypes && selectedTypes.length > 0) {
+        fallbackResults = fallbackResults.filter(item => selectedTypes.includes(item.type));
+      }
+
+      return fallbackResults;
+    }
+
+    return [];
+  }
 }
 
 // 연결 삭제
