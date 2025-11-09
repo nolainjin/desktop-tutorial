@@ -8,6 +8,7 @@ import { GraphView } from './components/graph/GraphView';
 import { useMemoStore } from './stores/memoStore';
 import { Memo, CreateMemoInput, UpdateMemoInput } from './types/memo';
 import { Idea } from './types/idea';
+import { Connection } from './types/connection';
 import { db } from './db/schema';
 import { GraphNode } from './features/graph/GraphBuilder';
 
@@ -21,10 +22,12 @@ function App() {
   const [editingMemo,setEditingMemo]=useState<Memo|undefined>();
   const [viewingMemo,setViewingMemo]=useState<Memo|undefined>();
   const [allIdeas,setAllIdeas]=useState<Map<string,Idea[]>>(new Map());
+  const [connections,setConnections]=useState<Connection[]>([]);
 
   useEffect(()=>{
     loadMemos();
     loadAllIdeas();
+    loadAllConnections();
   },[loadMemos]);
 
   const loadAllIdeas=async()=>{
@@ -35,6 +38,11 @@ function App() {
       ideasByMemo.set(idea.memoId,[...existing,idea]);
     });
     setAllIdeas(ideasByMemo);
+  };
+
+  const loadAllConnections=async()=>{
+    const allConnections=await db.connections.toArray();
+    setConnections(allConnections);
   };
 
   const handleNewMemo=()=>{
@@ -77,6 +85,7 @@ function App() {
     }
     setEditingMemo(undefined);
     await loadAllIdeas();
+    await loadAllConnections();
   };
 
   const handleCancel=()=>{
@@ -108,7 +117,7 @@ function App() {
           </div>
         </>
       )}
-      {isLoading?<Loading/>:view==='list'?tab==='list'?<MemoList memos={memos} onMemoClick={handleMemoClick} onNewMemo={handleNewMemo}/>:<GraphView memos={memos} allIdeas={allIdeas} onNodeClick={handleNodeClick}/>:view==='editor'?<MemoEditor memo={editingMemo} onSave={handleSaveMemo} onCancel={handleCancel}/>:viewingMemo&&<MemoDetail memo={viewingMemo} onEdit={()=>handleEditMemo(viewingMemo)} onBack={handleBackToList}/>}
+      {isLoading?<Loading/>:view==='list'?tab==='list'?<MemoList memos={memos} onMemoClick={handleMemoClick} onNewMemo={handleNewMemo}/>:<GraphView memos={memos} allIdeas={allIdeas} connections={connections} onNodeClick={handleNodeClick}/>:view==='editor'?<MemoEditor memo={editingMemo} onSave={handleSaveMemo} onCancel={handleCancel}/>:viewingMemo&&<MemoDetail memo={viewingMemo} onEdit={()=>handleEditMemo(viewingMemo)} onBack={handleBackToList}/>}
     </Layout>
   );
 }

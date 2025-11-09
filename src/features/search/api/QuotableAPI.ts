@@ -3,7 +3,7 @@ import { Idea, IdeaSource } from '../../../types/idea';
 // 영문 명언 검색 (Quotable API)
 export async function searchQuotes(keywords: string[]): Promise<Partial<Idea>[]> {
   try {
-    // 키워드를 영어로 간단하게 매핑
+    // 키워드를 영어로 확장 매핑
     const keywordMap: Record<string, string> = {
       '성장': 'growth',
       '습관': 'habit',
@@ -16,7 +16,19 @@ export async function searchQuotes(keywords: string[]): Promise<Partial<Idea>[]>
       '사랑': 'love',
       '행복': 'happiness',
       '배움': 'learning',
-      '지혜': 'wisdom'
+      '지혜': 'wisdom',
+      '실천': 'action',
+      '행동': 'action',
+      '연습': 'practice',
+      '훈련': 'practice',
+      '인내': 'patience',
+      '목표': 'goal',
+      '변화': 'change',
+      '용기': 'courage',
+      '꿈': 'dream',
+      '자유': 'freedom',
+      '창의': 'creativity',
+      '시간': 'time'
     };
 
     const englishKeyword = keywords

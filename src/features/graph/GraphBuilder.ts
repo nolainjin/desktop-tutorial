@@ -1,5 +1,6 @@
 import { Memo } from '../../types/memo';
 import { Idea } from '../../types/idea';
+import { Connection } from '../../types/connection';
 
 export interface GraphNode {
   id: string;
@@ -24,8 +25,12 @@ export interface GraphData {
   links: GraphLink[];
 }
 
-// 그래프 데이터 생성
-export function buildGraphData(memos: Memo[], allIdeas: Map<string, Idea[]>): GraphData {
+// 그래프 데이터 생성 (Connection 기반)
+export function buildGraphData(
+  memos: Memo[],
+  allIdeas: Map<string, Idea[]>,
+  connections: Connection[]
+): GraphData {
   const nodes: GraphNode[] = [];
   const links: GraphLink[] = [];
 
@@ -49,11 +54,20 @@ export function buildGraphData(memos: Memo[], allIdeas: Map<string, Idea[]>): Gr
       memo
     });
 
-    // 아이디어 노드 추가 (메모 주변에 배치)
+    // 이 메모와 연결된 Connection만 가져오기
+    const memoConnections = connections.filter(c => c.memoId === memo.id);
     const ideas = allIdeas.get(memo.id) || [];
-    ideas.slice(0, 3).forEach((idea, ideaIndex) => {
-      const ideaAngle = angle + (ideaIndex / 3 - 0.5) * (Math.PI / 3);
-      const ideaRadius = 100;
+
+    // Connection에 있는 아이디어만 표시
+    const connectedIdeas = ideas.filter(idea =>
+      memoConnections.some(c => c.ideaId === idea.id)
+    );
+
+    // 아이디어 노드 추가 (메모 주변에 배치)
+    connectedIdeas.forEach((idea, ideaIndex) => {
+      const totalIdeas = connectedIdeas.length;
+      const ideaAngle = angle + ((ideaIndex / Math.max(totalIdeas, 1)) - 0.5) * (Math.PI / 2);
+      const ideaRadius = 120;
 
       const ideaNodeId = `idea-${idea.id}`;
 

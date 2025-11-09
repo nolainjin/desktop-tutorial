@@ -25,7 +25,11 @@ export async function updateIdeaFeedback(
 }
 
 // 아이디어 개수 업데이트 (메모의 connectionCount)
-export async function updateMemoConnectionCount(memoId: string): Promise<void> {
-  const ideas = await getIdeasByMemoId(memoId);
-  await db.memos.update(memoId, { connectionCount: ideas.length });
+export async function updateMemoConnectionCount(memoId: string, count?: number): Promise<void> {
+  if (count !== undefined) {
+    await db.memos.update(memoId, { connectionCount: count });
+  } else {
+    const ideas = await getIdeasByMemoId(memoId);
+    await db.memos.update(memoId, { connectionCount: ideas.length });
+  }
 }

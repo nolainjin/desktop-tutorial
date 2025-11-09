@@ -1,11 +1,13 @@
 import { useEffect, useState, useRef } from 'react';
 import { Memo } from '../../types/memo';
 import { Idea } from '../../types/idea';
+import { Connection } from '../../types/connection';
 import { buildGraphData, GraphNode, GraphLink } from '../../features/graph/GraphBuilder';
 
 interface GraphViewProps {
   memos: Memo[];
   allIdeas: Map<string, Idea[]>;
+  connections: Connection[];
   onNodeClick: (node: GraphNode) => void;
 }
 
@@ -22,7 +24,7 @@ const TYPE_COLORS: Record<string, string> = {
   'web': '#14B8A6'
 };
 
-export function GraphView({ memos, allIdeas, onNodeClick }: GraphViewProps) {
+export function GraphView({ memos, allIdeas, connections, onNodeClick }: GraphViewProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
   const [graphData, setGraphData] = useState<{ nodes: GraphNode[]; links: GraphLink[] }>({
@@ -32,10 +34,10 @@ export function GraphView({ memos, allIdeas, onNodeClick }: GraphViewProps) {
 
   useEffect(() => {
     if (memos.length > 0) {
-      const data = buildGraphData(memos, allIdeas);
+      const data = buildGraphData(memos, allIdeas, connections);
       setGraphData(data);
     }
-  }, [memos, allIdeas]);
+  }, [memos, allIdeas, connections]);
 
   if (memos.length === 0) {
     return (

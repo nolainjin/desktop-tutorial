@@ -49,5 +49,30 @@ export const koreanProverbs = [
     content: '급할수록 돌아가라',
     keywords: ['인내', '계획', '지혜', '전략'],
     category: '인내'
+  },
+  {
+    content: '소 잃고 외양간 고친다',
+    keywords: ['실패', '배움', '교훈', '후회', '실천'],
+    category: '교훈'
+  },
+  {
+    content: '바늘 도둑이 소 도둑 된다',
+    keywords: ['습관', '반복', '행동', '실천', '작은 것'],
+    category: '습관'
+  },
+  {
+    content: '백 번 듣는 것이 한 번 보는 것만 못하다',
+    keywords: ['실천', '경험', '배움', '행동', '직접'],
+    category: '실천'
+  },
+  {
+    content: '천 리 길도 한 걸음부터',
+    keywords: ['시작', '실천', '행동', '꾸준', '노력'],
+    category: '시작'
+  },
+  {
+    content: '낮말은 새가 듣고 밤말은 쥐가 듣는다',
+    keywords: ['주의', '언행', '조심', '행동'],
+    category: '주의'
   }
 ];
