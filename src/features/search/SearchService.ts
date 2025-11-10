@@ -5,6 +5,7 @@ import { searchWikipedia } from './api/WikipediaAPI';
 import { searchBooks } from './api/GoogleBooksAPI';
 import { koreanProverbs } from './api/ProverbsDB';
 import { searchLocalQuotes } from './api/LocalQuotesDB';
+import { searchLibrary } from './api/KnowledgeLibraryAPI';
 import { extractKeywords } from './KeywordExtractor';
 import { calculateSimilarity } from './SimilarityCalculator';
 import { v4 as uuidv4 } from 'uuid';
@@ -53,7 +54,15 @@ export async function searchAllSources(
     const searchPromises: Promise<Partial<Idea>[]>[] = [];
 
     if (shouldSearch['famous-quote']) {
-      // 로컬 DB 우선 검색 (빠르고 정확)
+      // 🆕 52,000개 라이브러리 검색 (우선순위 1)
+      searchPromises.push(
+        searchLibrary(keywords, ['famous-quote', 'movie', 'book', 'drama', 'animation'], 20).catch(err => {
+          console.error('라이브러리 검색 오류:', err);
+          return [];
+        })
+      );
+
+      // 로컬 DB (기존)
       searchPromises.push(
         searchLocalQuotes(keywords).catch(err => {
           console.error('로컬 명언 검색 오류:', err);
@@ -61,7 +70,7 @@ export async function searchAllSources(
         })
       );
 
-      // 외부 API 검색 (추가 명언)
+      // 외부 API (보조)
       searchPromises.push(
         searchQuotes(keywords).catch(err => {
           console.error('API 명언 검색 오류:', err);
@@ -71,6 +80,15 @@ export async function searchAllSources(
     }
 
     if (shouldSearch['academic']) {
+      // 🆕 학술/에세이/웹 라이브러리 검색
+      searchPromises.push(
+        searchLibrary(keywords, ['academic', 'essay', 'web'], 15).catch(err => {
+          console.error('학술 라이브러리 검색 오류:', err);
+          return [];
+        })
+      );
+
+      // 위키백과 (보조)
       searchPromises.push(
         searchWikipedia(keywords).catch(err => {
           console.error('위키 검색 오류:', err);
@@ -80,10 +98,28 @@ export async function searchAllSources(
     }
 
     if (shouldSearch['proverb']) {
+      // 🆕 속담/시 라이브러리 검색
+      searchPromises.push(
+        searchLibrary(keywords, ['proverb', 'poem'], 10).catch(err => {
+          console.error('속담 라이브러리 검색 오류:', err);
+          return [];
+        })
+      );
+
+      // 기존 속담 (보조)
       searchPromises.push(Promise.resolve(searchKoreanProverbs(keywords)));
     }
 
     if (shouldSearch['book']) {
+      // 🆕 책 라이브러리 검색
+      searchPromises.push(
+        searchLibrary(keywords, ['book'], 10).catch(err => {
+          console.error('책 라이브러리 검색 오류:', err);
+          return [];
+        })
+      );
+
+      // Google Books API (보조)
       searchPromises.push(
         searchBooks(keywords).catch(err => {
           console.error('책 검색 오류:', err);

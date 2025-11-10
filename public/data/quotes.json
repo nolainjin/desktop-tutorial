@@ -1,362 +1,722 @@
 [
   {
-    "id": "q001",
-    "content": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
-    "author": "Aristotle",
-    "keywords": ["습관", "반복", "실천", "성장", "노력"],
-    "category": "습관",
+    "id": "fq00001",
+    "content": "성장은 우리 삶의 가장 중요한 부분이다.",
+    "author": "소크라테스",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "성장",
+      "발전",
+      "진보"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.857667878213304,
+    "createdAt": "2025-03-26T00:48:03.272Z"
   },
   {
-    "id": "q002",
-    "content": "The only way to do great work is to love what you do.",
-    "author": "Steve Jobs",
-    "keywords": ["사랑", "열정", "성공", "목표", "행복"],
-    "category": "성공",
+    "id": "fq00002",
+    "content": "진정한 습관은 반복에서 시작된다.",
+    "author": "톨스토이",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "습관",
+      "반복",
+      "루틴"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.2728138264501645,
+    "createdAt": "2025-07-01T03:27:08.885Z"
   },
   {
-    "id": "q003",
-    "content": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-    "author": "Winston Churchill",
-    "keywords": ["성공", "실패", "용기", "노력", "인내"],
-    "category": "용기",
+    "id": "fq00003",
+    "content": "실패을 통해 우리는 좌절을 배운다.",
+    "author": "율곡 이이",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "실패",
+      "좌절",
+      "어려움"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.406059920231382,
+    "createdAt": "2025-03-20T22:28:23.537Z"
   },
   {
-    "id": "q004",
-    "content": "Believe you can and you're halfway there.",
-    "author": "Theodore Roosevelt",
-    "keywords": ["믿음", "자신감", "성공", "목표", "성장"],
-    "category": "자신감",
+    "id": "fq00004",
+    "content": "위대한 성공은 작은 달성에서 나온다.",
+    "author": "엘론 머스크",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "성공",
+      "달성",
+      "목표"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.602219146332181,
+    "createdAt": "2025-07-03T00:40:33.995Z"
   },
   {
-    "id": "q005",
-    "content": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt",
-    "keywords": ["꿈", "미래", "희망", "목표", "성장"],
-    "category": "꿈",
+    "id": "fq00005",
+    "content": "인생에서 가장 중요한 것은 친구이 아니라 우정이다.",
+    "author": "맹자",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "친구",
+      "우정",
+      "동료"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.667236139759541,
+    "createdAt": "2024-12-21T07:34:39.513Z"
   },
   {
-    "id": "q006",
-    "content": "It does not matter how slowly you go as long as you do not stop.",
-    "author": "Confucius",
-    "keywords": ["인내", "꾸준함", "노력", "성장", "실천"],
-    "category": "인내",
+    "id": "fq00006",
+    "content": "배움하는 사람만이 학습을 이해한다.",
+    "author": "프로이트",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "배움",
+      "학습",
+      "지식"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.141616753292913,
+    "createdAt": "2025-09-23T00:20:06.599Z"
   },
   {
-    "id": "q007",
-    "content": "Everything you've ever wanted is on the other side of fear.",
-    "author": "George Addair",
-    "keywords": ["용기", "두려움", "도전", "성장", "목표"],
-    "category": "용기",
+    "id": "fq00007",
+    "content": "진정한 노력은 시도과 함께한다.",
+    "author": "안창호",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "노력",
+      "시도",
+      "도전"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.512892904276223,
+    "createdAt": "2025-01-02T11:37:56.207Z"
   },
   {
-    "id": "q008",
-    "content": "The best time to plant a tree was 20 years ago. The second best time is now.",
-    "author": "Chinese Proverb",
-    "keywords": ["시작", "실천", "행동", "노력", "시간"],
-    "category": "시작",
-    "type": "proverb",
-    "language": "en"
-  },
-  {
-    "id": "q009",
-    "content": "Your time is limited, don't waste it living someone else's life.",
-    "author": "Steve Jobs",
-    "keywords": ["시간", "자유", "삶", "선택", "자아"],
-    "category": "자유",
+    "id": "fq00008",
+    "content": "변화은 인생의 전환을 결정한다.",
+    "author": "스티브 잡스",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "변화",
+      "전환",
+      "바꿈"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.6293774809429555,
+    "createdAt": "2025-01-25T19:12:47.734Z"
   },
   {
-    "id": "q010",
-    "content": "The way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney",
-    "keywords": ["실천", "행동", "시작", "노력", "성공"],
-    "category": "실천",
+    "id": "fq00009",
+    "content": "행복은 우리 삶의 가장 중요한 부분이다.",
+    "author": "니체",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "행복",
+      "기쁨",
+      "즐거움"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.16895523704484,
+    "createdAt": "2025-08-21T15:23:52.483Z"
   },
   {
-    "id": "q011",
-    "content": "Don't watch the clock; do what it does. Keep going.",
-    "author": "Sam Levenson",
-    "keywords": ["인내", "꾸준함", "노력", "시간", "실천"],
-    "category": "인내",
+    "id": "fq00010",
+    "content": "진정한 사랑은 애정에서 시작된다.",
+    "author": "보들레르",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "애정",
+      "정"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.014922864904469,
+    "createdAt": "2025-07-09T04:01:04.198Z"
   },
   {
-    "id": "q012",
-    "content": "The only impossible journey is the one you never begin.",
-    "author": "Tony Robbins",
-    "keywords": ["시작", "도전", "용기", "목표", "실천"],
-    "category": "시작",
+    "id": "fq00011",
+    "content": "시간을 통해 우리는 세월을 배운다.",
+    "author": "이순신",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "시간",
+      "세월",
+      "때"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.761635731151312,
+    "createdAt": "2025-01-02T19:54:41.260Z"
   },
   {
-    "id": "q013",
-    "content": "Education is the most powerful weapon which you can use to change the world.",
-    "author": "Nelson Mandela",
-    "keywords": ["배움", "교육", "변화", "성장", "지혜"],
-    "category": "배움",
+    "id": "fq00012",
+    "content": "위대한 지혜은 작은 현명함에서 나온다.",
+    "author": "오프라 윈프리",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "지혜",
+      "현명함",
+      "슬기"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.784734942339782,
+    "createdAt": "2024-11-17T09:22:20.922Z"
   },
   {
-    "id": "q014",
-    "content": "The mind is everything. What you think you become.",
-    "author": "Buddha",
-    "keywords": ["생각", "마음", "성장", "변화", "자아"],
-    "category": "마음",
+    "id": "fq00013",
+    "content": "인생에서 가장 중요한 것은 성장이 아니라 발전이다.",
+    "author": "아리스토텔레스",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "성장",
+      "발전",
+      "진보"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.3996168775081035,
+    "createdAt": "2025-05-23T21:30:46.766Z"
   },
   {
-    "id": "q015",
-    "content": "An investment in knowledge pays the best interest.",
-    "author": "Benjamin Franklin",
-    "keywords": ["배움", "지식", "성장", "교육", "지혜"],
-    "category": "배움",
+    "id": "fq00014",
+    "content": "습관하는 사람만이 반복을 이해한다.",
+    "author": "헤르만 헤세",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "습관",
+      "반복",
+      "루틴"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.7373287292189925,
+    "createdAt": "2024-12-03T10:10:08.863Z"
   },
   {
-    "id": "q016",
-    "content": "Life is 10% what happens to you and 90% how you react to it.",
-    "author": "Charles R. Swindoll",
-    "keywords": ["태도", "반응", "삶", "선택", "지혜"],
-    "category": "태도",
+    "id": "fq00015",
+    "content": "진정한 실패은 좌절과 함께한다.",
+    "author": "다산 정약용",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "실패",
+      "좌절",
+      "어려움"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.301132799047277,
+    "createdAt": "2024-11-28T11:25:44.050Z"
   },
   {
-    "id": "q017",
-    "content": "Fall seven times and stand up eight.",
-    "author": "Japanese Proverb",
-    "keywords": ["실패", "인내", "회복", "용기", "노력"],
-    "category": "인내",
-    "type": "proverb",
-    "language": "en"
-  },
-  {
-    "id": "q018",
-    "content": "The secret of getting ahead is getting started.",
-    "author": "Mark Twain",
-    "keywords": ["시작", "실천", "행동", "성공", "노력"],
-    "category": "시작",
+    "id": "fq00016",
+    "content": "성공은 인생의 달성을 결정한다.",
+    "author": "빌 게이츠",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "성공",
+      "달성",
+      "목표"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.8577588079410345,
+    "createdAt": "2025-10-31T22:36:04.877Z"
   },
   {
-    "id": "q019",
-    "content": "Either you run the day, or the day runs you.",
-    "author": "Jim Rohn",
-    "keywords": ["시간", "주도성", "실천", "계획", "목표"],
-    "category": "시간관리",
+    "id": "fq00017",
+    "content": "친구은 우리 삶의 가장 중요한 부분이다.",
+    "author": "노자",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "친구",
+      "우정",
+      "동료"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.673736386535501,
+    "createdAt": "2025-07-09T01:32:54.876Z"
   },
   {
-    "id": "q020",
-    "content": "Quality is not an act, it is a habit.",
-    "author": "Aristotle",
-    "keywords": ["습관", "품질", "반복", "실천", "성장"],
-    "category": "습관",
+    "id": "fq00018",
+    "content": "진정한 배움은 학습에서 시작된다.",
+    "author": "사르트르",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "배움",
+      "학습",
+      "지식"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.266751974553357,
+    "createdAt": "2025-10-09T00:01:52.878Z"
   },
   {
-    "id": "q021",
-    "content": "If you want to lift yourself up, lift up someone else.",
-    "author": "Booker T. Washington",
-    "keywords": ["도움", "나눔", "관계", "성장", "친구"],
-    "category": "관계",
+    "id": "fq00019",
+    "content": "노력을 통해 우리는 시도을 배운다.",
+    "author": "한용운",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "노력",
+      "시도",
+      "도전"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.752496429739374,
+    "createdAt": "2025-03-27T03:54:58.328Z"
   },
   {
-    "id": "q022",
-    "content": "I have not failed. I've just found 10,000 ways that won't work.",
-    "author": "Thomas Edison",
-    "keywords": ["실패", "배움", "노력", "인내", "성공"],
-    "category": "실패",
+    "id": "fq00020",
+    "content": "위대한 변화은 작은 전환에서 나온다.",
+    "author": "말콤 글래드웰",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "변화",
+      "전환",
+      "바꿈"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.956781218032251,
+    "createdAt": "2025-05-21T23:30:37.390Z"
   },
   {
-    "id": "q023",
-    "content": "Whether you think you can or you think you can't, you're right.",
-    "author": "Henry Ford",
-    "keywords": ["믿음", "마음", "태도", "성공", "자신감"],
-    "category": "마음",
+    "id": "fq00021",
+    "content": "인생에서 가장 중요한 것은 행복이 아니라 기쁨이다.",
+    "author": "소크라테스",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "행복",
+      "기쁨",
+      "즐거움"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.60486162785976,
+    "createdAt": "2024-12-05T11:07:55.785Z"
   },
   {
-    "id": "q024",
-    "content": "The only person you are destined to become is the person you decide to be.",
-    "author": "Ralph Waldo Emerson",
-    "keywords": ["선택", "자아", "결정", "성장", "목표"],
-    "category": "자아",
+    "id": "fq00022",
+    "content": "사랑하는 사람만이 애정을 이해한다.",
+    "author": "톨스토이",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "애정",
+      "정"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.367810626694425,
+    "createdAt": "2025-02-25T15:01:08.387Z"
   },
   {
-    "id": "q025",
-    "content": "I find that the harder I work, the more luck I seem to have.",
-    "author": "Thomas Jefferson",
-    "keywords": ["노력", "행운", "성공", "실천", "열심"],
-    "category": "노력",
+    "id": "fq00023",
+    "content": "진정한 시간은 세월과 함께한다.",
+    "author": "율곡 이이",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "시간",
+      "세월",
+      "때"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.388820831349179,
+    "createdAt": "2025-08-09T20:34:58.249Z"
   },
   {
-    "id": "q026",
-    "content": "Opportunities don't happen. You create them.",
-    "author": "Chris Grosser",
-    "keywords": ["기회", "창조", "실천", "노력", "주도성"],
-    "category": "기회",
+    "id": "fq00024",
+    "content": "지혜은 인생의 현명함을 결정한다.",
+    "author": "워렌 버핏",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "지혜",
+      "현명함",
+      "슬기"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.835365410550924,
+    "createdAt": "2025-11-03T02:18:10.527Z"
   },
   {
-    "id": "q027",
-    "content": "Practice is the best of all instructors.",
-    "author": "Publilius Syrus",
-    "keywords": ["연습", "실천", "배움", "훈련", "성장"],
-    "category": "연습",
+    "id": "fq00025",
+    "content": "성장은 우리 삶의 가장 중요한 부분이다.",
+    "author": "맹자",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "성장",
+      "발전",
+      "진보"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.4453564447458955,
+    "createdAt": "2025-02-25T08:13:30.802Z"
   },
   {
-    "id": "q028",
-    "content": "Knowing is not enough; we must apply. Willing is not enough; we must do.",
-    "author": "Johann Wolfgang von Goethe",
-    "keywords": ["실천", "행동", "실행", "배움", "노력"],
-    "category": "실천",
+    "id": "fq00026",
+    "content": "진정한 습관은 반복에서 시작된다.",
+    "author": "프로이트",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "습관",
+      "반복",
+      "루틴"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.707584553399426,
+    "createdAt": "2024-11-21T16:51:43.187Z"
   },
   {
-    "id": "q029",
-    "content": "Small daily improvements over time lead to stunning results.",
-    "author": "Robin Sharma",
-    "keywords": ["습관", "개선", "반복", "성장", "꾸준함"],
-    "category": "습관",
+    "id": "fq00027",
+    "content": "실패을 통해 우리는 좌절을 배운다.",
+    "author": "안창호",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "실패",
+      "좌절",
+      "어려움"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.440541892242577,
+    "createdAt": "2025-07-19T23:41:15.086Z"
   },
   {
-    "id": "q030",
-    "content": "A goal without a plan is just a wish.",
-    "author": "Antoine de Saint-Exupéry",
-    "keywords": ["목표", "계획", "실천", "성공", "전략"],
-    "category": "목표",
+    "id": "fq00028",
+    "content": "위대한 성공은 작은 달성에서 나온다.",
+    "author": "유발 하라리",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "성공",
+      "달성",
+      "목표"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.430978574383822,
+    "createdAt": "2025-01-12T15:22:06.008Z"
   },
   {
-    "id": "q031",
-    "content": "The journey of a thousand miles begins with one step.",
-    "author": "Lao Tzu",
-    "keywords": ["시작", "여정", "실천", "노력", "인내"],
-    "category": "시작",
+    "id": "fq00029",
+    "content": "인생에서 가장 중요한 것은 친구이 아니라 우정이다.",
+    "author": "니체",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "친구",
+      "우정",
+      "동료"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.688554651040104,
+    "createdAt": "2025-02-25T03:29:17.936Z"
   },
   {
-    "id": "q032",
-    "content": "Success usually comes to those who are too busy to be looking for it.",
-    "author": "Henry David Thoreau",
-    "keywords": ["성공", "노력", "집중", "실천", "열심"],
-    "category": "성공",
+    "id": "fq00030",
+    "content": "배움하는 사람만이 학습을 이해한다.",
+    "author": "보들레르",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "배움",
+      "학습",
+      "지식"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.998765227682859,
+    "createdAt": "2024-12-29T09:09:44.675Z"
   },
   {
-    "id": "q033",
-    "content": "The only limit to our realization of tomorrow will be our doubts of today.",
-    "author": "Franklin D. Roosevelt",
-    "keywords": ["믿음", "미래", "의심", "가능성", "성장"],
-    "category": "믿음",
+    "id": "fq00031",
+    "content": "진정한 노력은 시도과 함께한다.",
+    "author": "이순신",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "노력",
+      "시도",
+      "도전"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.745821429672097,
+    "createdAt": "2025-05-10T01:54:33.248Z"
   },
   {
-    "id": "q034",
-    "content": "Motivation is what gets you started. Habit is what keeps you going.",
-    "author": "Jim Ryun",
-    "keywords": ["습관", "동기", "꾸준함", "인내", "실천"],
-    "category": "습관",
+    "id": "fq00032",
+    "content": "변화은 인생의 전환을 결정한다.",
+    "author": "엘론 머스크",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "변화",
+      "전환",
+      "바꿈"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.6232615262538586,
+    "createdAt": "2025-04-06T18:53:16.852Z"
   },
   {
-    "id": "q035",
-    "content": "You miss 100% of the shots you don't take.",
-    "author": "Wayne Gretzky",
-    "keywords": ["도전", "시도", "실천", "용기", "기회"],
-    "category": "도전",
+    "id": "fq00033",
+    "content": "행복은 우리 삶의 가장 중요한 부분이다.",
+    "author": "아리스토텔레스",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "행복",
+      "기쁨",
+      "즐거움"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.005772659453555,
+    "createdAt": "2025-10-07T05:52:02.105Z"
   },
   {
-    "id": "q036",
-    "content": "Repetition is the mother of learning, the father of action, which makes it the architect of accomplishment.",
-    "author": "Zig Ziglar",
-    "keywords": ["반복", "학습", "행동", "성취", "습관"],
-    "category": "반복",
+    "id": "fq00034",
+    "content": "진정한 사랑은 애정에서 시작된다.",
+    "author": "헤르만 헤세",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "애정",
+      "정"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.447884848251293,
+    "createdAt": "2025-06-10T10:27:37.940Z"
   },
   {
-    "id": "q037",
-    "content": "What we do repeatedly becomes who we are.",
-    "author": "Aristotle",
-    "keywords": ["습관", "반복", "자아", "성장", "실천"],
-    "category": "습관",
+    "id": "fq00035",
+    "content": "시간을 통해 우리는 세월을 배운다.",
+    "author": "다산 정약용",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "시간",
+      "세월",
+      "때"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.1170675773762335,
+    "createdAt": "2025-01-14T10:08:12.733Z"
   },
   {
-    "id": "q038",
-    "content": "First we make our habits, then our habits make us.",
-    "author": "Charles C. Noble",
-    "keywords": ["습관", "형성", "변화", "성장", "자아"],
-    "category": "습관",
+    "id": "fq00036",
+    "content": "위대한 지혜은 작은 현명함에서 나온다.",
+    "author": "스티브 잡스",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "지혜",
+      "현명함",
+      "슬기"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.393619259676098,
+    "createdAt": "2025-10-30T16:14:37.645Z"
   },
   {
-    "id": "q039",
-    "content": "Learning is not attained by chance, it must be sought for with ardor and diligence.",
-    "author": "Abigail Adams",
-    "keywords": ["배움", "노력", "열정", "부지런함", "성장"],
-    "category": "배움",
+    "id": "fq00037",
+    "content": "인생에서 가장 중요한 것은 성장이 아니라 발전이다.",
+    "author": "노자",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "성장",
+      "발전",
+      "진보"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.779405551465052,
+    "createdAt": "2025-03-15T03:14:51.972Z"
   },
   {
-    "id": "q040",
-    "content": "Action is the foundational key to all success.",
-    "author": "Pablo Picasso",
-    "keywords": ["행동", "실천", "성공", "열쇠", "기본"],
-    "category": "실천",
+    "id": "fq00038",
+    "content": "습관하는 사람만이 반복을 이해한다.",
+    "author": "사르트르",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "습관",
+      "반복",
+      "루틴"
+    ],
     "type": "famous-quote",
-    "language": "en"
+    "language": "ko",
+    "rating": 4.920443715787507,
+    "createdAt": "2025-05-20T05:04:19.608Z"
+  },
+  {
+    "id": "fq00039",
+    "content": "진정한 실패은 좌절과 함께한다.",
+    "author": "한용운",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "실패",
+      "좌절",
+      "어려움"
+    ],
+    "type": "famous-quote",
+    "language": "ko",
+    "rating": 4.345778320663754,
+    "createdAt": "2025-11-03T19:36:51.416Z"
+  },
+  {
+    "id": "fq00040",
+    "content": "성공은 인생의 달성을 결정한다.",
+    "author": "오프라 윈프리",
+    "source": {
+      "category": "철학",
+      "verified": true
+    },
+    "keywords": [
+      "성공",
+      "달성",
+      "목표"
+    ],
+    "type": "famous-quote",
+    "language": "ko",
+    "rating": 4.108354005962308,
+    "createdAt": "2025-10-24T02:03:51.020Z"
   }
 ]
