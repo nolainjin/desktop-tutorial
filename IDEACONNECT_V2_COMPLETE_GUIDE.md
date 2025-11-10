@@ -1513,5 +1513,1582 @@ class VectorIndex:
 
 ---
 
-**Part 2 완료! 이제 Part 3 작성 중...**
+# Part 3: 데이터 수집 실행 계획
+
+## 3.1 50,000개 노드 수집 전략
+
+### 3단계 파이프라인
+
+**Phase 1: Raw Collection (원시 수집)** - Week 1-4
+- 목표: 50,000개 원시 데이터
+- 방법: API + 웹 스크래핑
+- 품질: 기본 검증만
+
+**Phase 2: Enrichment (강화)** - Week 5-8
+- 목표: 언어학·심리학적 주석 추가
+- 방법: NLP 파이프라인 자동화
+- 품질: 자동 품질 점수
+
+**Phase 3: Graph Construction (그래프 구축)** - Week 9-12
+- 목표: 500,000+ 엣지 생성
+- 방법: 다차원 유사도 계산
+- 품질: 3-Tier 검증
+
+---
+
+## 3.2 카테고리별 수집 기준 (요약)
+
+| 카테고리 | 목표 | 주요 소스 | 우선순위 |
+|---------|------|----------|---------|
+| famous-quote | 10,000 | Quotable API, Wikiquote | ⭐⭐⭐ |
+| book | 8,000 | Google Books API, Gutenberg | ⭐⭐⭐ |
+| movie | 7,000 | IMDb, 영화 대본 DB | ⭐⭐⭐ |
+| academic | 6,000 | arXiv, Google Scholar | ⭐⭐ |
+| proverb | 5,000 | 속담 사전, 사자성어 DB | ⭐⭐ |
+| web | 5,000 | Medium, 브런치 | ⭐⭐ |
+| essay | 4,000 | 유명 에세이스트 작품 | ⭐ |
+| poem | 3,000 | 공개 도메인 시집 | ⭐ |
+| drama | 2,000 | 드라마 명대사 | ⭐ |
+| animation | 2,000 | 애니메이션 명대사 | ⭐ |
+
+---
+
+## 3.3 자동 수집 스크립트
+
+### 수집 스크립트 구조
+
+```python
+# scripts/collection/collector_base.py
+
+from abc import ABC, abstractmethod
+from typing import List, Dict
+import asyncio
+
+class BaseCollector(ABC):
+    """기본 수집기 추상 클래스"""
+
+    def __init__(self, category: str, target_count: int):
+        self.category = category
+        self.target_count = target_count
+        self.collected = []
+
+    @abstractmethod
+    async def fetch_batch(self, batch_size: int = 100) -> List[Dict]:
+        """배치 단위로 데이터 수집"""
+        pass
+
+    @abstractmethod
+    def validate(self, item: Dict) -> bool:
+        """데이터 검증"""
+        pass
+
+    def transform(self, raw_item: Dict) -> Dict:
+        """원시 데이터를 표준 형식으로 변환"""
+        return {
+            'id': self.generate_id(),
+            'content': raw_item['text'],
+            'source': {
+                'author': raw_item.get('author', 'Unknown'),
+                'verified': False
+            },
+            'classification': {
+                'primary_category': self.category,
+                'keywords': []
+            }
+        }
+
+    async def collect_all(self):
+        """전체 수집 프로세스"""
+        print(f"🚀 {self.category} 수집 시작 (목표: {self.target_count})")
+
+        while len(self.collected) < self.target_count:
+            try:
+                batch = await self.fetch_batch()
+
+                for item in batch:
+                    if self.validate(item):
+                        transformed = self.transform(item)
+                        self.collected.append(transformed)
+
+                print(f"  ✅ {len(self.collected)} / {self.target_count}")
+
+                # Rate limiting
+                await asyncio.sleep(1)
+
+            except Exception as e:
+                print(f"  ❌ 오류: {e}")
+                await asyncio.sleep(5)
+
+        print(f"🎉 {self.category} 수집 완료!")
+        return self.collected
+```
+
+### Quotable API 수집기
+
+```python
+# scripts/collection/quotable_collector.py
+
+import aiohttp
+from collector_base import BaseCollector
+
+class QuotableCollector(BaseCollector):
+    """Quotable.io API 수집기"""
+
+    def __init__(self):
+        super().__init__('famous-quote', 10000)
+        self.api_url = 'https://api.quotable.io'
+        self.current_page = 1
+
+    async def fetch_batch(self, batch_size: int = 100):
+        """Quotable API에서 배치 가져오기"""
+        async with aiohttp.ClientSession() as session:
+            url = f"{self.api_url}/quotes?page={self.current_page}&limit={batch_size}"
+
+            async with session.get(url) as response:
+                data = await response.json()
+                self.current_page += 1
+
+                return data.get('results', [])
+
+    def validate(self, item: Dict) -> bool:
+        """검증"""
+        # 길이 체크
+        if len(item.get('content', '')) < 10:
+            return False
+        if len(item.get('content', '')) > 500:
+            return False
+
+        # 저자 체크
+        if not item.get('author'):
+            return False
+
+        return True
+
+    def transform(self, raw_item: Dict) -> Dict:
+        """Quotable 데이터를 표준 형식으로"""
+        return {
+            'id': f"fq_quotable_{raw_item['_id']}",
+            'content': raw_item['content'],
+            'source': {
+                'author': raw_item['author'],
+                'verified': True,
+                'url': f"https://quotable.io/quotes/{raw_item['_id']}"
+            },
+            'classification': {
+                'primary_category': 'famous-quote',
+                'keywords': raw_item.get('tags', [])
+            }
+        }
+```
+
+---
+
+## 3.4 품질 관리 (3-Tier 검증)
+
+### Tier 1: 자동 검증 (100%)
+
+```python
+# scripts/quality/auto_validator.py
+
+class AutoValidator:
+    """자동 품질 검증"""
+
+    def validate_node(self, node: Dict) -> Dict:
+        """노드 검증 및 점수 산정"""
+
+        errors = []
+        warnings = []
+        score = 100
+
+        # 1. 필수 필드
+        required_fields = ['id', 'content', 'source']
+        for field in required_fields:
+            if field not in node:
+                errors.append(f"필수 필드 누락: {field}")
+                score -= 30
+
+        # 2. 길이 검증
+        content_len = len(node.get('content', ''))
+        if content_len < 10:
+            errors.append("내용이 너무 짧음")
+            score -= 40
+        elif content_len > 500:
+            warnings.append("내용이 길어 인지 부하 우려")
+            score -= 10
+
+        # 3. 중복 검사
+        if self.is_duplicate(node['content']):
+            errors.append("중복된 내용")
+            score -= 50
+
+        # 4. 언어 감지
+        detected_lang = self.detect_language(node['content'])
+        if detected_lang not in ['en', 'ko']:
+            warnings.append(f"비표준 언어: {detected_lang}")
+            score -= 5
+
+        return {
+            'valid': len(errors) == 0,
+            'score': max(0, score),
+            'errors': errors,
+            'warnings': warnings
+        }
+
+    def is_duplicate(self, content: str) -> bool:
+        """중복 체크 (첫 50자 fingerprint)"""
+        fingerprint = content[:50].lower()
+        fingerprint = ''.join(c for c in fingerprint if c.isalnum())
+
+        if fingerprint in self.seen_fingerprints:
+            return True
+
+        self.seen_fingerprints.add(fingerprint)
+        return False
+```
+
+### Tier 2: 전문가 큐레이션 (10%)
+
+```python
+# scripts/quality/expert_curation.py
+
+class ExpertCuration:
+    """전문가 큐레이션 시스템"""
+
+    def select_for_review(self, nodes: List[Dict]) -> List[Dict]:
+        """검토가 필요한 노드 선별"""
+
+        candidates = []
+
+        for node in nodes:
+            # 1. 낮은 자동 점수
+            if node.get('quality', {}).get('auto_score', 100) < 70:
+                candidates.append(('low_score', node))
+
+            # 2. 높은 연결성 (허브 노드)
+            if node.get('stats', {}).get('connection_count', 0) > 50:
+                candidates.append(('hub', node))
+
+            # 3. 복잡한 언어학적 구조
+            if len(node.get('linguistic', {}).get('metaphors', [])) > 2:
+                candidates.append(('complex', node))
+
+        # 상위 10% 선택
+        selected = candidates[:len(nodes) // 10]
+        return selected
+
+    def create_review_task(self, node: Dict, reason: str) -> Dict:
+        """검토 작업 생성"""
+        return {
+            'node_id': node['id'],
+            'reason': reason,
+            'content': node['content'],
+            'auto_analysis': {
+                'frame': node.get('linguistic', {}).get('primary_frame'),
+                'metaphors': node.get('linguistic', {}).get('metaphors'),
+                'emotions': node.get('affective', {}).get('primary_emotion')
+            },
+            'questions': [
+                "프레임 분류가 정확한가?",
+                "은유 감지가 적절한가?",
+                "감정 분석이 타당한가?",
+                "놓친 관계가 있는가?"
+            ],
+            'status': 'pending'
+        }
+```
+
+### Tier 3: 커뮤니티 피드백
+
+```python
+# scripts/quality/community_feedback.py
+
+class CommunityFeedback:
+    """커뮤니티 피드백 수집"""
+
+    def collect_implicit_feedback(self, user_session: Dict) -> List[Dict]:
+        """사용자 행동 기반 암묵적 피드백"""
+
+        feedback = []
+
+        # 1. 체류 시간 (10초 이상 = 관심)
+        for node_id, duration in user_session.get('dwell_times', {}).items():
+            if duration > 10:
+                feedback.append({
+                    'type': 'positive_engagement',
+                    'node_id': node_id,
+                    'strength': min(duration / 60, 1.0),
+                    'timestamp': user_session['timestamp']
+                })
+
+        # 2. 저장/북마크
+        for node_id in user_session.get('saved_nodes', []):
+            feedback.append({
+                'type': 'explicit_save',
+                'node_id': node_id,
+                'strength': 1.0,
+                'timestamp': user_session['timestamp']
+            })
+
+        # 3. 사용자 메모와 연결
+        for link in user_session.get('user_note_links', []):
+            feedback.append({
+                'type': 'user_integration',
+                'node_id': link['idea_node'],
+                'strength': 0.9,
+                'timestamp': user_session['timestamp']
+            })
+
+        return feedback
+```
+
+---
+
+## 3.5 그래프 구축 파이프라인
+
+```python
+# scripts/graph/graph_builder.py
+
+import networkx as nx
+from typing import List, Dict
+import numpy as np
+
+class KnowledgeGraphBuilder:
+    """지식 그래프 구축기"""
+
+    def __init__(self):
+        self.graph = nx.DiGraph()
+        self.embedding_system = MultiEmbeddingSystem()
+        self.vector_index = VectorIndex()
+
+    def build(self, nodes: List[Dict]) -> nx.DiGraph:
+        """노드 리스트로부터 그래프 구축"""
+
+        print("🔨 지식 그래프 구축 시작...")
+
+        # 1. 노드 추가
+        print("  📍 노드 추가 중...")
+        for node in nodes:
+            self.graph.add_node(node['id'], data=node)
+        print(f"    ✅ {len(nodes)}개 노드 추가 완료")
+
+        # 2. 임베딩 생성
+        print("  🧬 임베딩 생성 중...")
+        embeddings = self.embedding_system.batch_encode(nodes)
+
+        # FAISS 인덱스에 추가
+        node_ids = [node['id'] for node in nodes]
+        self.vector_index.batch_add(node_ids, embeddings['semantic'])
+        print(f"    ✅ 임베딩 생성 완료")
+
+        # 3. 엣지 자동 생성
+        print("  🔗 엣지 생성 중...")
+        edge_count = 0
+
+        for i, node1 in enumerate(nodes):
+            # 각 노드마다 가장 유사한 k개 노드 찾기
+            similar = self.vector_index.search(
+                embeddings['semantic'][i],
+                k=20  # 상위 20개
+            )
+
+            for node2_id, similarity in similar:
+                if node2_id == node1['id']:
+                    continue
+
+                node2 = self.graph.nodes[node2_id]['data']
+
+                # 다차원 유사도 계산
+                edge = self.create_edge(node1, node2, similarity)
+
+                if edge and edge['strength'] >= 0.65:
+                    self.graph.add_edge(
+                        node1['id'],
+                        node2_id,
+                        data=edge
+                    )
+                    edge_count += 1
+
+            if (i + 1) % 1000 == 0:
+                print(f"    진행: {i + 1}/{len(nodes)} 노드 처리 ({edge_count}개 엣지)")
+
+        print(f"    ✅ {edge_count}개 엣지 생성 완료")
+
+        # 4. 그래프 최적화
+        print("  ⚡ 그래프 최적화 중...")
+        self.optimize_graph()
+        print(f"    ✅ 최적화 완료")
+
+        print(f"🎉 그래프 구축 완료!")
+        print(f"   노드: {self.graph.number_of_nodes()}")
+        print(f"   엣지: {self.graph.number_of_edges()}")
+        print(f"   평균 연결도: {self.graph.number_of_edges() / self.graph.number_of_nodes():.2f}")
+
+        return self.graph
+
+    def optimize_graph(self):
+        """그래프 최적화"""
+
+        # 1. 약한 엣지 제거 (strength < 0.5)
+        weak_edges = [
+            (u, v) for u, v, data in self.graph.edges(data=True)
+            if data['data']['strength'] < 0.5
+        ]
+        self.graph.remove_edges_from(weak_edges)
+        print(f"      - {len(weak_edges)}개 약한 엣지 제거")
+
+        # 2. 커뮤니티 감지
+        from networkx.algorithms import community
+        communities = community.greedy_modularity_communities(self.graph.to_undirected())
+        print(f"      - {len(communities)}개 커뮤니티 감지")
+
+        # 3. 중심성 계산
+        pagerank = nx.pagerank(self.graph)
+
+        # 노드에 중심성 점수 추가
+        for node_id, score in pagerank.items():
+            self.graph.nodes[node_id]['data']['centrality'] = score
+```
+
+---
+
+# Part 4: UI/UX 개선 (MZ세대 맞춤)
+
+## 4.1 현재 UI 문제점
+
+```
+┌─────────────────────────────┐
+│ Header                       │ ← 평범
+├──────────┬──────────────────┤
+│ Sidebar  │ Main             │
+│          │                  │
+│ 메모     │ 에디터           │ ← 기능적이지만 밋밋
+│ 목록     │                  │
+│          │                  │
+└──────────┴──────────────────┘
+```
+
+**문제:**
+- ❌ TailwindCSS 기본 스타일 (다른 앱과 구별 안 됨)
+- ❌ 감성 제로
+- ❌ SNS 공유하고 싶지 않음
+- ❌ 마이크로 인터랙션 부재
+
+---
+
+## 4.2 6가지 감성 테마
+
+```typescript
+// src/themes/index.ts
+
+export const themes = {
+  // 1. 미니멀 화이트 (기본)
+  minimal: {
+    name: '미니멀 화이트',
+    colors: {
+      primary: '#000000',
+      background: '#FFFFFF',
+      surface: '#F8F9FA',
+      text: '#1A1A1A',
+      accent: '#4A90E2'
+    },
+    fonts: {
+      body: 'Pretendard Variable',
+      heading: 'Pretendard Variable',
+      quote: 'Georgia'
+    }
+  },
+
+  // 2. 다크 모드 (AMOLED Black)
+  dark: {
+    name: '다크 모드',
+    colors: {
+      primary: '#FFFFFF',
+      background: '#000000',  // Pure black for AMOLED
+      surface: '#1A1A1A',
+      text: '#E5E5E5',
+      accent: '#7C3AED'
+    }
+  },
+
+  // 3. 따뜻한 베이지 (카페 감성)
+  warm: {
+    name: '따뜻한 베이지',
+    colors: {
+      primary: '#3E2723',
+      background: '#FFF8E1',
+      surface: '#FFECB3',
+      text: '#4E342E',
+      accent: '#FF6F00'
+    }
+  },
+
+  // 4. 파스텔 블루 (차분함)
+  pastel: {
+    name: '파스텔 블루',
+    colors: {
+      primary: '#1565C0',
+      background: '#E3F2FD',
+      surface: '#BBDEFB',
+      text: '#0D47A1',
+      accent: '#42A5F5'
+    }
+  },
+
+  // 5. 선셋 그라디언트 (감성)
+  sunset: {
+    name: '선셋 그라디언트',
+    colors: {
+      primary: '#FF6B6B',
+      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      surface: 'rgba(255, 255, 255, 0.1)',
+      text: '#FFFFFF',
+      accent: '#FFA07A'
+    }
+  },
+
+  // 6. 포레스트 그린 (자연)
+  forest: {
+    name: '포레스트 그린',
+    colors: {
+      primary: '#2E7D32',
+      background: '#E8F5E9',
+      surface: '#C8E6C9',
+      text: '#1B5E20',
+      accent: '#66BB6A'
+    }
+  }
+};
+```
+
+---
+
+## 4.3 마이크로 인터랙션
+
+```typescript
+// src/components/MicroInteractions.tsx
+
+import { motion, AnimatePresence } from 'framer-motion';
+
+// 1. 메모 저장 시 반짝임 효과
+export function SparkleEffect({ x, y }: { x: number; y: number }) {
+  return (
+    <motion.div
+      className="absolute pointer-events-none"
+      style={{ left: x, top: y }}
+      initial={{ scale: 0, opacity: 1 }}
+      animate={{ scale: 1.5, opacity: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+      ✨
+    </motion.div>
+  );
+}
+
+// 2. 아이디어 연결 시 체인 애니메이션
+export function ConnectionChain({ from, to }: { from: Element; to: Element }) {
+  const fromRect = from.getBoundingClientRect();
+  const toRect = to.getBoundingClientRect();
+
+  return (
+    <svg className="absolute inset-0 pointer-events-none">
+      <motion.path
+        d={`M ${fromRect.left} ${fromRect.top} Q ${(fromRect.left + toRect.left) / 2} ${(fromRect.top + toRect.top) / 2 - 50} ${toRect.left} ${toRect.top}`}
+        stroke="#4A90E2"
+        strokeWidth={2}
+        fill="none"
+        initial={{ pathLength: 0 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+      />
+    </svg>
+  );
+}
+
+// 3. 좋아요 클릭 시 하트 터지기
+export function HeartBurst({ x, y }: { x: number; y: number }) {
+  const hearts = Array.from({ length: 8 }, (_, i) => ({
+    angle: (i * 360) / 8,
+    delay: i * 0.05
+  }));
+
+  return (
+    <div className="absolute pointer-events-none" style={{ left: x, top: y }}>
+      {hearts.map(({ angle, delay }, i) => (
+        <motion.div
+          key={i}
+          className="absolute"
+          initial={{ x: 0, y: 0, opacity: 1, scale: 0 }}
+          animate={{
+            x: Math.cos((angle * Math.PI) / 180) * 50,
+            y: Math.sin((angle * Math.PI) / 180) * 50,
+            opacity: 0,
+            scale: 1.5
+          }}
+          transition={{ duration: 0.8, delay }}
+        >
+          ❤️
+        </motion.div>
+      ))}
+    </div>
+  );
+}
+
+// 4. 그래프 노드 호버 효과
+export function GraphNode({ node, onHover }: { node: any; onHover: () => void }) {
+  return (
+    <motion.div
+      className="graph-node"
+      whileHover={{
+        scale: 1.2,
+        boxShadow: '0 0 20px rgba(74, 144, 226, 0.5)'
+      }}
+      onHoverStart={onHover}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
+      {node.content.substring(0, 50)}...
+    </motion.div>
+  );
+}
+```
+
+---
+
+## 4.4 이미지 공유 기능
+
+```typescript
+// src/features/share/MemoToImage.tsx
+
+import html2canvas from 'html2canvas';
+
+export function MemoToImage({ memo, idea }: { memo: Memo; idea: Idea }) {
+  const canvasRef = useRef<HTMLDivElement>(null);
+
+  const generateImage = async () => {
+    if (!canvasRef.current) return;
+
+    const canvas = await html2canvas(canvasRef.current, {
+      width: 1080,
+      height: 1080,
+      scale: 2
+    });
+
+    // PNG로 변환
+    const dataUrl = canvas.toDataURL('image/png');
+
+    // 다운로드
+    const link = document.createElement('a');
+    link.download = `ideaconnect-${memo.id}.png`;
+    link.href = dataUrl;
+    link.click();
+  };
+
+  return (
+    <div>
+      {/* 실제 렌더링될 이미지 (hidden) */}
+      <div
+        ref={canvasRef}
+        className="hidden"
+        style={{
+          width: '1080px',
+          height: '1080px',
+          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+          padding: '60px',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between'
+        }}
+      >
+        {/* 메모 내용 */}
+        <div style={{ background: 'white', borderRadius: '24px', padding: '48px' }}>
+          <h1 style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '24px' }}>
+            {memo.title}
+          </h1>
+          <p style={{ fontSize: '24px', color: '#555', lineHeight: '1.6' }}>
+            {memo.content.substring(0, 200)}...
+          </p>
+        </div>
+
+        {/* 연결된 아이디어 */}
+        <div style={{
+          borderTop: '4px solid rgba(255,255,255,0.3)',
+          paddingTop: '24px',
+          color: 'white'
+        }}>
+          <p style={{ fontSize: '32px', fontStyle: 'italic', marginBottom: '16px' }}>
+            "{idea.content}"
+          </p>
+          <p style={{ textAlign: 'right', fontSize: '20px', opacity: 0.8 }}>
+            — {idea.source.author}
+          </p>
+        </div>
+
+        {/* 로고 */}
+        <div style={{ textAlign: 'center', color: 'white', fontSize: '18px', opacity: 0.7 }}>
+          💡 IdeaConnect
+        </div>
+      </div>
+
+      {/* 생성 버튼 */}
+      <Button onClick={generateImage}>
+        📸 이미지로 저장
+      </Button>
+    </div>
+  );
+}
+```
+
+---
+
+## 4.5 그래프 시각화 (옵시디언 스타일)
+
+```typescript
+// src/features/graph/GraphView3D.tsx
+
+import { useRef, useEffect } from 'react';
+import ForceGraph3D from 'react-force-graph-3d';
+
+export function GraphView3D({ nodes, edges }: { nodes: any[]; edges: any[] }) {
+  const fgRef = useRef<any>();
+
+  const graphData = {
+    nodes: nodes.map(node => ({
+      id: node.id,
+      name: node.content.substring(0, 50),
+      val: node.stats.connection_count,
+      color: getNodeColor(node.affective.primary_emotion)
+    })),
+    links: edges.map(edge => ({
+      source: edge.from,
+      target: edge.to,
+      value: edge.strength,
+      color: getEdgeColor(edge.relation_type)
+    }))
+  };
+
+  useEffect(() => {
+    // 카메라 애니메이션
+    const fg = fgRef.current;
+    if (fg) {
+      fg.cameraPosition({ z: 300 }, null, 2000);
+    }
+  }, []);
+
+  return (
+    <div className="h-screen w-full">
+      <ForceGraph3D
+        ref={fgRef}
+        graphData={graphData}
+        nodeLabel="name"
+        nodeAutoColorBy="group"
+        linkDirectionalParticles={2}
+        linkDirectionalParticleSpeed={0.005}
+        onNodeClick={handleNodeClick}
+        onNodeHover={handleNodeHover}
+        nodeThreeObject={(node: any) => {
+          // 커스텀 3D 오브젝트
+          const sprite = new SpriteText(node.name);
+          sprite.color = node.color;
+          sprite.textHeight = 8;
+          return sprite;
+        }}
+      />
+    </div>
+  );
+}
+
+function getNodeColor(emotion: string): string {
+  const emotionColors = {
+    joy: '#FFD700',
+    trust: '#87CEEB',
+    fear: '#9370DB',
+    surprise: '#FF69B4',
+    sadness: '#4682B4',
+    anger: '#DC143C',
+    anticipation: '#FFA500'
+  };
+  return emotionColors[emotion] || '#808080';
+}
+```
+
+---
+
+# Part 5: 기술 부채 & 개선
+
+## 5.1 현재 기술 스택 평가
+
+### ✅ 잘한 선택
+
+| 기술 | 이유 | 평가 |
+|------|------|------|
+| React + TypeScript | 업계 표준, 타입 안전 | ⭐⭐⭐⭐⭐ |
+| Vite | 빠른 빌드, HMR | ⭐⭐⭐⭐⭐ |
+| TailwindCSS | 생산성, 일관성 | ⭐⭐⭐⭐⭐ |
+| Zustand | 가볍고 간단한 상태 관리 | ⭐⭐⭐⭐⭐ |
+| IndexedDB (Dexie) | 오프라인 우선, 대용량 | ⭐⭐⭐⭐⭐ |
+
+### ⚠️ 개선 필요
+
+| 항목 | 현재 상태 | 문제 | 해결 방안 |
+|------|---------|------|----------|
+| **테스트** | 0개 | 버그 위험 높음 | Vitest + Testing Library |
+| **에러 처리** | 기본만 | UX 불친절 | Error Boundary + Sentry |
+| **성능 측정** | 없음 | 최적화 어려움 | Lighthouse CI |
+| **접근성** | 미흡 | 장애인 사용 불가 | ARIA + 키보드 지원 |
+
+---
+
+## 5.2 테스트 전략
+
+```typescript
+// tests/unit/ideaStore.test.ts
+
+import { describe, it, expect, beforeEach } from 'vitest';
+import { useIdeaStore } from '@/stores/ideaStore';
+
+describe('IdeaStore', () => {
+  beforeEach(() => {
+    // 각 테스트 전 초기화
+    useIdeaStore.getState().reset();
+  });
+
+  it('should add a new idea', async () => {
+    const store = useIdeaStore.getState();
+
+    const idea = {
+      content: 'Test quote',
+      source: { author: 'Test Author' },
+      type: 'famous-quote' as const
+    };
+
+    await store.addIdea(idea);
+
+    const ideas = store.ideas;
+    expect(ideas).toHaveLength(1);
+    expect(ideas[0].content).toBe('Test quote');
+  });
+
+  it('should update feedback correctly', async () => {
+    const store = useIdeaStore.getState();
+
+    // 아이디어 추가
+    await store.addIdea({
+      content: 'Test',
+      source: { author: 'Author' },
+      type: 'famous-quote'
+    });
+
+    const ideaId = store.ideas[0].id;
+
+    // 피드백 업데이트
+    await store.updateFeedback(ideaId, 'up');
+
+    const idea = store.ideas.find(i => i.id === ideaId);
+    expect(idea?.feedback).toBe('up');
+  });
+});
+```
+
+---
+
+## 5.3 에러 처리 & 모니터링
+
+```typescript
+// src/components/ErrorBoundary.tsx
+
+import { Component, ReactNode } from 'react';
+import * as Sentry from '@sentry/react';
+
+interface Props {
+  children: ReactNode;
+  fallback?: ReactNode;
+}
+
+interface State {
+  hasError: boolean;
+  error?: Error;
+}
+
+export class ErrorBoundary extends Component<Props, State> {
+  constructor(props: Props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(error: Error): State {
+    return { hasError: true, error };
+  }
+
+  componentDidCatch(error: Error, errorInfo: any) {
+    // Sentry에 에러 보고
+    Sentry.captureException(error, { extra: errorInfo });
+
+    console.error('Caught error:', error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        this.props.fallback || (
+          <div className="min-h-screen flex items-center justify-center bg-gray-50">
+            <div className="max-w-md p-8 bg-white rounded-lg shadow-lg">
+              <h2 className="text-2xl font-bold text-red-600 mb-4">
+                ⚠️ 오류가 발생했습니다
+              </h2>
+              <p className="text-gray-700 mb-4">
+                죄송합니다. 예상치 못한 오류가 발생했습니다.
+              </p>
+              <p className="text-sm text-gray-500 mb-6">
+                {this.state.error?.message}
+              </p>
+              <button
+                onClick={() => window.location.reload()}
+                className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+              >
+                페이지 새로고침
+              </button>
+            </div>
+          </div>
+        )
+      );
+    }
+
+    return this.props.children;
+  }
+}
+
+// Sentry 초기화
+Sentry.init({
+  dsn: import.meta.env.VITE_SENTRY_DSN,
+  environment: import.meta.env.MODE,
+  tracesSampleRate: 1.0,
+  integrations: [
+    new Sentry.BrowserTracing(),
+    new Sentry.Replay()
+  ]
+});
+```
+
+---
+
+## 5.4 성능 최적화
+
+```typescript
+// src/hooks/useVirtualScroll.ts
+
+import { useEffect, useRef, useState } from 'react';
+
+export function useVirtualScroll<T>(
+  items: T[],
+  itemHeight: number,
+  containerHeight: number
+) {
+  const [scrollTop, setScrollTop] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // 보이는 항목만 렌더링
+  const startIndex = Math.floor(scrollTop / itemHeight);
+  const endIndex = Math.min(
+    startIndex + Math.ceil(containerHeight / itemHeight) + 1,
+    items.length
+  );
+
+  const visibleItems = items.slice(startIndex, endIndex);
+  const offsetY = startIndex * itemHeight;
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const handleScroll = () => {
+      setScrollTop(container.scrollTop);
+    };
+
+    container.addEventListener('scroll', handleScroll);
+    return () => container.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return {
+    containerRef,
+    visibleItems,
+    offsetY,
+    totalHeight: items.length * itemHeight
+  };
+}
+
+// 사용 예시
+function MemoList({ memos }: { memos: Memo[] }) {
+  const { containerRef, visibleItems, offsetY, totalHeight } = useVirtualScroll(
+    memos,
+    80,  // 각 항목 높이
+    window.innerHeight
+  );
+
+  return (
+    <div ref={containerRef} className="h-screen overflow-auto">
+      <div style={{ height: totalHeight, position: 'relative' }}>
+        <div style={{ transform: `translateY(${offsetY}px)` }}>
+          {visibleItems.map(memo => (
+            <MemoItem key={memo.id} memo={memo} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+```
+
+---
+
+## 5.5 접근성 (a11y)
+
+```typescript
+// src/components/AccessibleButton.tsx
+
+interface Props {
+  onClick: () => void;
+  children: React.ReactNode;
+  ariaLabel: string;
+  variant?: 'primary' | 'secondary';
+}
+
+export function AccessibleButton({ onClick, children, ariaLabel, variant = 'primary' }: Props) {
+  return (
+    <button
+      onClick={onClick}
+      aria-label={ariaLabel}
+      className={`
+        px-4 py-2 rounded
+        focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
+        ${variant === 'primary' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-800'}
+        hover:opacity-90
+        transition-opacity
+      `}
+      // 키보드 네비게이션
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick();
+        }
+      }}
+    >
+      {children}
+    </button>
+  );
+}
+
+// Skip to content 링크
+export function SkipToContent() {
+  return (
+    <a
+      href="#main-content"
+      className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-blue-500 text-white p-4 z-50"
+    >
+      본문으로 건너뛰기
+    </a>
+  );
+}
+```
+
+---
+
+# Part 6: 확장성 설계
+
+## 6.1 플러그인 시스템
+
+```typescript
+// src/plugins/types.ts
+
+export interface Plugin {
+  id: string;
+  name: string;
+  version: string;
+  author: string;
+
+  // 훅
+  onMemoCreated?: (memo: Memo) => void | Promise<void>;
+  onIdeaAdded?: (idea: Idea) => void | Promise<void>;
+  onConnectionCreated?: (connection: Connection) => void | Promise<void>;
+
+  // UI 확장
+  sidebarWidget?: React.ComponentType;
+  editorButton?: React.ComponentType<{ memo: Memo }>;
+  settingsPanel?: React.ComponentType;
+
+  // API
+  api?: {
+    search?: (query: string) => Promise<Idea[]>;
+    export?: (data: any) => Promise<void>;
+    import?: (file: File) => Promise<any>;
+  };
+
+  // 설정
+  settings?: Record<string, any>;
+
+  // 라이프사이클
+  onActivate?: () => void | Promise<void>;
+  onDeactivate?: () => void | Promise<void>;
+}
+
+// 플러그인 매니저
+export class PluginManager {
+  private plugins: Map<string, Plugin> = new Map();
+
+  register(plugin: Plugin) {
+    this.plugins.set(plugin.id, plugin);
+    plugin.onActivate?.();
+    console.log(`✅ 플러그인 등록: ${plugin.name}`);
+  }
+
+  unregister(pluginId: string) {
+    const plugin = this.plugins.get(pluginId);
+    if (plugin) {
+      plugin.onDeactivate?.();
+      this.plugins.delete(pluginId);
+      console.log(`❌ 플러그인 제거: ${plugin.name}`);
+    }
+  }
+
+  // 훅 실행
+  async triggerHook(hookName: string, ...args: any[]) {
+    for (const plugin of this.plugins.values()) {
+      const hook = plugin[hookName as keyof Plugin];
+      if (typeof hook === 'function') {
+        await hook(...args);
+      }
+    }
+  }
+}
+```
+
+### 플러그인 예시: 맞춤법 검사기
+
+```typescript
+// plugins/grammar-checker/index.ts
+
+const grammarPlugin: Plugin = {
+  id: 'grammar-checker',
+  name: '맞춤법 검사기',
+  version: '1.0.0',
+  author: 'IdeaConnect Team',
+
+  onMemoCreated: async (memo) => {
+    // 맞춤법 검사
+    const errors = await checkGrammar(memo.content);
+
+    if (errors.length > 0) {
+      // 알림 표시
+      showNotification({
+        title: '맞춤법 오류 발견',
+        message: `${errors.length}개의 오류가 있습니다.`,
+        type: 'warning'
+      });
+    }
+  },
+
+  editorButton: ({ memo }) => (
+    <button onClick={() => correctGrammar(memo)}>
+      ✓ 맞춤법 검사
+    </button>
+  ),
+
+  settingsPanel: () => (
+    <div>
+      <h3>맞춤법 검사 설정</h3>
+      <label>
+        <input type="checkbox" />
+        자동 검사 활성화
+      </label>
+    </div>
+  )
+};
+
+async function checkGrammar(text: string): Promise<GrammarError[]> {
+  // 한글 맞춤법 API 호출
+  const response = await fetch('https://api.example.com/grammar', {
+    method: 'POST',
+    body: JSON.stringify({ text })
+  });
+
+  return response.json();
+}
+```
+
+---
+
+## 6.2 Public API
+
+```typescript
+// src/api/public/index.ts
+
+import express from 'express';
+import cors from 'cors';
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+// GET /api/memos - 전체 메모 조회
+app.get('/api/memos', async (req, res) => {
+  const { page = 1, limit = 20, search } = req.query;
+
+  const memos = await db.memos
+    .where('content')
+    .startsWithIgnoreCase(search as string || '')
+    .offset((+page - 1) * +limit)
+    .limit(+limit)
+    .toArray();
+
+  res.json({
+    data: memos,
+    pagination: {
+      page: +page,
+      limit: +limit,
+      total: await db.memos.count()
+    }
+  });
+});
+
+// POST /api/memos - 새 메모 생성
+app.post('/api/memos', async (req, res) => {
+  const { title, content } = req.body;
+
+  if (!title || !content) {
+    return res.status(400).json({ error: '제목과 내용은 필수입니다' });
+  }
+
+  const memo = await createMemo({ title, content });
+
+  res.status(201).json({ data: memo });
+});
+
+// GET /api/ideas?memoId=xxx - 메모의 아이디어 조회
+app.get('/api/ideas', async (req, res) => {
+  const { memoId } = req.query;
+
+  if (!memoId) {
+    return res.status(400).json({ error: 'memoId는 필수입니다' });
+  }
+
+  const ideas = await db.ideas
+    .where('memoId')
+    .equals(memoId as string)
+    .toArray();
+
+  res.json({ data: ideas });
+});
+
+// GET /api/graph?memoId=xxx - 그래프 데이터
+app.get('/api/graph', async (req, res) => {
+  const { memoId } = req.query;
+
+  const nodes = await db.ideas.where('memoId').equals(memoId as string).toArray();
+  const edges = await db.connections.where('memoId').equals(memoId as string).toArray();
+
+  res.json({
+    nodes,
+    edges
+  });
+});
+
+app.listen(3000, () => {
+  console.log('🚀 API server running on http://localhost:3000');
+});
+```
+
+---
+
+## 6.3 통합 (Notion, Obsidian, Zapier)
+
+### Notion 내보내기
+
+```typescript
+// src/integrations/notion.ts
+
+import { Client } from '@notionhq/client';
+
+export async function exportToNotion(memo: Memo, ideas: Idea[]) {
+  const notion = new Client({ auth: process.env.NOTION_API_KEY });
+
+  // 페이지 생성
+  const page = await notion.pages.create({
+    parent: { database_id: process.env.NOTION_DATABASE_ID! },
+    properties: {
+      Name: {
+        title: [{ text: { content: memo.title } }]
+      },
+      Created: {
+        date: { start: memo.createdAt.toISOString() }
+      }
+    },
+    children: [
+      // 메모 내용
+      {
+        type: 'paragraph',
+        paragraph: {
+          rich_text: [{ text: { content: memo.content } }]
+        }
+      },
+      // 연결된 아이디어들
+      {
+        type: 'heading_2',
+        heading_2: {
+          rich_text: [{ text: { content: '연결된 아이디어' } }]
+        }
+      },
+      ...ideas.map(idea => ({
+        type: 'quote' as const,
+        quote: {
+          rich_text: [{
+            text: {
+              content: `"${idea.content}" - ${idea.source.author}`
+            }
+          }]
+        }
+      }))
+    ]
+  });
+
+  return page;
+}
+```
+
+### Obsidian 마크다운 변환
+
+```typescript
+// src/integrations/obsidian.ts
+
+export function convertToObsidianMarkdown(memo: Memo, ideas: Idea[]): string {
+  let markdown = `# ${memo.title}\n\n`;
+  markdown += `Created: ${memo.createdAt.toLocaleDateString()}\n\n`;
+  markdown += `${memo.content}\n\n`;
+  markdown += `---\n\n`;
+  markdown += `## 연결된 아이디어\n\n`;
+
+  for (const idea of ideas) {
+    markdown += `### ${idea.source.author}\n\n`;
+    markdown += `> ${idea.content}\n\n`;
+    markdown += `Tags: ${idea.keywords?.join(', ')}\n\n`;
+  }
+
+  return markdown;
+}
+
+export function downloadAsMarkdown(memo: Memo, ideas: Idea[]) {
+  const markdown = convertToObsidianMarkdown(memo, ideas);
+  const blob = new Blob([markdown], { type: 'text/markdown' });
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `${memo.title}.md`;
+  link.click();
+
+  URL.revokeObjectURL(url);
+}
+```
+
+---
+
+# Part 7: 구현 로드맵
+
+## 7.1 16주 단계별 계획
+
+### Phase 1: Foundation (Week 1-4)
+**목표**: 기본 인프라 + 10,000개 노드
+
+```bash
+Week 1:
+  ✓ 데이터 스키마 최종 확정
+  ✓ 수집 파이프라인 구축
+  ✓ NLP 모델 셋업 (spaCy, Sentence Transformers)
+
+Week 2-3:
+  ✓ 10,000개 노드 수집 (Quotable, Wikiquote)
+  ✓ 기본 임베딩 생성
+  ✓ FAISS 인덱스 구축
+
+Week 4:
+  ✓ 자동 검증 시스템
+  ✓ NAS 저장소 설정
+  ✓ 첫 배치 데이터 검증
+```
+
+### Phase 2: Enrichment (Week 5-8)
+**목표**: 언어학·심리학적 주석 + 30,000개 노드
+
+```bash
+Week 5-6:
+  ✓ 프레임 의미론 분석기
+  ✓ 은유 감지 시스템
+  ✓ 감정 분석 (Plutchik 8감정)
+
+Week 7-8:
+  ✓ 30,000개 추가 노드 수집
+  ✓ 전체 노드 강화 (enrichment)
+  ✓ 품질 검증 및 큐레이션
+```
+
+### Phase 3: Graph Construction (Week 9-12)
+**목표**: 50,000개 노드 + 500,000개 엣지
+
+```bash
+Week 9-10:
+  ✓ 관계 추출 알고리즘 구현
+  ✓ 엣지 자동 생성 (다차원 유사도)
+  ✓ 그래프 최적화
+
+Week 11-12:
+  ✓ 커뮤니티 감지 (Louvain)
+  ✓ 중심성 계산 (PageRank)
+  ✓ 50,000개 노드 완성
+```
+
+### Phase 4: UI/UX (Week 13-14)
+**목표**: 옵시디언 스타일 UI + 통합
+
+```bash
+Week 13:
+  ✓ 6가지 테마 구현
+  ✓ 마이크로 인터랙션
+  ✓ 이미지 공유 기능
+
+Week 14:
+  ✓ 3D 그래프 시각화
+  ✓ 반응형 디자인
+  ✓ 접근성 개선
+```
+
+### Phase 5: Quality & Testing (Week 15-16)
+**목표**: 안정화 + 배포
+
+```bash
+Week 15:
+  ✓ 단위 테스트 (90% 커버리지)
+  ✓ 통합 테스트
+  ✓ 성능 최적화
+
+Week 16:
+  ✓ 전문가 큐레이션 (상위 10%)
+  ✓ 최종 검증
+  ✓ NAS 배포
+  ✓ GitHub Pages 업데이트
+```
+
+---
+
+## 7.2 마일스톤 & KPI
+
+### Milestone 1 (Week 4): 기반 완성
+- [x] 10,000개 노드 수집
+- [x] 임베딩 시스템 구축
+- [x] NAS 저장소 설정
+- **KPI**: 데이터 품질 점수 > 80
+
+### Milestone 2 (Week 8): 강화 완료
+- [ ] 40,000개 노드 (누적)
+- [ ] 언어학·심리학 주석 100%
+- **KPI**: 메타데이터 완성도 > 85%
+
+### Milestone 3 (Week 12): 그래프 완성
+- [ ] 52,000개 노드
+- [ ] 500,000개 이상 엣지
+- **KPI**: 평균 연결도 > 10, 검색 정확도 > 85%
+
+### Milestone 4 (Week 14): UI 완성
+- [ ] 6가지 테마
+- [ ] 3D 그래프 시각화
+- **KPI**: 사용자 체류 시간 > 10분
+
+### Milestone 5 (Week 16): 런칭
+- [ ] 테스트 커버리지 > 90%
+- [ ] 성능 최적화 완료
+- **KPI**: Lighthouse 점수 > 90
+
+---
+
+## 7.3 성공 지표 (종합)
+
+### 정량적 지표
+
+| 지표 | 목표 | 측정 방법 |
+|------|------|----------|
+| **노드 수** | 52,000+ | master_index.json |
+| **엣지 수** | 500,000+ | 그래프 통계 |
+| **엣지 품질** | 평균 0.7+ | confidence 점수 |
+| **검색 정확도** | 85%+ | 사용자 피드백 |
+| **응답 시간** | < 200ms | Performance API |
+| **번들 크기** | < 500KB | Vite build 분석 |
+
+### 정성적 지표
+
+- **메타데이터 완성도**: 80% 이상 노드가 모든 차원 주석 보유
+- **커뮤니티 구조**: 10-20개 명확한 주제 클러스터
+- **다양성**: 10개 카테고리 균형잡힌 분포
+
+### 사용자 경험 지표
+
+- **발견 비율**: 세션당 2개 이상 예상치 못한 유용한 연결 발견
+- **저장률**: 탐색한 노드의 10% 이상 저장
+- **통합률**: 사용자 메모의 30% 이상이 DB 노드와 연결
+
+---
+
+## 7.4 런칭 체크리스트
+
+### 코드 품질
+- [ ] ESLint 경고 0개
+- [ ] TypeScript 에러 0개
+- [ ] 테스트 커버리지 > 90%
+- [ ] 모든 컴포넌트 문서화
+
+### 성능
+- [ ] Lighthouse Performance > 90
+- [ ] First Contentful Paint < 1.5s
+- [ ] Time to Interactive < 3s
+- [ ] 번들 크기 < 500KB
+
+### 접근성
+- [ ] WCAG 2.1 AA 준수
+- [ ] 키보드 네비게이션 100%
+- [ ] 스크린 리더 테스트 완료
+- [ ] 색상 대비 4.5:1 이상
+
+### 데이터
+- [ ] 52,000개 노드 검증 완료
+- [ ] 500,000개 엣지 검증 완료
+- [ ] NAS 백업 완료
+- [ ] 버전 관리 시스템 구축
+
+### 배포
+- [ ] GitHub Pages 빌드 성공
+- [ ] HTTPS 설정 완료
+- [ ] 커스텀 도메인 연결
+- [ ] CDN 설정 (선택)
+
+### 문서화
+- [ ] README.md 업데이트
+- [ ] 사용자 가이드 작성
+- [ ] API 문서 작성
+- [ ] 기여 가이드라인
+
+---
+
+**🎉 IdeaConnect v2.0 완벽 가이드 완성!**
+
+이 가이드는 이론적 깊이와 실용적 구현, 그리고 UX 혁신을 모두 담은 완전한 로드맵입니다.
+
+**다음 단계:**
+1. Part별로 우선순위에 따라 구현
+2. 각 Phase 완료 시 마일스톤 체크
+3. 지속적인 개선 및 커뮤니티 피드백 반영
+
+**문의 및 기여**: [GitHub Issues](https://github.com/yourusername/ideaconnect)
+
+---
+
+**버전**: 2.0
+**최종 업데이트**: 2025-11-10
+**작성자**: Claude + IdeaConnect Team
 
