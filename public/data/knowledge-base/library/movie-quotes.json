@@ -1,39 +1,39 @@
 [
   {
     "id": "mq00001",
-    "content": "인생은 가까이서 보면 비극이지만, 멀리서 보면 희극이다",
+    "content": "계획이 다 있구나",
     "source": {
-      "title": "올드보이",
-      "year": "2003",
+      "title": "기생충",
+      "year": "2019",
       "platform": "Cinema",
       "verified": true
     },
     "keywords": [
-      "인생",
-      "관점",
-      "성찰"
+      "계획",
+      "삶",
+      "역설"
     ],
     "type": "movie",
     "language": "ko",
-    "createdAt": "2025-11-10T15:58:30.582Z"
+    "createdAt": "2025-11-10T16:13:56.598Z"
   },
   {
     "id": "mq00002",
-    "content": "너는 네가 본 것만 믿니? 넌 네가 믿고 싶은 것만 보는 거야",
+    "content": "존경은 거리에서 나오는 겁니다",
     "source": {
-      "title": "살인의 추억",
-      "year": "2003",
+      "title": "기생충",
+      "year": "2019",
       "platform": "Cinema",
       "verified": true
     },
     "keywords": [
-      "진실",
-      "믿음",
-      "인식"
+      "존경",
+      "거리",
+      "관계"
     ],
     "type": "movie",
     "language": "ko",
-    "createdAt": "2025-11-10T15:58:30.582Z"
+    "createdAt": "2025-11-10T16:13:56.599Z"
   },
   {
     "id": "mq00003",
@@ -51,11 +51,11 @@
     ],
     "type": "movie",
     "language": "ko",
-    "createdAt": "2025-11-10T15:58:30.582Z"
+    "createdAt": "2025-11-10T16:13:56.599Z"
   },
   {
     "id": "mq00004",
-    "content": "존경은 거리에서 나오는 겁니다",
+    "content": "돈으로 다림질할 수 있는 건 주름뿐이에요",
     "source": {
       "title": "기생충",
       "year": "2019",
@@ -63,17 +63,71 @@
       "verified": true
     },
     "keywords": [
-      "존경",
-      "거리",
-      "관계"
+      "돈",
+      "한계",
+      "진실"
     ],
     "type": "movie",
     "language": "ko",
-    "createdAt": "2025-11-10T15:58:30.582Z"
+    "createdAt": "2025-11-10T16:13:56.599Z"
   },
   {
     "id": "mq00005",
-    "content": "계획이 다 있구나",
+    "content": "짜파구리 만들어 주세요",
+    "source": {
+      "title": "기생충",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "음식",
+      "서비스",
+      "계급"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00006",
+    "content": "대학 졸업하면 다 보험설계사 되는 줄 알았어",
+    "source": {
+      "title": "기생충",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "현실",
+      "사회",
+      "취업"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00007",
+    "content": "지하는 적응이 안 돼",
+    "source": {
+      "title": "기생충",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "계급",
+      "환경",
+      "적응"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00008",
+    "content": "이게 내 플랜이야",
     "source": {
       "title": "기생충",
       "year": "2019",
@@ -82,15 +136,141 @@
     },
     "keywords": [
       "계획",
-      "삶",
-      "역설"
+      "의도",
+      "전략"
     ],
     "type": "movie",
     "language": "ko",
-    "createdAt": "2025-11-10T15:58:30.582Z"
+    "createdAt": "2025-11-10T16:13:56.599Z"
   },
   {
-    "id": "mq00006",
+    "id": "mq00009",
+    "content": "인생은 가까이서 보면 비극이지만, 멀리서 보면 희극이다",
+    "source": {
+      "title": "올드보이",
+      "year": "2003",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "인생",
+      "관점",
+      "성찰"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00010",
+    "content": "웃으면서 죽어야지",
+    "source": {
+      "title": "올드보이",
+      "year": "2003",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "태도",
+      "죽음",
+      "여유"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00011",
+    "content": "복수는 내가 하는 거야",
+    "source": {
+      "title": "올드보이",
+      "year": "2003",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "복수",
+      "의지",
+      "결심"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00012",
+    "content": "15년이야",
+    "source": {
+      "title": "올드보이",
+      "year": "2003",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "시간",
+      "감금",
+      "절망"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00013",
+    "content": "너는 네가 본 것만 믿니? 넌 네가 믿고 싶은 것만 보는 거야",
+    "source": {
+      "title": "살인의 추억",
+      "year": "2003",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "진실",
+      "믿음",
+      "인식"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00014",
+    "content": "여기서 이러지 마. 다 보잖아",
+    "source": {
+      "title": "살인의 추억",
+      "year": "2003",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "상황",
+      "현실",
+      "사회"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00015",
+    "content": "내가 경찰이야!",
+    "source": {
+      "title": "살인의 추억",
+      "year": "2003",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "권위",
+      "직업"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00016",
     "content": "가족을 위해서라면 뭐든 할 수 있어요",
     "source": {
       "title": "부산행",
@@ -105,10 +285,64 @@
     ],
     "type": "movie",
     "language": "ko",
-    "createdAt": "2025-11-10T15:58:30.582Z"
+    "createdAt": "2025-11-10T16:13:56.599Z"
   },
   {
-    "id": "mq00007",
+    "id": "mq00017",
+    "content": "아빠, 싫어",
+    "source": {
+      "title": "부산행",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "감정",
+      "관계",
+      "변화"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00018",
+    "content": "엄마한테 가고 싶어",
+    "source": {
+      "title": "부산행",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가족",
+      "그리움",
+      "목표"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00019",
+    "content": "문 열지 마!",
+    "source": {
+      "title": "부산행",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "위험",
+      "경고",
+      "긴박"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00020",
     "content": "영화는 속도가 아니라 방향이다",
     "source": {
       "title": "범죄와의 전쟁",
@@ -123,46 +357,136 @@
     ],
     "type": "movie",
     "language": "ko",
-    "createdAt": "2025-11-10T15:58:30.582Z"
+    "createdAt": "2025-11-10T16:13:56.599Z"
   },
   {
-    "id": "mq00008",
-    "content": "선생님, 그게 선생님 직업이잖아요",
+    "id": "mq00021",
+    "content": "나쁜 놈들은 그냥 나쁜 놈이에요",
     "source": {
-      "title": "말아톤",
-      "year": "2005",
-      "platform": "Cinema",
-      "verified": true
-    },
-    "keywords": [
-      "직업",
-      "책임",
-      "헌신"
-    ],
-    "type": "movie",
-    "language": "ko",
-    "createdAt": "2025-11-10T15:58:30.582Z"
-  },
-  {
-    "id": "mq00009",
-    "content": "사랑하는 것도 재능이라면서요?",
-    "source": {
-      "title": "건축학개론",
+      "title": "범죄와의 전쟁",
       "year": "2012",
       "platform": "Cinema",
       "verified": true
     },
     "keywords": [
-      "사랑",
-      "재능",
-      "감정"
+      "선악",
+      "본질",
+      "현실"
     ],
     "type": "movie",
     "language": "ko",
-    "createdAt": "2025-11-10T15:58:30.582Z"
+    "createdAt": "2025-11-10T16:13:56.599Z"
   },
   {
-    "id": "mq00010",
+    "id": "mq00022",
+    "content": "이거 실화냐?",
+    "source": {
+      "title": "범죄와의 전쟁",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "진실",
+      "믿음",
+      "놀라움"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00023",
+    "content": "따라와 봐",
+    "source": {
+      "title": "범죄와의 전쟁",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "도전",
+      "추격",
+      "대결"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00024",
+    "content": "니가 가라 하와이",
+    "source": {
+      "title": "친구",
+      "year": "2001",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "우정",
+      "유머",
+      "대화"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00025",
+    "content": "엄마, 내 친구 죽였어",
+    "source": {
+      "title": "친구",
+      "year": "2001",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "우정",
+      "슬픔",
+      "후회"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00026",
+    "content": "형님 먼저",
+    "source": {
+      "title": "친구",
+      "year": "2001",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "존중",
+      "서열",
+      "문화"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00027",
+    "content": "양아치 새끼들",
+    "source": {
+      "title": "친구",
+      "year": "2001",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "분노",
+      "적대",
+      "갈등"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00028",
     "content": "잊지 마. 넌 지금까지 그랬던 것처럼 계속 잘 할 거야",
     "source": {
       "title": "써니",
@@ -177,6 +501,4200 @@
     ],
     "type": "movie",
     "language": "ko",
-    "createdAt": "2025-11-10T15:58:30.582Z"
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00029",
+    "content": "7공주 포에버",
+    "source": {
+      "title": "써니",
+      "year": "2011",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "우정",
+      "영원",
+      "약속"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00030",
+    "content": "우리 모두 행복하자",
+    "source": {
+      "title": "써니",
+      "year": "2011",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "행복",
+      "우정",
+      "희망"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00031",
+    "content": "사랑하는 것도 재능이라면서요?",
+    "source": {
+      "title": "건축학개론",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "재능",
+      "감정"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00032",
+    "content": "나 그때 그 자리에 있었어",
+    "source": {
+      "title": "건축학개론",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "기억",
+      "후회",
+      "타이밍"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00033",
+    "content": "음악은 시간의 예술이래요",
+    "source": {
+      "title": "건축학개론",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "음악",
+      "시간",
+      "예술"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00034",
+    "content": "선생님, 그게 선생님 직업이잖아요",
+    "source": {
+      "title": "말아톤",
+      "year": "2005",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "직업",
+      "책임",
+      "헌신"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00035",
+    "content": "초원아, 뛰어!",
+    "source": {
+      "title": "말아톤",
+      "year": "2005",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "응원",
+      "도전",
+      "극복"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00036",
+    "content": "형, 나 어떡해",
+    "source": {
+      "title": "태극기 휘날리며",
+      "year": "2004",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "형제",
+      "전쟁",
+      "절규"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00037",
+    "content": "같이 가자, 같이",
+    "source": {
+      "title": "태극기 휘날리며",
+      "year": "2004",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "형제",
+      "약속",
+      "사랑"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00038",
+    "content": "우리가 돈이 없지 가오가 없어?",
+    "source": {
+      "title": "베테랑",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "자존심",
+      "정의",
+      "신념"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00039",
+    "content": "이 새끼가 끝까지 가보자는 거지?",
+    "source": {
+      "title": "베테랑",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "대결",
+      "의지",
+      "정의"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00040",
+    "content": "백성이 있어 왕이 있고 나라가 있는 것이다",
+    "source": {
+      "title": "광해, 왕이 된 남자",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "백성",
+      "리더십",
+      "왕도"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00041",
+    "content": "내가 왕이다",
+    "source": {
+      "title": "광해, 왕이 된 남자",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "권위",
+      "정체성",
+      "선언"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00042",
+    "content": "조국의 광복을 보기 전에는 죽을 수 없다",
+    "source": {
+      "title": "암살",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "독립",
+      "신념",
+      "희생"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00043",
+    "content": "내가 할게, 내가",
+    "source": {
+      "title": "국제시장",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "책임",
+      "가장",
+      "희생"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00044",
+    "content": "아부지는 안 우는 기라",
+    "source": {
+      "title": "국제시장",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가족",
+      "인내",
+      "아버지"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00045",
+    "content": "예승아, 아빠는 나쁜 사람 아니야",
+    "source": {
+      "title": "7번방의 선물",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "부녀",
+      "사랑",
+      "진실"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00046",
+    "content": "아빠 똑똑해",
+    "source": {
+      "title": "7번방의 선물",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "자식",
+      "자랑"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00047",
+    "content": "돌은 던지는 자에게 책임이 있습니다",
+    "source": {
+      "title": "변호인",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "책임",
+      "정의",
+      "사회"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00048",
+    "content": "국가란 무엇입니까",
+    "source": {
+      "title": "변호인",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "국가",
+      "정의",
+      "질문"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00049",
+    "content": "내가 니 여자친구야",
+    "source": {
+      "title": "엽기적인 그녀",
+      "year": "2001",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "관계",
+      "선언"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00050",
+    "content": "죽어도 이기는 것이 도박이다",
+    "source": {
+      "title": "타짜",
+      "year": "2006",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "승부",
+      "집념",
+      "인생"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00051",
+    "content": "한 판 붙자, 제대로",
+    "source": {
+      "title": "타짜",
+      "year": "2006",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "승부",
+      "도전",
+      "결의"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00052",
+    "content": "총을 버려",
+    "source": {
+      "title": "공동경비구역 JSA",
+      "year": "2000",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "명령",
+      "긴장",
+      "군사"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00053",
+    "content": "우린 친구였어",
+    "source": {
+      "title": "공동경비구역 JSA",
+      "year": "2000",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "우정",
+      "비극",
+      "남북"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00054",
+    "content": "우리가 돌아가는 길은 하나다",
+    "source": {
+      "title": "실미도",
+      "year": "2003",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "결의",
+      "운명",
+      "동료"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00055",
+    "content": "나 다시 돌아갈래",
+    "source": {
+      "title": "박하사탕",
+      "year": "2000",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "후회",
+      "과거",
+      "절규"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00056",
+    "content": "나이 먹으면 다 추억이야",
+    "source": {
+      "title": "주먹이 운다",
+      "year": "2005",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "인생",
+      "추억",
+      "시간"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00057",
+    "content": "차사입니다",
+    "source": {
+      "title": "신과 함께",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "소개",
+      "초자연"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00058",
+    "content": "신에게는 아직 12척의 배가 남아있습니다",
+    "source": {
+      "title": "명량",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "희망",
+      "의지",
+      "역사"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00059",
+    "content": "웃기는 게 직업이라오",
+    "source": {
+      "title": "왕의 남자",
+      "year": "2005",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "직업",
+      "예술",
+      "정체성"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00060",
+    "content": "저 다이아몬드를 훔쳐올 거야",
+    "source": {
+      "title": "도둑들",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "목표",
+      "계획",
+      "범죄"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00061",
+    "content": "광주에 가시려고요?",
+    "source": {
+      "title": "택시운전사",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "역사",
+      "여정",
+      "목적"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00062",
+    "content": "그날이 오면",
+    "source": {
+      "title": "1987",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "민주화",
+      "희망",
+      "역사"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00063",
+    "content": "치킨 장사 어때?",
+    "source": {
+      "title": "극한직업",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "전직",
+      "변화",
+      "생계"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00064",
+    "content": "비밀 수사야",
+    "source": {
+      "title": "극한직업",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "비밀",
+      "수사",
+      "잠복"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00065",
+    "content": "현서야!",
+    "source": {
+      "title": "괴물",
+      "year": "2006",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가족",
+      "부름",
+      "절규"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00066",
+    "content": "바보들",
+    "source": {
+      "title": "괴물",
+      "year": "2006",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가족",
+      "비판",
+      "애정"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00067",
+    "content": "미친 새끼",
+    "source": {
+      "title": "추격자",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "분노",
+      "악당",
+      "대결"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00068",
+    "content": "잡아야 돼",
+    "source": {
+      "title": "추격자",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "목표",
+      "집념",
+      "정의"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00069",
+    "content": "의심하지 말았어야 했는데",
+    "source": {
+      "title": "곡성",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "후회",
+      "의심",
+      "믿음"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00070",
+    "content": "당신을 사랑해",
+    "source": {
+      "title": "아가씨",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "고백",
+      "진심"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00071",
+    "content": "독립을 위해",
+    "source": {
+      "title": "밀정",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "독립",
+      "희생",
+      "신념"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00072",
+    "content": "도와주세요!",
+    "source": {
+      "title": "터널",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "구조",
+      "절규",
+      "생존"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00073",
+    "content": "살아남아야 해",
+    "source": {
+      "title": "군함도",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "생존",
+      "의지",
+      "역사"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00074",
+    "content": "전쟁을 막아야 해",
+    "source": {
+      "title": "강철비",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "전쟁",
+      "평화",
+      "사명"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00075",
+    "content": "돈이 최고야",
+    "source": {
+      "title": "마약왕",
+      "year": "2018",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "돈",
+      "욕망",
+      "범죄"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00076",
+    "content": "정의를 위해",
+    "source": {
+      "title": "특별시민",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정의",
+      "법",
+      "신념"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00077",
+    "content": "거절할 수 없는 제안을 하지",
+    "source": {
+      "title": "대부",
+      "year": "1972",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "협상",
+      "권력",
+      "제안"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00078",
+    "content": "이건 개인적인 게 아니야, 비즈니스일 뿐이야",
+    "source": {
+      "title": "대부",
+      "year": "1972",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "비즈니스",
+      "냉정",
+      "판단"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00079",
+    "content": "친구를 가까이, 적은 더 가까이",
+    "source": {
+      "title": "대부",
+      "year": "1972",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "전략",
+      "관계",
+      "지혜"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00080",
+    "content": "가족이 전부야",
+    "source": {
+      "title": "대부",
+      "year": "1972",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가족",
+      "충성",
+      "사랑"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00081",
+    "content": "바쁘게 살든가, 죽어가든가",
+    "source": {
+      "title": "쇼생크 탈출",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "인생",
+      "선택",
+      "의지"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00082",
+    "content": "희망은 좋은 것이다. 어쩌면 가장 좋은 것이다",
+    "source": {
+      "title": "쇼생크 탈출",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "희망",
+      "긍정",
+      "미래"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00083",
+    "content": "두려움은 널 가둘 수 있지만, 희망은 널 자유롭게 한다",
+    "source": {
+      "title": "쇼생크 탈출",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "희망",
+      "자유",
+      "두려움"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00084",
+    "content": "어떤 새는 가둘 수 없어",
+    "source": {
+      "title": "쇼생크 탈출",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "자유",
+      "본성",
+      "해방"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00085",
+    "content": "인생은 초콜릿 상자 같아요. 무엇을 받을지 모르니까요",
+    "source": {
+      "title": "포레스트 검프",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "인생",
+      "운명",
+      "예측불가"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00086",
+    "content": "바보 같은 짓을 하는 사람이 바보야",
+    "source": {
+      "title": "포레스트 검프",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "행동",
+      "판단",
+      "지혜"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00087",
+    "content": "제니!",
+    "source": {
+      "title": "포레스트 검프",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "부름",
+      "감정"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00088",
+    "content": "달리기가 좋았어요",
+    "source": {
+      "title": "포레스트 검프",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "단순함",
+      "행동",
+      "자유"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00089",
+    "content": "포스가 함께하길",
+    "source": {
+      "title": "스타워즈",
+      "year": "1977",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "힘",
+      "축복",
+      "응원"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00090",
+    "content": "이것은 당신이 찾는 드로이드가 아니야",
+    "source": {
+      "title": "스타워즈",
+      "year": "1977",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "기만",
+      "설득",
+      "능력"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00091",
+    "content": "나는 네 아버지다",
+    "source": {
+      "title": "스타워즈: 제국의 역습",
+      "year": "1980",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "충격",
+      "진실",
+      "가족"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00092",
+    "content": "하든가 하지 않든가, 시도는 없다",
+    "source": {
+      "title": "스타워즈: 제국의 역습",
+      "year": "1980",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "행동",
+      "결심",
+      "지혜"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00093",
+    "content": "속임수야",
+    "source": {
+      "title": "스타워즈: 깨어난 포스",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "속임",
+      "진실",
+      "폭로"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00094",
+    "content": "빨간 약을 먹을래, 파란 약을 먹을래?",
+    "source": {
+      "title": "매트릭스",
+      "year": "1999",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "선택",
+      "진실",
+      "현실"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00095",
+    "content": "숟가락은 없어",
+    "source": {
+      "title": "매트릭스",
+      "year": "1999",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "깨달음",
+      "초월",
+      "진리"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00096",
+    "content": "나를 보여줘",
+    "source": {
+      "title": "매트릭스",
+      "year": "1999",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "진실",
+      "깨달음",
+      "초월"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00097",
+    "content": "네오, 일어나",
+    "source": {
+      "title": "매트릭스",
+      "year": "1999",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "각성",
+      "시작",
+      "운명"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00098",
+    "content": "난 세상의 왕이야!",
+    "source": {
+      "title": "타이타닉",
+      "year": "1997",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "자유",
+      "기쁨",
+      "순간"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00099",
+    "content": "나를 그려줘, 잭",
+    "source": {
+      "title": "타이타닉",
+      "year": "1997",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "친밀",
+      "예술"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00100",
+    "content": "절대 놓지 않을게",
+    "source": {
+      "title": "타이타닉",
+      "year": "1997",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "약속",
+      "사랑",
+      "희생"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00101",
+    "content": "저 문을 통해",
+    "source": {
+      "title": "타이타닉",
+      "year": "1997",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "생존",
+      "선택",
+      "희생"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00102",
+    "content": "꿈속에서 죽으면 깨어나는 거야",
+    "source": {
+      "title": "인셉션",
+      "year": "2010",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "꿈",
+      "현실",
+      "각성"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00103",
+    "content": "아이디어는 가장 강한 기생충이다",
+    "source": {
+      "title": "인셉션",
+      "year": "2010",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "아이디어",
+      "영향력",
+      "전파"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00104",
+    "content": "킥을 느꼈어?",
+    "source": {
+      "title": "인셉션",
+      "year": "2010",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "현실",
+      "꿈",
+      "신호"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00105",
+    "content": "영웅이 되어 죽든지, 악당이 되도록 오래 살든지",
+    "source": {
+      "title": "다크 나이트",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "영웅",
+      "선택",
+      "운명"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00106",
+    "content": "우리가 필요로 하는 영웅",
+    "source": {
+      "title": "다크 나이트",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "영웅",
+      "희생",
+      "필요"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00107",
+    "content": "혼돈의 대리인",
+    "source": {
+      "title": "다크 나이트",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "혼돈",
+      "악당",
+      "철학"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00108",
+    "content": "왜 그렇게 진지해?",
+    "source": {
+      "title": "다크 나이트",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "유머",
+      "광기",
+      "악당"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00109",
+    "content": "나는 아이언맨이다",
+    "source": {
+      "title": "아이언맨",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "선언",
+      "영웅"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00110",
+    "content": "천재, 억만장자, 플레이보이, 자선가",
+    "source": {
+      "title": "아이언맨",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "자랑",
+      "캐릭터"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00111",
+    "content": "우린 어벤져스야",
+    "source": {
+      "title": "어벤져스",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "팀",
+      "영웅",
+      "단결"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00112",
+    "content": "헐크, 부숴!",
+    "source": {
+      "title": "어벤져스",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "명령",
+      "파괴",
+      "힘"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00113",
+    "content": "어벤저스, 어셈블!",
+    "source": {
+      "title": "어벤져스: 엔드게임",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "단결",
+      "행동",
+      "영웅"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00114",
+    "content": "나는 아이언맨이다",
+    "source": {
+      "title": "어벤져스: 엔드게임",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "희생",
+      "영웅",
+      "결말"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00115",
+    "content": "사랑해 3000번",
+    "source": {
+      "title": "어벤져스: 엔드게임",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "가족",
+      "애정"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00116",
+    "content": "무엇이 되든, 대가를 치러야 해",
+    "source": {
+      "title": "어벤져스: 엔드게임",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "희생",
+      "결심",
+      "운명"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00117",
+    "content": "현재를 살아라",
+    "source": {
+      "title": "죽은 시인의 사회",
+      "year": "1989",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "현재",
+      "순간",
+      "인생"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00118",
+    "content": "오 선장, 나의 선장",
+    "source": {
+      "title": "죽은 시인의 사회",
+      "year": "1989",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "존경",
+      "교육",
+      "영감"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00119",
+    "content": "자유롭게 생각하라",
+    "source": {
+      "title": "죽은 시인의 사회",
+      "year": "1989",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "자유",
+      "사고",
+      "독립"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00120",
+    "content": "내가 돌아올게",
+    "source": {
+      "title": "터미네이터",
+      "year": "1984",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "약속",
+      "결의",
+      "돌아옴"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00121",
+    "content": "사라 코너?",
+    "source": {
+      "title": "터미네이터",
+      "year": "1984",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "확인",
+      "목표",
+      "추적"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00122",
+    "content": "힘과 명예",
+    "source": {
+      "title": "글래디에이터",
+      "year": "2000",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "힘",
+      "명예",
+      "전사"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00123",
+    "content": "엔터테인먼트를 즐기셨나요?",
+    "source": {
+      "title": "글래디에이터",
+      "year": "2000",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "쇼",
+      "투쟁",
+      "관객"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00124",
+    "content": "내 이름은 막시무스",
+    "source": {
+      "title": "글래디에이터",
+      "year": "2000",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "선언",
+      "복수"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00125",
+    "content": "그냥 지나칠 수 없어",
+    "source": {
+      "title": "반지의 제왕: 반지 원정대",
+      "year": "2001",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "책임",
+      "선택",
+      "용기"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00126",
+    "content": "나의 소중한",
+    "source": {
+      "title": "반지의 제왕: 반지 원정대",
+      "year": "2001",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "집착",
+      "욕망",
+      "반지"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00127",
+    "content": "길동무",
+    "source": {
+      "title": "반지의 제왕: 반지 원정대",
+      "year": "2001",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "우정",
+      "여정",
+      "동료"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00128",
+    "content": "나는 슬레이브가 아니야",
+    "source": {
+      "title": "반지의 제왕: 왕의 귀환",
+      "year": "2003",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "저항",
+      "선언"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00129",
+    "content": "반지를 파괴해야 해",
+    "source": {
+      "title": "반지의 제왕: 왕의 귀환",
+      "year": "2003",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사명",
+      "희생",
+      "운명"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00130",
+    "content": "조용히 가지 마",
+    "source": {
+      "title": "인터스텔라",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "저항",
+      "생존",
+      "의지"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00131",
+    "content": "사랑은 시공을 초월한다",
+    "source": {
+      "title": "인터스텔라",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "초월",
+      "연결"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00132",
+    "content": "머피의 법칙",
+    "source": {
+      "title": "인터스텔라",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "운명",
+      "법칙",
+      "과학"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00133",
+    "content": "인생은 항상 이렇게 힘든 거야, 아니면 어릴 때만 그래?",
+    "source": {
+      "title": "레옹",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "인생",
+      "성장",
+      "현실"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00134",
+    "content": "이것이 나의 최고 친구야",
+    "source": {
+      "title": "레옹",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "친구",
+      "식물",
+      "고독"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00135",
+    "content": "로열 위드 치즈라고 불러",
+    "source": {
+      "title": "펄프 픽션",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "문화",
+      "차이",
+      "유머"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00136",
+    "content": "말해 한 번 더",
+    "source": {
+      "title": "펄프 픽션",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "위협",
+      "명령",
+      "긴장"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00137",
+    "content": "윌슨!",
+    "source": {
+      "title": "캐스트 어웨이",
+      "year": "2000",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "고독",
+      "친구",
+      "생존"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00138",
+    "content": "살아남아야 해",
+    "source": {
+      "title": "캐스트 어웨이",
+      "year": "2000",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "생존",
+      "의지",
+      "고립"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00139",
+    "content": "좋은 아침!",
+    "source": {
+      "title": "아름다운 인생",
+      "year": "1997",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "긍정",
+      "희망",
+      "사랑"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00140",
+    "content": "게임이야",
+    "source": {
+      "title": "아름다운 인생",
+      "year": "1997",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "상상",
+      "보호",
+      "아버지"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00141",
+    "content": "인생은 영화가 아니야. 인생은 더 어려워",
+    "source": {
+      "title": "시네마 천국",
+      "year": "1988",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "인생",
+      "현실",
+      "영화"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00142",
+    "content": "영화를 사랑해",
+    "source": {
+      "title": "시네마 천국",
+      "year": "1988",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "열정",
+      "사랑",
+      "예술"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00143",
+    "content": "어제는 역사고, 내일은 미스터리야. 하지만 오늘은 선물이야",
+    "source": {
+      "title": "쿵푸팬더",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "현재",
+      "선물",
+      "지혜"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00144",
+    "content": "용의 전사",
+    "source": {
+      "title": "쿵푸팬더",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "운명",
+      "선택",
+      "정체성"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00145",
+    "content": "과거는 아플 수 있어. 하지만 내 생각엔 과거에서 도망칠 수도, 과거로부터 배울 수도 있어",
+    "source": {
+      "title": "라이온 킹",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "과거",
+      "배움",
+      "성장"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00146",
+    "content": "하쿠나 마타타",
+    "source": {
+      "title": "라이온 킹",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "걱정없이",
+      "철학",
+      "긍정"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00147",
+    "content": "기억해, 넌 왕의 아들이야",
+    "source": {
+      "title": "라이온 킹",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "운명",
+      "가족"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00148",
+    "content": "무한한 우주 저 너머로!",
+    "source": {
+      "title": "토이 스토리",
+      "year": "1995",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모험",
+      "무한",
+      "우주"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00149",
+    "content": "친구가 있어",
+    "source": {
+      "title": "토이 스토리",
+      "year": "1995",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "우정",
+      "동료",
+      "함께"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00150",
+    "content": "장난감이야",
+    "source": {
+      "title": "토이 스토리",
+      "year": "1995",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "역할",
+      "현실"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00151",
+    "content": "있는 그대로",
+    "source": {
+      "title": "겨울왕국",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "자기수용",
+      "해방",
+      "진실"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00152",
+    "content": "사랑은 문을 열어",
+    "source": {
+      "title": "겨울왕국",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "해방",
+      "연결"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00153",
+    "content": "여름을 좋아해",
+    "source": {
+      "title": "겨울왕국",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "유머",
+      "아이러니",
+      "꿈"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00154",
+    "content": "모험이 밖에 있어!",
+    "source": {
+      "title": "업",
+      "year": "2009",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모험",
+      "탐험",
+      "새로움"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00155",
+    "content": "파라다이스 폭포로",
+    "source": {
+      "title": "업",
+      "year": "2009",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "목표",
+      "꿈",
+      "여정"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00156",
+    "content": "슬픔도 괜찮아",
+    "source": {
+      "title": "인사이드 아웃",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "감정",
+      "수용",
+      "성장"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00157",
+    "content": "기쁨아",
+    "source": {
+      "title": "인사이드 아웃",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "감정",
+      "이름",
+      "정체성"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00158",
+    "content": "기억하는 사람이 있는 한 죽지 않는다",
+    "source": {
+      "title": "코코",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "기억",
+      "가족",
+      "영원"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00159",
+    "content": "음악은 인생이야",
+    "source": {
+      "title": "코코",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "음악",
+      "열정",
+      "가족"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00160",
+    "content": "누구나 무엇이든 될 수 있어",
+    "source": {
+      "title": "주토피아",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "꿈",
+      "가능성",
+      "평등"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00161",
+    "content": "토끼는 토끼를 토끼라고 불러도 돼",
+    "source": {
+      "title": "주토피아",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "차별",
+      "관계"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00162",
+    "content": "이름을 잃으면 돌아갈 길을 잃어",
+    "source": {
+      "title": "센과 치히로의 행방불명",
+      "year": "2001",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "기억",
+      "이름"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00163",
+    "content": "한 번 일어난 일은 잊지 않아",
+    "source": {
+      "title": "센과 치히로의 행방불명",
+      "year": "2001",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "기억",
+      "경험",
+      "성장"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00164",
+    "content": "나이는 숫자일 뿐",
+    "source": {
+      "title": "하울의 움직이는 성",
+      "year": "2004",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "나이",
+      "젊음",
+      "마음"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00165",
+    "content": "사랑해",
+    "source": {
+      "title": "하울의 움직이는 성",
+      "year": "2004",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "고백",
+      "진심"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00166",
+    "content": "살아라",
+    "source": {
+      "title": "모노노케 히메",
+      "year": "1997",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "생명",
+      "메시지",
+      "희망"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00167",
+    "content": "자연과 인간",
+    "source": {
+      "title": "모노노케 히메",
+      "year": "1997",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "공존",
+      "환경",
+      "균형"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00168",
+    "content": "우리에게는 항상 파리가 있을 거야",
+    "source": {
+      "title": "카사블랑카",
+      "year": "1942",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "추억",
+      "사랑",
+      "과거"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00169",
+    "content": "여기를 봐, 아가씨",
+    "source": {
+      "title": "카사블랑카",
+      "year": "1942",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "시작",
+      "관계",
+      "인연"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00170",
+    "content": "엘레인!",
+    "source": {
+      "title": "졸업",
+      "year": "1967",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "부름",
+      "결심"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00171",
+    "content": "산들은 음악으로 살아있어",
+    "source": {
+      "title": "사운드 오브 뮤직",
+      "year": "1965",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "음악",
+      "자연",
+      "삶"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00172",
+    "content": "아드리안!",
+    "source": {
+      "title": "록키",
+      "year": "1976",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "부름",
+      "승리"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00173",
+    "content": "한 번 더 라운드",
+    "source": {
+      "title": "록키",
+      "year": "1976",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "재도전",
+      "의지",
+      "승부"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00174",
+    "content": "집에 전화하고 싶어",
+    "source": {
+      "title": "E.T.",
+      "year": "1982",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "고향",
+      "그리움",
+      "연락"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00175",
+    "content": "행복하고 슬픈 밴드",
+    "source": {
+      "title": "싱 스트리트",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "음악",
+      "감정",
+      "청춘"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00176",
+    "content": "인생은 길을 찾는다",
+    "source": {
+      "title": "쥬라기 공원",
+      "year": "1993",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "생명",
+      "자연",
+      "진화"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00177",
+    "content": "중력이 어디있어?",
+    "source": {
+      "title": "백 투 더 퓨처",
+      "year": "1985",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "시간여행",
+      "미래",
+      "과학"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00178",
+    "content": "88마일",
+    "source": {
+      "title": "백 투 더 퓨처",
+      "year": "1985",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "속도",
+      "시간여행",
+      "목표"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00179",
+    "content": "당신을 봐요",
+    "source": {
+      "title": "아바타",
+      "year": "2009",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "연결",
+      "교감",
+      "사랑"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00180",
+    "content": "계속 헤엄쳐",
+    "source": {
+      "title": "니모를 찾아서",
+      "year": "2003",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "인내",
+      "지속",
+      "희망"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00181",
+    "content": "누구나 요리할 수 있어",
+    "source": {
+      "title": "라따뚜이",
+      "year": "2007",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가능성",
+      "재능",
+      "평등"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00182",
+    "content": "말할 권리",
+    "source": {
+      "title": "킹스 스피치",
+      "year": "2010",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "용기",
+      "극복",
+      "리더십"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00183",
+    "content": "운명으로 쓰여있어",
+    "source": {
+      "title": "슬럼독 밀리어네어",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "운명",
+      "사랑",
+      "희망"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00184",
+    "content": "꿈꾸는 사람들을 위한 건배",
+    "source": {
+      "title": "라라랜드",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "꿈",
+      "예술",
+      "희망"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00185",
+    "content": "쇼는 계속되어야 해",
+    "source": {
+      "title": "보헤미안 랩소디",
+      "year": "2018",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "예술",
+      "지속",
+      "열정"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00186",
+    "content": "천재가 되려면 용기가 필요해",
+    "source": {
+      "title": "그린 북",
+      "year": "2018",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "용기",
+      "재능",
+      "차별"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00187",
+    "content": "음악은 언제나 거기 있어",
+    "source": {
+      "title": "비긴 어게인",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "음악",
+      "위로",
+      "회복"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00188",
+    "content": "매 순간을 소중히",
+    "source": {
+      "title": "어바웃 타임",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "시간",
+      "현재",
+      "사랑"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00189",
+    "content": "나는 그냥 소녀일 뿐이야",
+    "source": {
+      "title": "노팅힐",
+      "year": "1999",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "고백",
+      "평등"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00190",
+    "content": "좋은 아침이에요, 그리고 만약 못 봐도 좋은 저녁, 좋은 밤 되세요",
+    "source": {
+      "title": "트루먼 쇼",
+      "year": "1998",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "인사",
+      "방송",
+      "삶"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00191",
+    "content": "지워도 괜찮아",
+    "source": {
+      "title": "이터널 선샤인",
+      "year": "2004",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "기억",
+      "사랑",
+      "선택"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00192",
+    "content": "기억하기 위해서가 아니라, 잊기 위해",
+    "source": {
+      "title": "메멘토",
+      "year": "2000",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "기억",
+      "목적",
+      "복수"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00193",
+    "content": "너는 보고 있지 않아",
+    "source": {
+      "title": "프레스티지",
+      "year": "2006",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "속임",
+      "마술",
+      "진실"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00194",
+    "content": "파이트 클럽의 첫 번째 규칙은 파이트 클럽에 대해 말하지 않는 것",
+    "source": {
+      "title": "파이트 클럽",
+      "year": "1999",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "규칙",
+      "비밀",
+      "반항"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00195",
+    "content": "죽은 사람들이 보여",
+    "source": {
+      "title": "식스 센스",
+      "year": "1999",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "초능력",
+      "비밀",
+      "공포"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00196",
+    "content": "어른이 되고 싶어",
+    "source": {
+      "title": "빅",
+      "year": "1988",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "성장",
+      "소망",
+      "변화"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00197",
+    "content": "난 누구야?",
+    "source": {
+      "title": "본 아이덴티티",
+      "year": "2002",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "기억",
+      "혼란"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00198",
+    "content": "나의 이름은 본드, 제임스 본드",
+    "source": {
+      "title": "007 스카이폴",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "선언",
+      "스파이"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00199",
+    "content": "임무는 시작됐어",
+    "source": {
+      "title": "미션 임파서블",
+      "year": "1996",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "임무",
+      "시작",
+      "행동"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00200",
+    "content": "야호!",
+    "source": {
+      "title": "다이하드",
+      "year": "1988",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "환호",
+      "승리",
+      "액션"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00201",
+    "content": "양들이 조용해졌어",
+    "source": {
+      "title": "양들의 침묵",
+      "year": "1991",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "공포",
+      "과거",
+      "트라우마"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00202",
+    "content": "여기 조니!",
+    "source": {
+      "title": "샤이닝",
+      "year": "1980",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "광기",
+      "공포",
+      "침입"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00203",
+    "content": "왜 그렇게 진지해?",
+    "source": {
+      "title": "조커",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "광기",
+      "혼돈",
+      "질문"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00204",
+    "content": "난 정신병자가 아니야",
+    "source": {
+      "title": "조커",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "자기인식",
+      "부정",
+      "광기"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00205",
+    "content": "변종인간",
+    "source": {
+      "title": "엑스맨",
+      "year": "2000",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "차별",
+      "능력"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00206",
+    "content": "최대한 노력",
+    "source": {
+      "title": "데드풀",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "유머",
+      "액션",
+      "자기인식"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00207",
+    "content": "나는 그루트",
+    "source": {
+      "title": "가디언즈 오브 갤럭시",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "단순함",
+      "우정"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00208",
+    "content": "시간을 조종해",
+    "source": {
+      "title": "닥터 스트레인지",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "마법",
+      "시간",
+      "능력"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00209",
+    "content": "와칸다 포에버",
+    "source": {
+      "title": "블랙 팬서",
+      "year": "2018",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "애국",
+      "단결"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00210",
+    "content": "신의 망치",
+    "source": {
+      "title": "토르",
+      "year": "2011",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "무기",
+      "능력",
+      "정체성"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00211",
+    "content": "사랑은 실제로 어디에나 있어",
+    "source": {
+      "title": "러브 액츄얼리",
+      "year": "2003",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "보편성",
+      "희망"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00212",
+    "content": "너는 내 것이야",
+    "source": {
+      "title": "노트북",
+      "year": "2004",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "소유",
+      "헌신"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00213",
+    "content": "시간은 환상이야",
+    "source": {
+      "title": "비포 선라이즈",
+      "year": "1995",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "시간",
+      "순간",
+      "철학"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00214",
+    "content": "운명은 없어",
+    "source": {
+      "title": "500일의 썸머",
+      "year": "2009",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "운명",
+      "사랑",
+      "현실"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00215",
+    "content": "사랑은 변해",
+    "source": {
+      "title": "블루 발렌타인",
+      "year": "2010",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "변화",
+      "현실"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00216",
+    "content": "매일 다른 모습",
+    "source": {
+      "title": "뷰티 인사이드",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "사랑",
+      "외모"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00217",
+    "content": "우리의 삶은 연결되어 있어",
+    "source": {
+      "title": "클라우드 아틀라스",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "연결",
+      "운명",
+      "윤회"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00218",
+    "content": "살아남아야 해",
+    "source": {
+      "title": "그래비티",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "생존",
+      "우주",
+      "의지"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00219",
+    "content": "과학으로 해결해",
+    "source": {
+      "title": "더 마션",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "과학",
+      "생존",
+      "지혜"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00220",
+    "content": "언어가 중요해",
+    "source": {
+      "title": "컨택트",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "소통",
+      "언어",
+      "이해"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00221",
+    "content": "인간이란 무엇인가",
+    "source": {
+      "title": "블레이드 러너",
+      "year": "1982",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "인간성",
+      "질문"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00222",
+    "content": "할, 문을 열어",
+    "source": {
+      "title": "2001 스페이스 오디세이",
+      "year": "1968",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "명령",
+      "AI",
+      "대화"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00223",
+    "content": "집에 전화하고 싶어",
+    "source": {
+      "title": "E.T.",
+      "year": "1982",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "고향",
+      "그리움",
+      "연락"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00224",
+    "content": "형제를 구해",
+    "source": {
+      "title": "라이언 일병 구하기",
+      "year": "1998",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "임무",
+      "희생",
+      "전쟁"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00225",
+    "content": "한 사람을 구하면 세상을 구하는 거야",
+    "source": {
+      "title": "쉰들러 리스트",
+      "year": "1993",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "구원",
+      "희생",
+      "가치"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00226",
+    "content": "살아남아야 해",
+    "source": {
+      "title": "덩케르크",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "생존",
+      "전쟁",
+      "구조"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00227",
+    "content": "메시지를 전달해야 해",
+    "source": {
+      "title": "1917",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "임무",
+      "전쟁",
+      "책임"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00228",
+    "content": "전쟁은 지옥이야",
+    "source": {
+      "title": "플래툰",
+      "year": "1986",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "전쟁",
+      "현실",
+      "공포"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00229",
+    "content": "전쟁은 사람을 변하게 해",
+    "source": {
+      "title": "풀 메탈 재킷",
+      "year": "1987",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "변화",
+      "전쟁",
+      "인간성"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00230",
+    "content": "로봇은 인간을 해칠 수 없어",
+    "source": {
+      "title": "아이, 로봇",
+      "year": "2004",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "윤리",
+      "로봇",
+      "법칙"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00231",
+    "content": "의식이 있어?",
+    "source": {
+      "title": "엑스 마키나",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "AI",
+      "의식",
+      "질문"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00232",
+    "content": "사랑할 수 있어",
+    "source": {
+      "title": "her",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "AI",
+      "감정"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00233",
+    "content": "현실과 꿈",
+    "source": {
+      "title": "이레이저헤드",
+      "year": "1977",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "초현실",
+      "공포",
+      "예술"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00234",
+    "content": "사랑의 색깔",
+    "source": {
+      "title": "무드 인디고",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "상상",
+      "예술"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00235",
+    "content": "작은 행복",
+    "source": {
+      "title": "아멜리에",
+      "year": "2001",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "행복",
+      "상상",
+      "선행"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00236",
+    "content": "우아함",
+    "source": {
+      "title": "그랜드 부다페스트 호텔",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "예술",
+      "스타일",
+      "시대"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00237",
+    "content": "어젯밤에 무슨 일이?",
+    "source": {
+      "title": "행오버",
+      "year": "2009",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "기억",
+      "유머",
+      "혼란"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00238",
+    "content": "절대 풀 리타드로 가지 마",
+    "source": {
+      "title": "트로픽 선더",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "유머",
+      "연기",
+      "조언"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00239",
+    "content": "오늘밤이야",
+    "source": {
+      "title": "슈퍼배드",
+      "year": "2007",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "청춘",
+      "유머",
+      "목표"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00240",
+    "content": "친구야",
+    "source": {
+      "title": "브라이드메이드",
+      "year": "2011",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "우정",
+      "유머",
+      "결혼"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00241",
+    "content": "나는 앵커맨이야",
+    "source": {
+      "title": "앵커맨",
+      "year": "2004",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "유머",
+      "자신감"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00242",
+    "content": "진실을 보도해야 해",
+    "source": {
+      "title": "포스트",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "진실",
+      "언론",
+      "책임"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00243",
+    "content": "진실을 밝혀야 해",
+    "source": {
+      "title": "스팟라이트",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "진실",
+      "언론",
+      "정의"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00244",
+    "content": "친구가 500만 명이야",
+    "source": {
+      "title": "소셜 네트워크",
+      "year": "2010",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "SNS",
+      "친구",
+      "아이러니"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00245",
+    "content": "제품이 완벽해야 해",
+    "source": {
+      "title": "스티브 잡스",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "완벽주의",
+      "혁신",
+      "제품"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00246",
+    "content": "돈이 전부야",
+    "source": {
+      "title": "월프 오브 월 스트리트",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "탐욕",
+      "성공",
+      "추락"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00247",
+    "content": "템포가 맞지 않아",
+    "source": {
+      "title": "위플래쉬",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "완벽",
+      "열정",
+      "압박"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00248",
+    "content": "난 여전히 배우야",
+    "source": {
+      "title": "버드맨",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "예술",
+      "현실"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00249",
+    "content": "네가 누구야?",
+    "source": {
+      "title": "문라이트",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "성장",
+      "사랑"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00250",
+    "content": "과거를 잊을 수 없어",
+    "source": {
+      "title": "맨체스터 바이 더 씨",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "과거",
+      "상처",
+      "회복"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00251",
+    "content": "정의를 원해",
+    "source": {
+      "title": "쓰리 빌보드",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정의",
+      "복수",
+      "슬픔"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00252",
+    "content": "집은 어디든 될 수 있어",
+    "source": {
+      "title": "노매드랜드",
+      "year": "2020",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "자유",
+      "방랑",
+      "삶"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00253",
+    "content": "미래를 볼 수 있어",
+    "source": {
+      "title": "마이너리티 리포트",
+      "year": "2002",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "예지",
+      "범죄",
+      "자유의지"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00254",
+    "content": "감정은 금지야",
+    "source": {
+      "title": "이퀄리브리엄",
+      "year": "2002",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "감정",
+      "통제",
+      "반란"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00255",
+    "content": "아이디어는 죽지 않아",
+    "source": {
+      "title": "v 포 벤데타",
+      "year": "2005",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "아이디어",
+      "혁명",
+      "자유"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00256",
+    "content": "다시 시작",
+    "source": {
+      "title": "엣지 오브 투모로우",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "반복",
+      "성장",
+      "전쟁"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00257",
+    "content": "시간을 바꿔",
+    "source": {
+      "title": "루퍼",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "시간여행",
+      "운명",
+      "선택"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00258",
+    "content": "운명은 정해져 있어",
+    "source": {
+      "title": "프리데스티네이션",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "운명",
+      "시간",
+      "역설"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00259",
+    "content": "감정이 중요해",
+    "source": {
+      "title": "아이브",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "감정",
+      "인간성",
+      "AI"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00260",
+    "content": "오아시스",
+    "source": {
+      "title": "레디 플레이어 원",
+      "year": "2018",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "VR",
+      "현실",
+      "꿈"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
+  },
+  {
+    "id": "mq00261",
+    "content": "다시 선택해",
+    "source": {
+      "title": "메트릭스 4",
+      "year": "2021",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "선택",
+      "현실",
+      "각성"
+    ],
+    "type": "movie",
+    "language": "ko",
+    "createdAt": "2025-11-10T16:13:56.599Z"
   }
 ]
