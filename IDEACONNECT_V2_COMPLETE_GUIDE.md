@@ -719,5 +719,799 @@ def extract_relations(quote1, quote2):
 
 ---
 
-**Part 1 완료! 다음 Part 2를 진행할까요?**
+# Part 2: 데이터 아키텍처
+
+## 2.1 향상된 노드(Node) 구조
+
+### 다층적 표현 시스템
+
+**설계 철학**: 하나의 아이디어를 다양한 각도에서 분석하고 저장
+
+```typescript
+interface IdeaNode {
+  // ===== 기본 식별 정보 =====
+  id: string;                    // UUID
+  content: string;               // 원문 (영어)
+  content_ko?: string;           // 번역 (한국어)
+  created_at: Date;
+  updated_at: Date;
+
+  // ===== 출처 메타데이터 =====
+  source: {
+    author: string;              // 저자/인물
+    author_ko?: string;          // 저자 한국어명
+    work?: string;               // 작품명
+    work_ko?: string;
+    year?: number;               // 연도
+    url?: string;                // 웹 출처
+    isbn?: string;               // 책
+    doi?: string;                // 논문
+    imdb_id?: string;            // 영화
+    verified: boolean;           // 출처 검증 여부
+  };
+
+  // ===== 언어학적 분석 =====
+  linguistic: {
+    // 프레임 의미론
+    primary_frame: string;       // "시간과_행동"
+    frame_elements: Record<string, string>;
+    related_frames: {
+      frame: string;
+      relation: 'inheritance' | 'subframe' | 'uses' | 'perspective';
+    }[];
+
+    // 은유 분석
+    metaphors: {
+      system: string;            // "시간은_자원이다"
+      elements: string[];        // ["spending", "saving"]
+      source_domain: string;     // "물질적_자원"
+      target_domain: string;     // "시간"
+      strength: number;          // 0.0-1.0
+    }[];
+
+    // 의미 역할
+    semantic_roles: {
+      theme?: string;            // 주제
+      agent?: string;            // 행위자
+      patient?: string;          // 피행위자
+      instrument?: string;       // 도구
+      location?: string;         // 장소
+      time?: string;             // 시간
+    };
+
+    // 화행 이론 (Speech Act)
+    speech_act: 'assertive' | 'directive' | 'commissive' | 'expressive' | 'declarative';
+
+    // 부정 표현 분석
+    negation?: {
+      has_negation: boolean;
+      negated_concept: string;
+      affirmative_alternative?: string;
+    };
+  };
+
+  // ===== 인지심리학적 분석 =====
+  cognitive: {
+    // 스키마 매핑
+    schemas: {
+      type: string;              // "습관 형성 스키마"
+      slot: string;              // "결과"
+      related_slots: Record<string, string[]>;
+      activation_strength: number; // 0.0-1.0
+    }[];
+
+    // 정보 처리 수준
+    processing_level: 'surface' | 'semantic' | 'pragmatic';
+
+    // 인지 부하
+    cognitive_load: {
+      level: 'low' | 'medium' | 'high';
+      complexity_score: number;  // 0-100
+      abstractness: number;      // 0.0-1.0 (구체적 vs 추상적)
+    };
+
+    // 기억 인출 단서
+    retrieval_cues: string[];    // ["습관", "반복", "정체성"]
+
+    // 정교화 수준
+    elaboration: {
+      level: 'basic' | 'intermediate' | 'advanced';
+      requires_context: boolean;
+    };
+  };
+
+  // ===== 감정/태도 분석 =====
+  affective: {
+    // 감정 벡터 (Plutchik의 8가지 기본 감정)
+    emotions: {
+      joy: number;               // 0.0-1.0
+      trust: number;
+      fear: number;
+      surprise: number;
+      sadness: number;
+      disgust: number;
+      anger: number;
+      anticipation: number;
+    };
+
+    // 감정가 (Valence): 긍정/부정
+    valence: number;             // -1.0 (매우 부정) ~ +1.0 (매우 긍정)
+
+    // 각성도 (Arousal): 차분함/흥분
+    arousal: number;             // 0.0 (차분) ~ 1.0 (흥분)
+
+    // 지배성 (Dominance): 통제감
+    dominance: number;           // 0.0 (수동적) ~ 1.0 (지배적)
+
+    // 감정 강도
+    intensity: number;           // 0.0-1.0
+
+    // 주요 감정 (자동 계산)
+    primary_emotion: string;     // "희망", "동기부여", "성찰" 등
+  };
+
+  // ===== 실용적 차원 =====
+  pragmatic: {
+    // 적용 가능한 상황/맥락
+    applicable_contexts: string[]; // ["자기계발", "습관 형성", "동기부여"]
+
+    // 행동 유도성 (Affordance)
+    action_tendencies: string[]; // ["반복 실천", "자기 성찰", "목표 설정"]
+
+    // 실천 난이도
+    implementation: {
+      difficulty: 'easy' | 'medium' | 'hard';
+      time_required: 'immediate' | 'days' | 'weeks' | 'months' | 'years';
+      resources_needed: string[];
+    };
+
+    // 시간 지평
+    time_horizon: 'immediate' | 'short-term' | 'long-term' | 'lifelong';
+
+    // 대상 청중
+    target_audience: string[];   // ["학생", "직장인", "창업가", "일반"]
+  };
+
+  // ===== 벡터 임베딩 =====
+  embeddings: {
+    semantic: number[];          // 768-dim (의미적 유사도)
+    emotional: number[];         // 768-dim (감정적 유사도)
+    pragmatic: number[];         // 768-dim (실용적 유사도)
+    kg_embedding?: number[];     // 128-dim (지식 그래프)
+
+    // 임베딩 메타정보
+    model_version: string;       // "all-MiniLM-L6-v2"
+    generated_at: Date;
+  };
+
+  // ===== 분류 정보 =====
+  classification: {
+    // 기본 카테고리
+    primary_category: IdeaType;  // "famous-quote", "book", etc.
+    secondary_categories: IdeaType[];
+
+    // 주제 태그
+    topics: string[];            // ["습관", "성장", "시간관리"]
+
+    // 키워드 (검색용)
+    keywords: string[];          // 자동 추출 + 수동 큐레이션
+
+    // 난이도
+    difficulty_level: 'beginner' | 'intermediate' | 'advanced';
+  };
+
+  // ===== 품질 & 통계 =====
+  quality: {
+    // 자동 품질 점수
+    auto_score: number;          // 0-100
+
+    // 전문가 큐레이션
+    curated: boolean;
+    curator_notes?: string;
+
+    // 완성도
+    completeness: {
+      has_embeddings: boolean;
+      has_linguistic: boolean;
+      has_cognitive: boolean;
+      has_affective: boolean;
+      overall: number;           // 0-100
+    };
+  };
+
+  stats: {
+    view_count: number;
+    connection_count: number;    // 몇 개의 엣지와 연결되어 있는가
+    user_saved_count: number;    // 몇 명이 저장했는가
+    avg_rating: number;          // 0-5
+    last_accessed: Date;
+  };
+}
+
+// 아이디어 타입 정의
+type IdeaType =
+  | 'famous-quote'
+  | 'book'
+  | 'proverb'
+  | 'movie'
+  | 'drama'
+  | 'animation'
+  | 'academic'
+  | 'web'
+  | 'essay'
+  | 'poem';
+```
+
+### 노드 구조 설계 의도
+
+| 섹션 | 목적 | 활용 |
+|------|------|------|
+| **기본 식별** | 고유성, 버전 관리 | CRUD 작업 |
+| **출처 메타데이터** | 신뢰성, 추적성 | 검증, 인용 |
+| **언어학적 분석** | 깊은 의미 이해 | 프레임 기반 검색, 은유 연결 |
+| **인지심리학적 분석** | 사고 구조 파악 | 스키마 기반 연결, 활성화 전파 |
+| **감정/태도 분석** | 감정적 공명 | 감정 기반 추천, 무드별 탐색 |
+| **실용적 차원** | 적용 가능성 | 컨텍스트 인식 추천 |
+| **벡터 임베딩** | 수치적 유사도 | 빠른 검색, 클러스터링 |
+| **분류 정보** | 조직화 | 필터링, 탐색 |
+| **품질 & 통계** | 신뢰성, 인기도 | 랭킹, 큐레이션 |
+
+---
+
+## 2.2 다차원 엣지(Edge) 구조
+
+### 관계의 복잡성 표현
+
+**설계 철학**: 두 아이디어 간의 관계는 단순한 "연결됨"이 아닌 다층적 의미
+
+```typescript
+interface IdeaEdge {
+  // ===== 기본 식별 =====
+  id: string;                    // UUID
+  from: string;                  // 출발 노드 ID
+  to: string;                    // 도착 노드 ID
+  created_at: Date;
+
+  // ===== 관계 유형 =====
+  relation_type: RelationType;
+
+  // ===== 관계 강도 =====
+  strength: number;              // 0.0-1.0 (종합 강도)
+
+  // ===== 차원별 점수 =====
+  dimensions: {
+    semantic_similarity: number;     // 의미적 유사성 (0-1)
+    emotional_resonance: number;     // 감정적 공명 (0-1)
+    pragmatic_alignment: number;     // 실용적 정렬 (0-1)
+    metaphorical_connection: number; // 은유적 연결 (0-1)
+    causal_strength: number;         // 인과 관계 강도 (0-1)
+    temporal_proximity: number;      // 시간적 근접성 (0-1)
+  };
+
+  // ===== 관계 설명 =====
+  reasoning: {
+    automatic: string;           // AI 자동 생성
+    curated?: string;            // 큐레이터 수동 작성
+    evidence: string[];          // 근거 리스트
+  };
+
+  // ===== 양방향성 =====
+  bidirectional: boolean;        // 양방향 관계인가?
+  reverse_relation?: RelationType; // 역방향 관계 유형
+
+  // ===== 컨텍스트 의존성 =====
+  context_dependent: boolean;    // 특정 맥락에서만 유효한가?
+  contexts?: string[];           // ["자기계발", "리더십"]
+
+  // ===== 신뢰도 & 출처 =====
+  confidence: number;            // 0.0-1.0
+  source: 'algorithm' | 'expert' | 'community' | 'user';
+
+  // ===== 활성화 이력 =====
+  activation: {
+    count: number;               // 몇 번 활성화되었는가
+    last_activated: Date;
+    decay_rate: number;          // 확산 활성화 감쇠율
+  };
+
+  // ===== 검증 & 품질 =====
+  verified: boolean;             // 전문가 검증 여부
+  quality_score: number;         // 0-100
+
+  // ===== 메타정보 =====
+  version: string;
+  notes?: string;
+}
+
+// 관계 유형 온톨로지
+type RelationType =
+  // === 의미적 관계 ===
+  | 'similar_to'              // 유사함
+  | 'opposite_to'             // 반대됨
+  | 'part_of'                 // 부분-전체
+  | 'example_of'              // 사례
+  | 'generalizes_to'          // 일반화
+  | 'specializes_to'          // 특수화
+
+  // === 인과적 관계 ===
+  | 'causes'                  // A가 B를 야기
+  | 'enables'                 // A가 B를 가능하게 함
+  | 'prevents'                // A가 B를 막음
+  | 'requires'                // A가 B를 필요로 함
+  | 'contributes_to'          // A가 B에 기여
+
+  // === 시간적 관계 ===
+  | 'precedes'                // A가 B보다 먼저
+  | 'follows'                 // A가 B를 따름
+  | 'concurrent_with'         // A와 B가 동시
+
+  // === 논리적 관계 ===
+  | 'supports'                // A가 B를 지지
+  | 'contradicts'             // A가 B와 모순
+  | 'refines'                 // A가 B를 정제
+  | 'extends'                 // A가 B를 확장
+  | 'implies'                 // A가 B를 함의
+
+  // === 은유적 관계 ===
+  | 'metaphor_of'             // A는 B의 은유
+  | 'analogy_to'              // A는 B와 유추
+
+  // === 감정적 관계 ===
+  | 'evokes_same_emotion'     // 같은 감정 유발
+  | 'contrasting_emotion'     // 대조되는 감정
+
+  // === 실용적 관계 ===
+  | 'implements_same_principle' // 같은 원리 구현
+  | 'alternative_approach'    // 대안적 접근
+  | 'complements'             // 보완 관계
+
+  // === 구조적 관계 ===
+  | 'belongs_to_category'     // 카테고리 소속
+  | 'shares_frame'            // 프레임 공유
+  | 'shares_metaphor';        // 은유 공유
+```
+
+### 엣지 자동 생성 알고리즘
+
+```python
+def create_edge_automatically(node1: IdeaNode, node2: IdeaNode) -> IdeaEdge | None:
+    """
+    두 노드 간 엣지를 자동으로 생성
+    """
+
+    # 1. 차원별 유사도 계산
+    dimensions = calculate_multi_dimensional_similarity(node1, node2)
+
+    # 2. 종합 강도 계산 (가중 평균)
+    strength = (
+        dimensions['semantic_similarity'] * 0.35 +
+        dimensions['emotional_resonance'] * 0.25 +
+        dimensions['pragmatic_alignment'] * 0.20 +
+        dimensions['metaphorical_connection'] * 0.15 +
+        dimensions['causal_strength'] * 0.05
+    )
+
+    # 3. 임계값 체크 (0.65 이상만 엣지 생성)
+    if strength < 0.65:
+        return None
+
+    # 4. 관계 유형 추론
+    relation_type = infer_relation_type(node1, node2, dimensions)
+
+    # 5. 양방향성 판단
+    bidirectional = is_bidirectional(relation_type)
+
+    # 6. 설명 생성
+    reasoning = generate_reasoning(node1, node2, relation_type, dimensions)
+
+    # 7. 엣지 객체 생성
+    edge = IdeaEdge(
+        id=generate_uuid(),
+        from=node1.id,
+        to=node2.id,
+        relation_type=relation_type,
+        strength=strength,
+        dimensions=dimensions,
+        reasoning=reasoning,
+        bidirectional=bidirectional,
+        confidence=calculate_confidence(dimensions),
+        source='algorithm',
+        created_at=datetime.now()
+    )
+
+    return edge
+
+def infer_relation_type(node1, node2, dimensions) -> RelationType:
+    """관계 유형 자동 추론"""
+
+    # 의미적 유사도가 매우 높으면
+    if dimensions['semantic_similarity'] > 0.85:
+        return 'similar_to'
+
+    # 감정이 비슷하면
+    if dimensions['emotional_resonance'] > 0.8:
+        return 'evokes_same_emotion'
+
+    # 같은 은유 시스템을 공유하면
+    if dimensions['metaphorical_connection'] > 0.8:
+        return 'shares_metaphor'
+
+    # 인과 관계 마커가 있으면
+    if has_causal_markers(node1, node2):
+        return 'causes' if dimensions['causal_strength'] > 0.7 else 'contributes_to'
+
+    # 프레임이 같으면
+    if shares_frame(node1, node2):
+        return 'shares_frame'
+
+    # 기본값
+    return 'similar_to'
+```
+
+---
+
+## 2.3 임베딩 전략
+
+### 다중 임베딩 시스템
+
+**목적**: 서로 다른 차원의 유사도를 독립적으로 계산
+
+```python
+# scripts/embeddings/multi_embedding.py
+
+from sentence_transformers import SentenceTransformer
+import numpy as np
+from typing import Dict, List
+import pickle
+
+class MultiEmbeddingSystem:
+    """다중 임베딩 생성 및 관리"""
+
+    def __init__(self):
+        print("🔧 임베딩 모델 로딩 중...")
+
+        # 1. 의미적 임베딩
+        self.semantic_model = SentenceTransformer('all-MiniLM-L6-v2')
+        print("✅ Semantic 모델 로딩 완료")
+
+        # 2. 감정적 임베딩
+        self.emotion_model = SentenceTransformer('j-hartmann/emotion-english-distilroberta-base')
+        print("✅ Emotion 모델 로딩 완료")
+
+        # 3. 다국어 임베딩 (한국어 지원)
+        self.multilingual_model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2')
+        print("✅ Multilingual 모델 로딩 완료")
+
+        # 캐시
+        self.cache = {}
+
+    def encode_node(self, node: IdeaNode) -> Dict[str, np.ndarray]:
+        """노드를 다중 임베딩으로 인코딩"""
+
+        # 캐시 체크
+        if node.id in self.cache:
+            return self.cache[node.id]
+
+        content = node.content
+        content_ko = node.content_ko or content
+
+        # 임베딩 생성
+        embeddings = {
+            'semantic': self.semantic_model.encode(content),
+            'emotional': self.emotion_model.encode(content),
+            'multilingual': self.multilingual_model.encode(content_ko)
+        }
+
+        # 정규화 (코사인 유사도 최적화)
+        for key in embeddings:
+            embeddings[key] = embeddings[key] / np.linalg.norm(embeddings[key])
+
+        # 캐시 저장
+        self.cache[node.id] = embeddings
+
+        return embeddings
+
+    def batch_encode(self, nodes: List[IdeaNode]) -> Dict[str, List[np.ndarray]]:
+        """배치 인코딩 (효율적)"""
+
+        contents = [node.content for node in nodes]
+        contents_ko = [node.content_ko or node.content for node in nodes]
+
+        # 배치 처리
+        semantic_batch = self.semantic_model.encode(contents, show_progress_bar=True)
+        emotional_batch = self.emotion_model.encode(contents, show_progress_bar=True)
+        multilingual_batch = self.multilingual_model.encode(contents_ko, show_progress_bar=True)
+
+        # 정규화
+        semantic_batch = semantic_batch / np.linalg.norm(semantic_batch, axis=1, keepdims=True)
+        emotional_batch = emotional_batch / np.linalg.norm(emotional_batch, axis=1, keepdims=True)
+        multilingual_batch = multilingual_batch / np.linalg.norm(multilingual_batch, axis=1, keepdims=True)
+
+        return {
+            'semantic': semantic_batch,
+            'emotional': emotional_batch,
+            'multilingual': multilingual_batch
+        }
+
+    def save_cache(self, filepath: str):
+        """캐시 저장"""
+        with open(filepath, 'wb') as f:
+            pickle.dump(self.cache, f)
+        print(f"💾 캐시 저장 완료: {filepath}")
+
+    def load_cache(self, filepath: str):
+        """캐시 로드"""
+        with open(filepath, 'rb') as f:
+            self.cache = pickle.load(f)
+        print(f"📂 캐시 로드 완료: {len(self.cache)}개 항목")
+```
+
+### 벡터 인덱싱 (FAISS)
+
+**목적**: 50,000개 노드에서 빠른 유사도 검색
+
+```python
+# scripts/embeddings/vector_index.py
+
+import faiss
+import numpy as np
+from typing import List, Tuple
+
+class VectorIndex:
+    """FAISS 기반 벡터 인덱스"""
+
+    def __init__(self, dimension: int = 768):
+        self.dimension = dimension
+
+        # FAISS 인덱스 생성 (Inner Product = 코사인 유사도)
+        self.index = faiss.IndexFlatIP(dimension)
+
+        # ID 매핑
+        self.id_to_idx = {}  # node_id -> index
+        self.idx_to_id = {}  # index -> node_id
+
+        self.next_idx = 0
+
+    def add_vector(self, node_id: str, vector: np.ndarray):
+        """벡터 추가"""
+
+        # 정규화 확인
+        if np.linalg.norm(vector) - 1.0 > 1e-6:
+            vector = vector / np.linalg.norm(vector)
+
+        # 인덱스에 추가
+        self.index.add(vector.reshape(1, -1))
+
+        # 매핑 저장
+        self.id_to_idx[node_id] = self.next_idx
+        self.idx_to_id[self.next_idx] = node_id
+
+        self.next_idx += 1
+
+    def batch_add(self, node_ids: List[str], vectors: np.ndarray):
+        """배치 추가"""
+
+        # 정규화
+        norms = np.linalg.norm(vectors, axis=1, keepdims=True)
+        vectors = vectors / norms
+
+        # 인덱스에 추가
+        self.index.add(vectors)
+
+        # 매핑 저장
+        for node_id in node_ids:
+            self.id_to_idx[node_id] = self.next_idx
+            self.idx_to_id[self.next_idx] = node_id
+            self.next_idx += 1
+
+    def search(self, query_vector: np.ndarray, k: int = 10) -> List[Tuple[str, float]]:
+        """가장 유사한 k개 노드 검색"""
+
+        # 정규화
+        query_vector = query_vector / np.linalg.norm(query_vector)
+
+        # 검색
+        distances, indices = self.index.search(query_vector.reshape(1, -1), k)
+
+        # 결과 변환
+        results = []
+        for idx, distance in zip(indices[0], distances[0]):
+            if idx in self.idx_to_id:
+                node_id = self.idx_to_id[idx]
+                similarity = float(distance)  # Inner Product = 코사인 유사도
+                results.append((node_id, similarity))
+
+        return results
+
+    def save(self, filepath: str):
+        """인덱스 저장"""
+        faiss.write_index(self.index, filepath)
+
+        # 매핑 저장
+        import pickle
+        with open(filepath + '.mapping', 'wb') as f:
+            pickle.dump((self.id_to_idx, self.idx_to_id, self.next_idx), f)
+
+        print(f"💾 인덱스 저장 완료: {filepath}")
+
+    def load(self, filepath: str):
+        """인덱스 로드"""
+        self.index = faiss.read_index(filepath)
+
+        # 매핑 로드
+        import pickle
+        with open(filepath + '.mapping', 'rb') as f:
+            self.id_to_idx, self.idx_to_id, self.next_idx = pickle.load(f)
+
+        print(f"📂 인덱스 로드 완료: {self.next_idx}개 벡터")
+```
+
+---
+
+## 2.4 NAS 저장소 설계
+
+### 폴더 구조
+
+```
+/Volumes/work-sync/project/ideamemo/
+├── nodes/                          # 노드 데이터
+│   ├── famous-quote/
+│   │   ├── en/
+│   │   │   ├── batch_0001.json     # 1,000개씩
+│   │   │   ├── batch_0002.json
+│   │   │   └── ...
+│   │   └── ko/
+│   │       ├── batch_0001.json
+│   │       └── ...
+│   ├── book/
+│   │   ├── classic/
+│   │   ├── self-help/
+│   │   └── philosophy/
+│   ├── movie/
+│   ├── proverb/
+│   ├── academic/
+│   ├── web/
+│   ├── essay/
+│   ├── poem/
+│   ├── drama/
+│   └── animation/
+│
+├── edges/                          # 엣지 데이터
+│   ├── semantic/                   # 의미적 관계
+│   ├── emotional/                  # 감정적 관계
+│   ├── causal/                     # 인과 관계
+│   └── metaphorical/               # 은유적 관계
+│
+├── embeddings/                     # 임베딩 벡터
+│   ├── semantic/
+│   │   ├── vectors.faiss           # FAISS 인덱스
+│   │   └── vectors.faiss.mapping   # ID 매핑
+│   ├── emotional/
+│   └── multilingual/
+│
+├── indexes/                        # 메타 인덱스
+│   ├── master_index.json           # 전체 노드 목록
+│   ├── category_index.json         # 카테고리별 통계
+│   ├── keyword_index.json          # 키워드 역색인
+│   ├── frame_index.json            # 프레임별 노드
+│   └── metaphor_index.json         # 은유별 노드
+│
+├── quality/                        # 품질 관리
+│   ├── validation_reports/
+│   ├── curated_nodes.json          # 전문가 검증 완료
+│   └── flagged_nodes.json          # 문제 있는 노드
+│
+└── versions/                       # 버전 관리
+    ├── v1.0/
+    ├── v1.1/
+    └── v2.0/
+```
+
+### 데이터 파일 포맷
+
+#### nodes/famous-quote/en/batch_0001.json
+```json
+{
+  "batch_info": {
+    "version": "2.0",
+    "created_at": "2025-11-10T12:00:00Z",
+    "node_count": 1000,
+    "category": "famous-quote",
+    "language": "en"
+  },
+  "nodes": [
+    {
+      "id": "fq_en_001",
+      "content": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+      "source": {
+        "author": "Aristotle",
+        "year": -350,
+        "verified": true
+      },
+      "linguistic": {
+        "primary_frame": "identity_formation",
+        "metaphors": [
+          {
+            "system": "identity_is_construction",
+            "strength": 0.85
+          }
+        ]
+      },
+      "embeddings": {
+        "semantic": [...],
+        "emotional": [...],
+        "pragmatic": [...]
+      }
+    },
+    ...
+  ]
+}
+```
+
+#### edges/semantic/batch_0001.json
+```json
+{
+  "batch_info": {
+    "version": "2.0",
+    "created_at": "2025-11-10T14:00:00Z",
+    "edge_count": 5000,
+    "relation_type": "semantic"
+  },
+  "edges": [
+    {
+      "id": "edge_001",
+      "from": "fq_en_001",
+      "to": "fq_en_042",
+      "relation_type": "similar_to",
+      "strength": 0.87,
+      "dimensions": {
+        "semantic_similarity": 0.92,
+        "emotional_resonance": 0.75
+      },
+      "reasoning": {
+        "automatic": "Both quotes discuss habit formation and identity",
+        "evidence": ["shared frame: habit_formation", "similar keywords"]
+      }
+    },
+    ...
+  ]
+}
+```
+
+#### indexes/master_index.json
+```json
+{
+  "version": "2.0",
+  "updated_at": "2025-11-10T20:00:00Z",
+  "stats": {
+    "total_nodes": 52000,
+    "total_edges": 548000,
+    "categories": {
+      "famous-quote": 10000,
+      "book": 8000,
+      "movie": 7000,
+      "academic": 6000,
+      "proverb": 5000,
+      "web": 5000,
+      "essay": 4000,
+      "poem": 3000,
+      "drama": 2000,
+      "animation": 2000
+    }
+  },
+  "files": [
+    {
+      "path": "nodes/famous-quote/en/batch_0001.json",
+      "node_count": 1000,
+      "size_mb": 15.3,
+      "checksum": "sha256:abc123..."
+    },
+    ...
+  ]
+}
+```
+
+---
+
+**Part 2 완료! 이제 Part 3 작성 중...**
 
