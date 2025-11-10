@@ -61,7 +61,12 @@ async function loadLibraryCategory(category: IdeaType): Promise<LibraryItem[]> {
   }
 
   try {
-    const response = await fetch(`/data/knowledge-base/library/${fileName}`);
+    // public 폴더는 자동으로 base path 적용됨
+    const url = `./data/knowledge-base/library/${fileName}`;
+
+    console.log(`🔄 ${category} 로딩 중: ${url}`);
+    const response = await fetch(url);
+
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }

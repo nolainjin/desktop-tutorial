@@ -13,6 +13,7 @@ import { Connection } from './types/connection';
 import { db } from './db/schema';
 import { GraphNode } from './features/graph/GraphBuilder';
 import { initAutoSync } from './features/storage/AutoSync';
+import { preloadAllLibraries } from './features/search/api/KnowledgeLibraryAPI';
 
 type View = 'list' | 'editor' | 'detail';
 type Tab = 'list' | 'graph' | 'data';
@@ -34,6 +35,11 @@ function App() {
 
     // 자동 동기화 초기화
     initAutoSync();
+
+    // 🆕 52,000개 지식 라이브러리 로드 (백그라운드)
+    preloadAllLibraries().catch(err => {
+      console.error('라이브러리 로드 실패:', err);
+    });
   },[loadMemos]);
 
   const loadAllIdeas=async()=>{
