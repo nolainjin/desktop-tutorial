@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom';
-import { expect, afterEach, vi } from 'vitest';
+import { afterEach, vi } from 'vitest';
 import { cleanup } from '@testing-library/react';
 
 // Cleanup after each test case (e.g. clearing jsdom)
@@ -14,7 +14,7 @@ const indexedDB = {
   databases: vi.fn(),
 };
 
-global.indexedDB = indexedDB as any;
+(globalThis as any).indexedDB = indexedDB;
 
 // Mock matchMedia
 Object.defineProperty(window, 'matchMedia', {
@@ -32,7 +32,7 @@ Object.defineProperty(window, 'matchMedia', {
 });
 
 // Mock IntersectionObserver
-global.IntersectionObserver = class IntersectionObserver {
+(globalThis as any).IntersectionObserver = class IntersectionObserver {
   constructor() {}
   disconnect() {}
   observe() {}
@@ -40,4 +40,4 @@ global.IntersectionObserver = class IntersectionObserver {
     return [];
   }
   unobserve() {}
-} as any;
+};
