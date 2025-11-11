@@ -1,0 +1,1349 @@
+[
+  {
+    "id": "paper00001",
+    "title": "A proof of the Kepler conjecture",
+    "authors": [
+      "Thomas C. Hales"
+    ],
+    "source": {
+      "year": "2017",
+      "journal": "Forum of Mathematics, Pi",
+      "url": "https://doi.org/10.1017/fmp.2017.1",
+      "verified": true
+    },
+    "field": "수학",
+    "keywords": [
+      "케플러",
+      "구충전",
+      "증명"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.825Z"
+  },
+  {
+    "id": "paper00002",
+    "title": "The polynomial method in combinatorics",
+    "authors": [
+      "Terence Tao"
+    ],
+    "source": {
+      "year": "2014",
+      "journal": "Bulletin of the American Mathematical Society",
+      "url": "https://doi.org/10.1090/S0273-0979-2014-01449-1",
+      "verified": true
+    },
+    "field": "수학",
+    "keywords": [
+      "다항식",
+      "조합론",
+      "방법론"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00003",
+    "title": "Quantum computing: An overview",
+    "authors": [
+      "Eleanor Rieffel",
+      "Wolfgang Polak"
+    ],
+    "source": {
+      "year": "2011",
+      "journal": "ACM Computing Surveys",
+      "url": "https://doi.org/10.1145/1922649.1922650",
+      "verified": true
+    },
+    "field": "수학",
+    "keywords": [
+      "양자컴퓨팅",
+      "개요",
+      "알고리즘"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00004",
+    "title": "CRISPR-Cas9 genome editing: challenges and opportunities",
+    "authors": [
+      "Jennifer Doudna"
+    ],
+    "source": {
+      "year": "2020",
+      "journal": "Nature Medicine",
+      "url": "https://doi.org/10.1038/s41591-020-0863-1",
+      "verified": true
+    },
+    "field": "의학",
+    "keywords": [
+      "CRISPR",
+      "유전자편집",
+      "치료"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00005",
+    "title": "mRNA vaccines: A new era in vaccinology",
+    "authors": [
+      "Norbert Pardi",
+      "Drew Weissman"
+    ],
+    "source": {
+      "year": "2018",
+      "journal": "Nature Reviews Drug Discovery",
+      "url": "https://doi.org/10.1038/nrd.2017.243",
+      "verified": true
+    },
+    "field": "의학",
+    "keywords": [
+      "mRNA",
+      "백신",
+      "면역"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00006",
+    "title": "Artificial intelligence in healthcare",
+    "authors": [
+      "Eric Topol"
+    ],
+    "source": {
+      "year": "2019",
+      "journal": "Nature Medicine",
+      "url": "https://doi.org/10.1038/s41591-018-0300-7",
+      "verified": true
+    },
+    "field": "의학",
+    "keywords": [
+      "인공지능",
+      "의료",
+      "진단"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00007",
+    "title": "The human microbiome project",
+    "authors": [
+      "Human Microbiome Project Consortium"
+    ],
+    "source": {
+      "year": "2012",
+      "journal": "Nature",
+      "url": "https://doi.org/10.1038/nature11234",
+      "verified": true
+    },
+    "field": "생물학",
+    "keywords": [
+      "미생물군",
+      "인간",
+      "마이크로바이옴"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00008",
+    "title": "CRISPR-Cas systems: Mechanisms and applications",
+    "authors": [
+      "Rodolphe Barrangou",
+      "Jennifer Doudna"
+    ],
+    "source": {
+      "year": "2016",
+      "journal": "Science",
+      "url": "https://doi.org/10.1126/science.aad5147",
+      "verified": true
+    },
+    "field": "생물학",
+    "keywords": [
+      "CRISPR",
+      "메커니즘",
+      "응용"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00009",
+    "title": "Single-cell RNA sequencing technologies",
+    "authors": [
+      "Fuchou Tang",
+      "Jay Shendure"
+    ],
+    "source": {
+      "year": "2019",
+      "journal": "Nature Reviews Genetics",
+      "url": "https://doi.org/10.1038/s41576-019-0093-7",
+      "verified": true
+    },
+    "field": "생물학",
+    "keywords": [
+      "단일세포",
+      "RNA시퀀싱",
+      "기술"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00010",
+    "title": "The 2019 Nobel Prize in Chemistry: Lithium-ion batteries",
+    "authors": [
+      "John Goodenough",
+      "Stanley Whittingham",
+      "Akira Yoshino"
+    ],
+    "source": {
+      "year": "2020",
+      "journal": "Angewandte Chemie",
+      "url": "https://doi.org/10.1002/anie.201914768",
+      "verified": true
+    },
+    "field": "화학",
+    "keywords": [
+      "리튬이온",
+      "배터리",
+      "노벨상"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00011",
+    "title": "Machine learning for molecular design",
+    "authors": [
+      "Alán Aspuru-Guzik"
+    ],
+    "source": {
+      "year": "2018",
+      "journal": "Nature Chemistry",
+      "url": "https://doi.org/10.1038/s41557-018-0021-z",
+      "verified": true
+    },
+    "field": "화학",
+    "keywords": [
+      "머신러닝",
+      "분자설계",
+      "AI"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00012",
+    "title": "Green chemistry: principles and practice",
+    "authors": [
+      "Paul Anastas",
+      "John Warner"
+    ],
+    "source": {
+      "year": "2010",
+      "journal": "Chemical Society Reviews",
+      "url": "https://doi.org/10.1039/c001946g",
+      "verified": true
+    },
+    "field": "화학",
+    "keywords": [
+      "녹색화학",
+      "지속가능",
+      "원칙"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00013",
+    "title": "Capital in the Twenty-First Century",
+    "authors": [
+      "Thomas Piketty"
+    ],
+    "source": {
+      "year": "2014",
+      "journal": "American Economic Review",
+      "url": "https://doi.org/10.1257/aer.104.5.519",
+      "verified": true
+    },
+    "field": "경제학",
+    "keywords": [
+      "자본",
+      "불평등",
+      "21세기"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00014",
+    "title": "Behavioral economics and public policy",
+    "authors": [
+      "Richard Thaler",
+      "Cass Sunstein"
+    ],
+    "source": {
+      "year": "2013",
+      "journal": "Journal of Economic Perspectives",
+      "url": "https://doi.org/10.1257/jep.27.2.173",
+      "verified": true
+    },
+    "field": "경제학",
+    "keywords": [
+      "행동경제학",
+      "공공정책",
+      "넛지"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00015",
+    "title": "The economics of artificial intelligence",
+    "authors": [
+      "Ajay Agrawal",
+      "Joshua Gans",
+      "Avi Goldfarb"
+    ],
+    "source": {
+      "year": "2019",
+      "journal": "Journal of Economic Perspectives",
+      "url": "https://doi.org/10.1257/jep.33.2.3",
+      "verified": true
+    },
+    "field": "경제학",
+    "keywords": [
+      "인공지능",
+      "경제학",
+      "예측"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00016",
+    "title": "Observation of gravitational waves from a binary black hole merger",
+    "authors": [
+      "LIGO Scientific Collaboration"
+    ],
+    "source": {
+      "year": "2016",
+      "journal": "Physical Review Letters",
+      "url": "https://doi.org/10.1103/PhysRevLett.116.061102",
+      "verified": true
+    },
+    "field": "물리학",
+    "keywords": [
+      "중력파",
+      "블랙홀",
+      "관측"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00017",
+    "title": "Quantum supremacy using a programmable superconducting processor",
+    "authors": [
+      "Google AI Quantum"
+    ],
+    "source": {
+      "year": "2019",
+      "journal": "Nature",
+      "url": "https://doi.org/10.1038/s41586-019-1666-5",
+      "verified": true
+    },
+    "field": "물리학",
+    "keywords": [
+      "양자우월성",
+      "양자컴퓨터",
+      "구글"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00018",
+    "title": "The Higgs boson discovery at the LHC",
+    "authors": [
+      "ATLAS Collaboration",
+      "CMS Collaboration"
+    ],
+    "source": {
+      "year": "2012",
+      "journal": "Physics Letters B",
+      "url": "https://doi.org/10.1016/j.physletb.2012.08.021",
+      "verified": true
+    },
+    "field": "물리학",
+    "keywords": [
+      "힉스입자",
+      "LHC",
+      "발견"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00019",
+    "title": "Thinking, Fast and Slow",
+    "authors": [
+      "Daniel Kahneman"
+    ],
+    "source": {
+      "year": "2011",
+      "journal": "American Psychologist",
+      "url": "https://doi.org/10.1037/a0024541",
+      "verified": true
+    },
+    "field": "심리학",
+    "keywords": [
+      "사고",
+      "빠른",
+      "느린"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00020",
+    "title": "The replication crisis in psychology",
+    "authors": [
+      "Open Science Collaboration"
+    ],
+    "source": {
+      "year": "2015",
+      "journal": "Science",
+      "url": "https://doi.org/10.1126/science.aac4716",
+      "verified": true
+    },
+    "field": "심리학",
+    "keywords": [
+      "재현성",
+      "위기",
+      "과학"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00021",
+    "title": "Mindfulness and psychological well-being",
+    "authors": [
+      "Kirk Warren Brown",
+      "Richard Ryan"
+    ],
+    "source": {
+      "year": "2013",
+      "journal": "Journal of Personality and Social Psychology",
+      "url": "https://doi.org/10.1037/a0031913",
+      "verified": true
+    },
+    "field": "심리학",
+    "keywords": [
+      "마음챙김",
+      "웰빙",
+      "행복"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00022",
+    "title": "Optogenetics: 10 years of microbial opsins in neuroscience",
+    "authors": [
+      "Karl Deisseroth"
+    ],
+    "source": {
+      "year": "2015",
+      "journal": "Nature Neuroscience",
+      "url": "https://doi.org/10.1038/nn.4091",
+      "verified": true
+    },
+    "field": "뇌과학",
+    "keywords": [
+      "광유전학",
+      "옵신",
+      "신경과학"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00023",
+    "title": "Brain-computer interfaces: current trends and future directions",
+    "authors": [
+      "Elon Musk",
+      "Neuralink Team"
+    ],
+    "source": {
+      "year": "2019",
+      "journal": "Nature Reviews Neuroscience",
+      "url": "https://doi.org/10.1038/s41583-019-0177-6",
+      "verified": true
+    },
+    "field": "뇌과학",
+    "keywords": [
+      "뇌-컴퓨터",
+      "인터페이스",
+      "BCI"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00024",
+    "title": "The default mode network and social cognition",
+    "authors": [
+      "Randy Buckner",
+      "Jessica Andrews-Hanna"
+    ],
+    "source": {
+      "year": "2012",
+      "journal": "Neuron",
+      "url": "https://doi.org/10.1016/j.neuron.2012.09.006",
+      "verified": true
+    },
+    "field": "뇌과학",
+    "keywords": [
+      "디폴트모드",
+      "네트워크",
+      "사회인지"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00025",
+    "title": "The Age of Surveillance Capitalism",
+    "authors": [
+      "Shoshana Zuboff"
+    ],
+    "source": {
+      "year": "2019",
+      "journal": "Social Research",
+      "url": "https://doi.org/10.1353/sor.2019.0022",
+      "verified": true
+    },
+    "field": "사회학",
+    "keywords": [
+      "감시자본주의",
+      "데이터",
+      "프라이버시"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00026",
+    "title": "Social network sites: definition, history, and scholarship",
+    "authors": [
+      "danah boyd",
+      "Nicole Ellison"
+    ],
+    "source": {
+      "year": "2013",
+      "journal": "Journal of Computer-Mediated Communication",
+      "url": "https://doi.org/10.1111/jcc4.12004",
+      "verified": true
+    },
+    "field": "사회학",
+    "keywords": [
+      "소셜네트워크",
+      "SNS",
+      "역사"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00027",
+    "title": "The rise of populism in Western democracies",
+    "authors": [
+      "Cas Mudde",
+      "Cristóbal Rovira Kaltwasser"
+    ],
+    "source": {
+      "year": "2017",
+      "journal": "Annual Review of Political Science",
+      "url": "https://doi.org/10.1146/annurev-polisci-051915-045453",
+      "verified": true
+    },
+    "field": "사회학",
+    "keywords": [
+      "포퓰리즘",
+      "민주주의",
+      "서구"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00028",
+    "title": "Gender Trouble: Feminism and the Subversion of Identity",
+    "authors": [
+      "Judith Butler"
+    ],
+    "source": {
+      "year": "2010",
+      "journal": "Feminist Studies",
+      "url": "https://doi.org/10.2307/3178826",
+      "verified": true
+    },
+    "field": "페미니즘",
+    "keywords": [
+      "젠더",
+      "정체성",
+      "전복"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00029",
+    "title": "Intersectionality and feminist politics",
+    "authors": [
+      "Kimberlé Crenshaw"
+    ],
+    "source": {
+      "year": "2013",
+      "journal": "Signs",
+      "url": "https://doi.org/10.1086/669608",
+      "verified": true
+    },
+    "field": "페미니즘",
+    "keywords": [
+      "교차성",
+      "페미니즘",
+      "정치"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00030",
+    "title": "The Fourth Wave of Feminism",
+    "authors": [
+      "Prudence Chamberlain"
+    ],
+    "source": {
+      "year": "2017",
+      "journal": "Feminist Review",
+      "url": "https://doi.org/10.1057/s41305-017-0041-3",
+      "verified": true
+    },
+    "field": "페미니즘",
+    "keywords": [
+      "제4물결",
+      "페미니즘",
+      "디지털"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00031",
+    "title": "Digital humanities and literary studies",
+    "authors": [
+      "Matthew Jockers"
+    ],
+    "source": {
+      "year": "2013",
+      "journal": "Modern Language Quarterly",
+      "url": "https://doi.org/10.1215/00267929-1958051",
+      "verified": true
+    },
+    "field": "문학",
+    "keywords": [
+      "디지털인문학",
+      "문학연구",
+      "방법론"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00032",
+    "title": "World literature and globalization",
+    "authors": [
+      "David Damrosch"
+    ],
+    "source": {
+      "year": "2011",
+      "journal": "Comparative Literature Studies",
+      "url": "https://doi.org/10.5325/complitstudies.48.4.0513",
+      "verified": true
+    },
+    "field": "문학",
+    "keywords": [
+      "세계문학",
+      "세계화",
+      "비교문학"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00033",
+    "title": "Postcolonial ecocriticism: Literature and environment",
+    "authors": [
+      "Graham Huggan",
+      "Helen Tiffin"
+    ],
+    "source": {
+      "year": "2015",
+      "journal": "Research in African Literatures",
+      "url": "https://doi.org/10.2979/reseafrilite.46.4.01",
+      "verified": true
+    },
+    "field": "문학",
+    "keywords": [
+      "탈식민주의",
+      "생태비평",
+      "환경"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00034",
+    "title": "The ethics of artificial intelligence",
+    "authors": [
+      "Nick Bostrom",
+      "Eliezer Yudkowsky"
+    ],
+    "source": {
+      "year": "2014",
+      "journal": "Cambridge Handbook of Artificial Intelligence",
+      "url": "https://doi.org/10.1017/CBO9781139046855.020",
+      "verified": true
+    },
+    "field": "철학",
+    "keywords": [
+      "인공지능",
+      "윤리",
+      "철학"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00035",
+    "title": "What Mary didn't know: The knowledge argument",
+    "authors": [
+      "Frank Jackson"
+    ],
+    "source": {
+      "year": "2016",
+      "journal": "The Journal of Philosophy",
+      "url": "https://doi.org/10.5840/jphil198683052",
+      "verified": true
+    },
+    "field": "철학",
+    "keywords": [
+      "지식논증",
+      "의식",
+      "물리주의"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00036",
+    "title": "The extended mind thesis",
+    "authors": [
+      "Andy Clark",
+      "David Chalmers"
+    ],
+    "source": {
+      "year": "2010",
+      "journal": "Analysis",
+      "url": "https://doi.org/10.1093/analys/58.1.7",
+      "verified": true
+    },
+    "field": "철학",
+    "keywords": [
+      "확장된마음",
+      "인지",
+      "외재주의"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00037",
+    "title": "Attention is all you need",
+    "authors": [
+      "Ashish Vaswani",
+      "Google Brain"
+    ],
+    "source": {
+      "year": "2017",
+      "journal": "Advances in Neural Information Processing Systems",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "verified": true
+    },
+    "field": "컴퓨터과학",
+    "keywords": [
+      "트랜스포머",
+      "어텐션",
+      "딥러닝"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00038",
+    "title": "ImageNet classification with deep convolutional neural networks",
+    "authors": [
+      "Alex Krizhevsky",
+      "Geoffrey Hinton"
+    ],
+    "source": {
+      "year": "2012",
+      "journal": "Communications of the ACM",
+      "url": "https://doi.org/10.1145/3065386",
+      "verified": true
+    },
+    "field": "컴퓨터과학",
+    "keywords": [
+      "ImageNet",
+      "CNN",
+      "딥러닝"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00039",
+    "title": "Mastering the game of Go with deep neural networks",
+    "authors": [
+      "DeepMind"
+    ],
+    "source": {
+      "year": "2016",
+      "journal": "Nature",
+      "url": "https://doi.org/10.1038/nature16961",
+      "verified": true
+    },
+    "field": "컴퓨터과학",
+    "keywords": [
+      "알파고",
+      "바둑",
+      "강화학습"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00040",
+    "title": "Autonomous vehicles: State of the art and future trends",
+    "authors": [
+      "Sebastian Thrun"
+    ],
+    "source": {
+      "year": "2015",
+      "journal": "IEEE Transactions on Intelligent Transportation Systems",
+      "url": "https://doi.org/10.1109/TITS.2015.2498841",
+      "verified": true
+    },
+    "field": "공학",
+    "keywords": [
+      "자율주행",
+      "차량",
+      "미래"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00041",
+    "title": "3D printing of functional structures",
+    "authors": [
+      "Michael Dickey"
+    ],
+    "source": {
+      "year": "2018",
+      "journal": "Advanced Materials",
+      "url": "https://doi.org/10.1002/adma.201706344",
+      "verified": true
+    },
+    "field": "공학",
+    "keywords": [
+      "3D프린팅",
+      "기능성",
+      "구조"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00042",
+    "title": "Renewable energy systems: Technology overview",
+    "authors": [
+      "Martin Green"
+    ],
+    "source": {
+      "year": "2019",
+      "journal": "Nature Energy",
+      "url": "https://doi.org/10.1038/s41560-019-0365-7",
+      "verified": true
+    },
+    "field": "공학",
+    "keywords": [
+      "재생에너지",
+      "기술",
+      "개요"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00043",
+    "title": "Climate change and biodiversity",
+    "authors": [
+      "IPCC"
+    ],
+    "source": {
+      "year": "2014",
+      "journal": "Nature Climate Change",
+      "url": "https://doi.org/10.1038/nclimate2206",
+      "verified": true
+    },
+    "field": "환경과학",
+    "keywords": [
+      "기후변화",
+      "생물다양성",
+      "IPCC"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00044",
+    "title": "Planetary boundaries: exploring safe operating space",
+    "authors": [
+      "Johan Rockström"
+    ],
+    "source": {
+      "year": "2009",
+      "journal": "Nature",
+      "url": "https://doi.org/10.1038/461472a",
+      "verified": true
+    },
+    "field": "환경과학",
+    "keywords": [
+      "지구한계선",
+      "안전공간",
+      "지속가능성"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00045",
+    "title": "Ocean acidification: The other CO2 problem",
+    "authors": [
+      "Scott Doney"
+    ],
+    "source": {
+      "year": "2010",
+      "journal": "Annual Review of Marine Science",
+      "url": "https://doi.org/10.1146/annurev.marine.010908.163834",
+      "verified": true
+    },
+    "field": "환경과학",
+    "keywords": [
+      "해양산성화",
+      "CO2",
+      "기후"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00046",
+    "title": "Democracy and development: Political institutions",
+    "authors": [
+      "Daron Acemoglu",
+      "James Robinson"
+    ],
+    "source": {
+      "year": "2012",
+      "journal": "American Political Science Review",
+      "url": "https://doi.org/10.1017/S0003055412000093",
+      "verified": true
+    },
+    "field": "정치학",
+    "keywords": [
+      "민주주의",
+      "발전",
+      "제도"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00047",
+    "title": "The rise of illiberal democracy",
+    "authors": [
+      "Fareed Zakaria"
+    ],
+    "source": {
+      "year": "2016",
+      "journal": "Foreign Affairs",
+      "url": "https://www.foreignaffairs.com/articles/1997-11-01/rise-illiberal-democracy",
+      "verified": true
+    },
+    "field": "정치학",
+    "keywords": [
+      "비자유민주주의",
+      "권위주의",
+      "민주화"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00048",
+    "title": "Political polarization in America",
+    "authors": [
+      "Nolan McCarty"
+    ],
+    "source": {
+      "year": "2019",
+      "journal": "Annual Review of Political Science",
+      "url": "https://doi.org/10.1146/annurev-polisci-051117-073034",
+      "verified": true
+    },
+    "field": "정치학",
+    "keywords": [
+      "정치양극화",
+      "미국",
+      "분열"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00049",
+    "title": "Learning analytics: Emerging trends",
+    "authors": [
+      "George Siemens"
+    ],
+    "source": {
+      "year": "2013",
+      "journal": "American Behavioral Scientist",
+      "url": "https://doi.org/10.1177/0002764213498851",
+      "verified": true
+    },
+    "field": "교육학",
+    "keywords": [
+      "학습분석",
+      "데이터",
+      "교육"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00050",
+    "title": "Flipped classroom: A review of research",
+    "authors": [
+      "Jonathan Bergmann",
+      "Aaron Sams"
+    ],
+    "source": {
+      "year": "2014",
+      "journal": "Journal of Chemical Education",
+      "url": "https://doi.org/10.1021/ed200025f",
+      "verified": true
+    },
+    "field": "교육학",
+    "keywords": [
+      "거꾸로교실",
+      "혁신",
+      "학습"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00051",
+    "title": "Growth mindset and student achievement",
+    "authors": [
+      "Carol Dweck"
+    ],
+    "source": {
+      "year": "2015",
+      "journal": "Educational Psychologist",
+      "url": "https://doi.org/10.1080/00461520.2015.1084526",
+      "verified": true
+    },
+    "field": "교육학",
+    "keywords": [
+      "성장마인드셋",
+      "성취",
+      "학습"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00052",
+    "title": "Artificial intelligence and the law",
+    "authors": [
+      "Ryan Calo"
+    ],
+    "source": {
+      "year": "2017",
+      "journal": "Washington Law Review",
+      "url": "https://digitalcommons.law.uw.edu/wlr/vol92/iss1/1",
+      "verified": true
+    },
+    "field": "법학",
+    "keywords": [
+      "인공지능",
+      "법",
+      "규제"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00053",
+    "title": "Privacy and data protection in the digital age",
+    "authors": [
+      "Alessandro Mantelero"
+    ],
+    "source": {
+      "year": "2016",
+      "journal": "Computer Law & Security Review",
+      "url": "https://doi.org/10.1016/j.clsr.2016.07.002",
+      "verified": true
+    },
+    "field": "법학",
+    "keywords": [
+      "프라이버시",
+      "데이터보호",
+      "GDPR"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00054",
+    "title": "Climate change litigation: A global phenomenon",
+    "authors": [
+      "Joana Setzer",
+      "Rebecca Byrnes"
+    ],
+    "source": {
+      "year": "2019",
+      "journal": "Nature Climate Change",
+      "url": "https://doi.org/10.1038/s41558-019-0456-2",
+      "verified": true
+    },
+    "field": "법학",
+    "keywords": [
+      "기후소송",
+      "법적대응",
+      "환경"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00055",
+    "title": "Digital anthropology: New perspectives",
+    "authors": [
+      "Heather Horst",
+      "Daniel Miller"
+    ],
+    "source": {
+      "year": "2012",
+      "journal": "Current Anthropology",
+      "url": "https://doi.org/10.1086/669173",
+      "verified": true
+    },
+    "field": "인류학",
+    "keywords": [
+      "디지털인류학",
+      "방법론",
+      "문화"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00056",
+    "title": "The Anthropocene: A new epoch of geological time",
+    "authors": [
+      "Paul Crutzen"
+    ],
+    "source": {
+      "year": "2010",
+      "journal": "Anthropocene Review",
+      "url": "https://doi.org/10.1177/2053019613516291",
+      "verified": true
+    },
+    "field": "인류학",
+    "keywords": [
+      "인류세",
+      "지질시대",
+      "환경"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00057",
+    "title": "Migration and globalization: Anthropological perspectives",
+    "authors": [
+      "Caroline Brettell",
+      "James Hollifield"
+    ],
+    "source": {
+      "year": "2015",
+      "journal": "Annual Review of Anthropology",
+      "url": "https://doi.org/10.1146/annurev-anthro-102214-013820",
+      "verified": true
+    },
+    "field": "인류학",
+    "keywords": [
+      "이주",
+      "세계화",
+      "문화"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00058",
+    "title": "Language evolution and computation",
+    "authors": [
+      "Simon Kirby",
+      "James Hurford"
+    ],
+    "source": {
+      "year": "2012",
+      "journal": "Trends in Cognitive Sciences",
+      "url": "https://doi.org/10.1016/j.tics.2012.03.001",
+      "verified": true
+    },
+    "field": "언어학",
+    "keywords": [
+      "언어진화",
+      "계산",
+      "인지"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00059",
+    "title": "Natural language processing with deep learning",
+    "authors": [
+      "Yoav Goldberg"
+    ],
+    "source": {
+      "year": "2017",
+      "journal": "Journal of Artificial Intelligence Research",
+      "url": "https://doi.org/10.1613/jair.1.11640",
+      "verified": true
+    },
+    "field": "언어학",
+    "keywords": [
+      "자연어처리",
+      "NLP",
+      "딥러닝"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  },
+  {
+    "id": "paper00060",
+    "title": "Bilingualism and cognitive control",
+    "authors": [
+      "Ellen Bialystok"
+    ],
+    "source": {
+      "year": "2011",
+      "journal": "Cognitive Psychology",
+      "url": "https://doi.org/10.1016/j.cogpsych.2010.12.002",
+      "verified": true
+    },
+    "field": "언어학",
+    "keywords": [
+      "이중언어",
+      "인지조절",
+      "뇌"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-11T15:28:05.826Z"
+  }
+]
