@@ -1,1 +1,3062 @@
-[]
+[
+  {
+    "id": "an00001",
+    "content": "계속 헤엄쳐",
+    "source": {
+      "title": "니모를 찾아서",
+      "year": "2003",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "인내",
+      "지속",
+      "희망"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.446Z"
+  },
+  {
+    "id": "an00002",
+    "content": "누구나 요리할 수 있어",
+    "source": {
+      "title": "라따뚜이",
+      "year": "2007",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가능성",
+      "재능",
+      "평등"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00003",
+    "content": "사랑을 찾아",
+    "source": {
+      "title": "월-E",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "로봇",
+      "순수"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00004",
+    "content": "베이맥스",
+    "source": {
+      "title": "빅 히어로",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "로봇",
+      "치유",
+      "우정"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00005",
+    "content": "날아",
+    "source": {
+      "title": "빅 히어로",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "비행",
+      "영웅",
+      "팀"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00006",
+    "content": "악당이 아니야",
+    "source": {
+      "title": "주먹왕 랄프",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "변화",
+      "영웅"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00007",
+    "content": "인터넷 세계",
+    "source": {
+      "title": "주먹왕 랄프 2",
+      "year": "2018",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "인터넷",
+      "모험",
+      "우정"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00008",
+    "content": "바다를 건너",
+    "source": {
+      "title": "모아나",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모험",
+      "운명",
+      "용기"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00009",
+    "content": "과거는 아플 수 있어. 하지만 내 생각엔 과거에서 도망칠 수도, 과거로부터 배울 수도 있어",
+    "source": {
+      "title": "라이온 킹",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "과거",
+      "배움",
+      "성장"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00010",
+    "content": "하쿠나 마타타",
+    "source": {
+      "title": "라이온 킹",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "걱정없이",
+      "철학",
+      "긍정"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00011",
+    "content": "기억해, 넌 왕의 아들이야",
+    "source": {
+      "title": "라이온 킹",
+      "year": "1994",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "운명",
+      "가족"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00012",
+    "content": "엄마가 영웅",
+    "source": {
+      "title": "인크레더블 2",
+      "year": "2018",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가족",
+      "영웅",
+      "역할"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00013",
+    "content": "무한한 우주 저 너머로!",
+    "source": {
+      "title": "토이 스토리",
+      "year": "1995",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모험",
+      "무한",
+      "우주"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00014",
+    "content": "친구가 있어",
+    "source": {
+      "title": "토이 스토리",
+      "year": "1995",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "우정",
+      "동료",
+      "함께"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00015",
+    "content": "장난감이야",
+    "source": {
+      "title": "토이 스토리",
+      "year": "1995",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "역할",
+      "현실"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00016",
+    "content": "우디를 구해",
+    "source": {
+      "title": "토이 스토리 2",
+      "year": "1999",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "구출",
+      "우정",
+      "모험"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00017",
+    "content": "안녕",
+    "source": {
+      "title": "토이 스토리 3",
+      "year": "2010",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "이별",
+      "성장",
+      "추억"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00018",
+    "content": "새로운 주인",
+    "source": {
+      "title": "토이 스토리 4",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "변화",
+      "수용",
+      "이별"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00019",
+    "content": "부",
+    "source": {
+      "title": "몬스터 주식회사",
+      "year": "2001",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "이름",
+      "소녀",
+      "사랑"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00020",
+    "content": "친구가 됐어",
+    "source": {
+      "title": "몬스터 대학교",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "우정",
+      "시작",
+      "대학"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00021",
+    "content": "속도가 전부가 아니야",
+    "source": {
+      "title": "카",
+      "year": "2006",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "속도",
+      "우정",
+      "가치"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00022",
+    "content": "세계 대회",
+    "source": {
+      "title": "카 2",
+      "year": "2011",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "경쟁",
+      "스파이",
+      "모험"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00023",
+    "content": "삶의 의미",
+    "source": {
+      "title": "소울",
+      "year": "2020",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "의미",
+      "목적",
+      "영혼"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00024",
+    "content": "불꽃",
+    "source": {
+      "title": "소울",
+      "year": "2020",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "열정",
+      "목적",
+      "삶"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00025",
+    "content": "바다 괴물",
+    "source": {
+      "title": "루카",
+      "year": "2021",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "우정",
+      "차별"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00026",
+    "content": "변신해",
+    "source": {
+      "title": "턴",
+      "year": "2022",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "변신",
+      "감정",
+      "성장"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00027",
+    "content": "불과 물",
+    "source": {
+      "title": "엘리멘탈",
+      "year": "2023",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "원소",
+      "사랑",
+      "다름"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00028",
+    "content": "소원을 빌어",
+    "source": {
+      "title": "위시",
+      "year": "2023",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "소원",
+      "마법",
+      "꿈"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00029",
+    "content": "있는 그대로",
+    "source": {
+      "title": "겨울왕국",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "자기수용",
+      "해방",
+      "진실"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00030",
+    "content": "사랑은 문을 열어",
+    "source": {
+      "title": "겨울왕국",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "해방",
+      "연결"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00031",
+    "content": "여름을 좋아해",
+    "source": {
+      "title": "겨울왕국",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "유머",
+      "아이러니",
+      "꿈"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00032",
+    "content": "모험이 밖에 있어!",
+    "source": {
+      "title": "업",
+      "year": "2009",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모험",
+      "탐험",
+      "새로움"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00033",
+    "content": "파라다이스 폭포로",
+    "source": {
+      "title": "업",
+      "year": "2009",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "목표",
+      "꿈",
+      "여정"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00034",
+    "content": "슬픔도 괜찮아",
+    "source": {
+      "title": "인사이드 아웃",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "감정",
+      "수용",
+      "성장"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00035",
+    "content": "기쁨아",
+    "source": {
+      "title": "인사이드 아웃",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "감정",
+      "이름",
+      "정체성"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00036",
+    "content": "기억하는 사람이 있는 한 죽지 않는다",
+    "source": {
+      "title": "코코",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "기억",
+      "가족",
+      "영원"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00037",
+    "content": "음악은 인생이야",
+    "source": {
+      "title": "코코",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "음악",
+      "열정",
+      "가족"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00038",
+    "content": "누구나 무엇이든 될 수 있어",
+    "source": {
+      "title": "주토피아",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "꿈",
+      "가능성",
+      "평등"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00039",
+    "content": "토끼는 토끼를 토끼라고 불러도 돼",
+    "source": {
+      "title": "주토피아",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "차별",
+      "관계"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00040",
+    "content": "이름을 잃으면 돌아갈 길을 잃어",
+    "source": {
+      "title": "센과 치히로의 행방불명",
+      "year": "2001",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "기억",
+      "이름"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00041",
+    "content": "한 번 일어난 일은 잊지 않아",
+    "source": {
+      "title": "센과 치히로의 행방불명",
+      "year": "2001",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "기억",
+      "경험",
+      "성장"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00042",
+    "content": "나이는 숫자일 뿐",
+    "source": {
+      "title": "하울의 움직이는 성",
+      "year": "2004",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "나이",
+      "젊음",
+      "마음"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00043",
+    "content": "사랑해",
+    "source": {
+      "title": "하울의 움직이는 성",
+      "year": "2004",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "고백",
+      "진심"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00044",
+    "content": "살아라",
+    "source": {
+      "title": "모노노케 히메",
+      "year": "1997",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "생명",
+      "메시지",
+      "희망"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00045",
+    "content": "자연과 인간",
+    "source": {
+      "title": "모노노케 히메",
+      "year": "1997",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "공존",
+      "환경",
+      "균형"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00046",
+    "content": "발세!",
+    "source": {
+      "title": "천공의 성 라퓨타",
+      "year": "1986",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "주문",
+      "마법",
+      "전설"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00047",
+    "content": "하늘의 성",
+    "source": {
+      "title": "천공의 성 라퓨타",
+      "year": "1986",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "꿈",
+      "모험",
+      "전설"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00048",
+    "content": "날 수 있어",
+    "source": {
+      "title": "마녀 배달부 키키",
+      "year": "1989",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "비행",
+      "자유",
+      "능력"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00049",
+    "content": "마법을 잃었어",
+    "source": {
+      "title": "마녀 배달부 키키",
+      "year": "1989",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "상실",
+      "성장",
+      "극복"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00050",
+    "content": "날지 못하는 돼지는 그냥 돼지야",
+    "source": {
+      "title": "붉은 돼지",
+      "year": "1992",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "비행",
+      "꿈",
+      "정체성"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00051",
+    "content": "추억",
+    "source": {
+      "title": "추억은 방울방울",
+      "year": "1991",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "과거",
+      "회상",
+      "성장"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00052",
+    "content": "콘크리트 로드",
+    "source": {
+      "title": "귀를 기울이면",
+      "year": "1995",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "꿈",
+      "청춘",
+      "창작"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00053",
+    "content": "나를 믿어",
+    "source": {
+      "title": "귀를 기울이면",
+      "year": "1995",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "응원",
+      "믿음"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00054",
+    "content": "이름을 기억해",
+    "source": {
+      "title": "너의 이름은",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "기억",
+      "운명",
+      "사랑"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00055",
+    "content": "시간을 넘어",
+    "source": {
+      "title": "너의 이름은",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "시간",
+      "초월",
+      "만남"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00056",
+    "content": "비를 멈춰줘",
+    "source": {
+      "title": "날씨의 아이",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "날씨",
+      "능력",
+      "희생"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00057",
+    "content": "함께 있고 싶어",
+    "source": {
+      "title": "날씨의 아이",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "함께",
+      "선택"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00058",
+    "content": "문을 닫아야 해",
+    "source": {
+      "title": "스즈메의 문단속",
+      "year": "2022",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사명",
+      "재난",
+      "책임"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00059",
+    "content": "등가교환",
+    "source": {
+      "title": "강철의 연금술사",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "원칙",
+      "대가",
+      "법칙"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00060",
+    "content": "진리를 찾아",
+    "source": {
+      "title": "강철의 연금술사",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "진리",
+      "탐구",
+      "대가"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00061",
+    "content": "나는 포기하지 않아",
+    "source": {
+      "title": "나루토 더 무비",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "의지",
+      "끈기",
+      "닌자"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00062",
+    "content": "자유를 위해",
+    "source": {
+      "title": "원피스 필름 레드",
+      "year": "2022",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "자유",
+      "모험",
+      "해적"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00063",
+    "content": "동료야",
+    "source": {
+      "title": "원피스 필름 레드",
+      "year": "2022",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "우정",
+      "팀",
+      "믿음"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00064",
+    "content": "더 강해져",
+    "source": {
+      "title": "드래곤볼 슈퍼: 브로리",
+      "year": "2018",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "힘",
+      "성장",
+      "전투"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00065",
+    "content": "에바 탑승",
+    "source": {
+      "title": "에반게리온: 서",
+      "year": "2007",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "로봇",
+      "전투",
+      "사명"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00066",
+    "content": "인형사",
+    "source": {
+      "title": "공각기동대",
+      "year": "1995",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "AI",
+      "의식",
+      "정체성"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00067",
+    "content": "고스트란 무엇인가",
+    "source": {
+      "title": "공각기동대",
+      "year": "1995",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "영혼",
+      "질문",
+      "존재"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00068",
+    "content": "테츠오!",
+    "source": {
+      "title": "아키라",
+      "year": "1988",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "친구",
+      "부름",
+      "변이"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00069",
+    "content": "금전적인",
+    "source": {
+      "title": "아키라",
+      "year": "1988",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "초능력",
+      "파괴",
+      "미래"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00070",
+    "content": "포켓몬 get!",
+    "source": {
+      "title": "포켓몬스터 극장판",
+      "year": "1998",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "포획",
+      "모험",
+      "친구"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00071",
+    "content": "피카츄!",
+    "source": {
+      "title": "포켓몬스터 극장판",
+      "year": "1998",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "파트너",
+      "우정",
+      "전투"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00072",
+    "content": "진화해",
+    "source": {
+      "title": "디지몬 어드벤처",
+      "year": "2000",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "진화",
+      "성장",
+      "파트너"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00073",
+    "content": "액션가면",
+    "source": {
+      "title": "짱구는 못말려 극장판",
+      "year": "1993",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "영웅",
+      "어린이",
+      "유머"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00074",
+    "content": "도라에몽",
+    "source": {
+      "title": "도라에몽: 스탠바이미",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "친구",
+      "미래",
+      "도구"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00075",
+    "content": "어디든지 문",
+    "source": {
+      "title": "도라에몽: 스탠바이미",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "도구",
+      "마법",
+      "모험"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00076",
+    "content": "정의의 사나이",
+    "source": {
+      "title": "크레용 신짱 극장판",
+      "year": "2001",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정의",
+      "유머",
+      "가족"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00077",
+    "content": "어제는 역사고, 내일은 미스터리야. 하지만 오늘은 선물이야",
+    "source": {
+      "title": "쿵푸팬더",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "현재",
+      "선물",
+      "지혜"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00078",
+    "content": "용의 전사",
+    "source": {
+      "title": "쿵푸팬더",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "운명",
+      "선택",
+      "정체성"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00079",
+    "content": "비밀 재료는 없어",
+    "source": {
+      "title": "쿵푸팬더",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "진실",
+      "자신감",
+      "깨달음"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00080",
+    "content": "악당이 되겠어",
+    "source": {
+      "title": "슈퍼배드",
+      "year": "2010",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "악당",
+      "야망",
+      "유머"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00081",
+    "content": "미니언!",
+    "source": {
+      "title": "슈퍼배드",
+      "year": "2010",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "부하",
+      "유머",
+      "충성"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00082",
+    "content": "아빠가 됐어",
+    "source": {
+      "title": "슈퍼배드 2",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가족",
+      "변화",
+      "사랑"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00083",
+    "content": "형제를 찾아",
+    "source": {
+      "title": "슈퍼배드 3",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가족",
+      "유대",
+      "과거"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00084",
+    "content": "야생으로",
+    "source": {
+      "title": "마다가스카",
+      "year": "2005",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "자연",
+      "모험",
+      "적응"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00085",
+    "content": "춤춰!",
+    "source": {
+      "title": "마다가스카",
+      "year": "2005",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "유머",
+      "즐거움",
+      "자유"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00086",
+    "content": "아프리카로",
+    "source": {
+      "title": "마다가스카 2",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "고향",
+      "귀환",
+      "정체성"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00087",
+    "content": "늑대인간",
+    "source": {
+      "title": "하울링",
+      "year": "2009",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "두려움",
+      "수용"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00088",
+    "content": "악당에서 영웅으로",
+    "source": {
+      "title": "메가마인드",
+      "year": "2010",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "변화",
+      "정체성",
+      "선택"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00089",
+    "content": "믿음",
+    "source": {
+      "title": "라이즈 오브 가디언즈",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "믿음",
+      "수호자",
+      "어린이"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00090",
+    "content": "빠르게",
+    "source": {
+      "title": "터보",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "속도",
+      "꿈",
+      "도전"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00091",
+    "content": "집",
+    "source": {
+      "title": "홈",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가족",
+      "소속",
+      "이해"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00092",
+    "content": "노래해",
+    "source": {
+      "title": "트롤",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "음악",
+      "행복",
+      "긍정"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00093",
+    "content": "포옹의 시간",
+    "source": {
+      "title": "트롤",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "포옹",
+      "행복"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00094",
+    "content": "음악은 하나",
+    "source": {
+      "title": "트롤: 월드 투어",
+      "year": "2020",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "음악",
+      "화합",
+      "다양성"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00095",
+    "content": "비즈니스야",
+    "source": {
+      "title": "보스 베이비",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "경쟁",
+      "유머",
+      "형제"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00096",
+    "content": "가족이 최고야",
+    "source": {
+      "title": "보스 베이비 2",
+      "year": "2021",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가족",
+      "형제",
+      "사랑"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00097",
+    "content": "밖으로 나가",
+    "source": {
+      "title": "크루즈 패밀리",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모험",
+      "변화",
+      "가족"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00098",
+    "content": "새로운 세상",
+    "source": {
+      "title": "크루즈 패밀리",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "탐험",
+      "용기",
+      "적응"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00099",
+    "content": "더 나은 내일",
+    "source": {
+      "title": "크루즈 패밀리: 뉴 에이지",
+      "year": "2020",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "진보",
+      "가족",
+      "미래"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00100",
+    "content": "인간을 봤어",
+    "source": {
+      "title": "스몰풋",
+      "year": "2018",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "발견",
+      "진실",
+      "용기"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00101",
+    "content": "예티",
+    "source": {
+      "title": "애비",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "가족",
+      "모험"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00102",
+    "content": "바나나!",
+    "source": {
+      "title": "슈퍼배드 외전: 미니언즈",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "유머",
+      "미니언",
+      "음식"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00103",
+    "content": "보스를 찾아",
+    "source": {
+      "title": "슈퍼배드 외전: 미니언즈",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "목적",
+      "충성",
+      "모험"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00104",
+    "content": "주인을 기다려",
+    "source": {
+      "title": "마이펫의 이중생활",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "반려동물",
+      "충성",
+      "일상"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00105",
+    "content": "집에 혼자",
+    "source": {
+      "title": "마이펫의 이중생활",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "자유",
+      "모험",
+      "책임"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00106",
+    "content": "농장으로",
+    "source": {
+      "title": "마이펫의 이중생활 2",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모험",
+      "친구",
+      "용기"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00107",
+    "content": "무대에 서",
+    "source": {
+      "title": "노래하는 새",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "꿈",
+      "도전",
+      "음악"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00108",
+    "content": "쇼를 해야 해",
+    "source": {
+      "title": "노래하는 새",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "공연",
+      "열정",
+      "극복"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00109",
+    "content": "더 큰 무대로",
+    "source": {
+      "title": "노래하는 새 2",
+      "year": "2021",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "성장",
+      "도전",
+      "팀워크"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00110",
+    "content": "크리스마스를 훔쳐",
+    "source": {
+      "title": "그린치",
+      "year": "2018",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "변화",
+      "마음",
+      "사랑"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00111",
+    "content": "마음이 따뜻해졌어",
+    "source": {
+      "title": "그린치",
+      "year": "2018",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "변화",
+      "감동",
+      "크리스마스"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00112",
+    "content": "음식이 하늘에서",
+    "source": {
+      "title": "흐린 때때로 미트볼",
+      "year": "2009",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "발명",
+      "엉뚱함",
+      "과학"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00113",
+    "content": "음식 동물",
+    "source": {
+      "title": "흐린 때때로 미트볼 2",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모험",
+      "상상",
+      "창조"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00114",
+    "content": "괴물들의 호텔",
+    "source": {
+      "title": "호텔 트란실바니아",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "다름",
+      "수용",
+      "가족"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00115",
+    "content": "징잉!",
+    "source": {
+      "title": "호텔 트란실바니아",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "유머",
+      "변신",
+      "뱀파이어"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00116",
+    "content": "할아버지",
+    "source": {
+      "title": "호텔 트란실바니아 2",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가족",
+      "세대",
+      "사랑"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00117",
+    "content": "휴가를 떠나",
+    "source": {
+      "title": "호텔 트란실바니아 3",
+      "year": "2018",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "휴식",
+      "사랑",
+      "모험"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00118",
+    "content": "표현해",
+    "source": {
+      "title": "이모티콘 무비",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "감정",
+      "정체성",
+      "디지털"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00119",
+    "content": "파란색 작은 친구들",
+    "source": {
+      "title": "스머프",
+      "year": "2011",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "팀워크",
+      "우정",
+      "모험"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00120",
+    "content": "채소밭 전쟁",
+    "source": {
+      "title": "피터 래빗",
+      "year": "2018",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "경쟁",
+      "유머",
+      "모험"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00121",
+    "content": "세상으로",
+    "source": {
+      "title": "피터 래빗 2",
+      "year": "2021",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모험",
+      "정체성",
+      "선택"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00122",
+    "content": "빙하기",
+    "source": {
+      "title": "아이스 에이지",
+      "year": "2002",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "생존",
+      "우정",
+      "모험"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00123",
+    "content": "도토리!",
+    "source": {
+      "title": "아이스 에이지",
+      "year": "2002",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "집착",
+      "유머",
+      "목표"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00124",
+    "content": "빙하가 녹아",
+    "source": {
+      "title": "아이스 에이지 2",
+      "year": "2006",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "위기",
+      "생존",
+      "팀워크"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00125",
+    "content": "공룡 세계",
+    "source": {
+      "title": "아이스 에이지 3",
+      "year": "2009",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모험",
+      "가족",
+      "발견"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00126",
+    "content": "대륙 이동",
+    "source": {
+      "title": "아이스 에이지 4",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "변화",
+      "모험",
+      "가족"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00127",
+    "content": "우주로",
+    "source": {
+      "title": "아이스 에이지 5",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모험",
+      "위기",
+      "우주"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00128",
+    "content": "꿈을 포기하지 마",
+    "source": {
+      "title": "로봇",
+      "year": "2005",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "꿈",
+      "도전",
+      "발명"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00129",
+    "content": "작은 것도 소중해",
+    "source": {
+      "title": "호튼",
+      "year": "2008",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가치",
+      "보호",
+      "믿음"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00130",
+    "content": "브라질로",
+    "source": {
+      "title": "리오",
+      "year": "2011",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모험",
+      "자유",
+      "사랑"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00131",
+    "content": "날 수 없어",
+    "source": {
+      "title": "리오",
+      "year": "2011",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "한계",
+      "극복",
+      "성장"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00132",
+    "content": "아마존으로",
+    "source": {
+      "title": "리오 2",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가족",
+      "뿌리",
+      "모험"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00133",
+    "content": "싸우지 않아",
+    "source": {
+      "title": "페르디난드",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "평화",
+      "선택",
+      "용기"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00134",
+    "content": "꽃이 좋아",
+    "source": {
+      "title": "페르디난드",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "평화",
+      "자연",
+      "다름"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00135",
+    "content": "자유롭게 살고 싶어",
+    "source": {
+      "title": "마당을 나온 암탉",
+      "year": "2011",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "자유",
+      "꿈",
+      "모성"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00136",
+    "content": "엄마가 될 거야",
+    "source": {
+      "title": "마당을 나온 암탉",
+      "year": "2011",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모성",
+      "사랑",
+      "희생"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00137",
+    "content": "자유를 향해",
+    "source": {
+      "title": "언더독",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "자유",
+      "탈출",
+      "우정"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00138",
+    "content": "형제야",
+    "source": {
+      "title": "백두대간 곰 형제",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "형제",
+      "생존",
+      "자연"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00139",
+    "content": "친구들",
+    "source": {
+      "title": "뽀로로 극장판",
+      "year": "2013",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "우정",
+      "모험",
+      "어린이"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00140",
+    "content": "살아남아",
+    "source": {
+      "title": "점박이: 한반도의 공룡",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "생존",
+      "성장",
+      "공룡"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00141",
+    "content": "새로운 낙원",
+    "source": {
+      "title": "점박이: 한반도의 공룡 2",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모험",
+      "가족",
+      "생존"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00142",
+    "content": "마법 신발",
+    "source": {
+      "title": "레드슈즈",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "마법",
+      "변신",
+      "사랑"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00143",
+    "content": "좀비",
+    "source": {
+      "title": "서울역",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "공포",
+      "생존",
+      "사회"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00144",
+    "content": "누구나 마스크를 쓸 수 있어",
+    "source": {
+      "title": "스파이더맨: 뉴 유니버스",
+      "year": "2018",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "영웅",
+      "가능성",
+      "다양성"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00145",
+    "content": "차원을 넘어",
+    "source": {
+      "title": "스파이더맨: 뉴 유니버스",
+      "year": "2018",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "다중우주",
+      "팀워크",
+      "성장"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00146",
+    "content": "운명을 바꿔",
+    "source": {
+      "title": "스파이더맨: 어크로스 더 유니버스",
+      "year": "2023",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "운명",
+      "선택",
+      "자유의지"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00147",
+    "content": "모든 게 멋져",
+    "source": {
+      "title": "레고 무비",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "긍정",
+      "창조",
+      "팀워크"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00148",
+    "content": "평범한 게 특별해",
+    "source": {
+      "title": "레고 무비",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "자존감",
+      "가치",
+      "영웅"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00149",
+    "content": "함께 만들어",
+    "source": {
+      "title": "레고 무비 2",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "협력",
+      "창조",
+      "이해"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00150",
+    "content": "혼자가 아니야",
+    "source": {
+      "title": "레고 배트맨 무비",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "팀워크",
+      "가족",
+      "성장"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00151",
+    "content": "닌자의 길",
+    "source": {
+      "title": "레고 닌자고 무비",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "무술",
+      "성장",
+      "가족"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00152",
+    "content": "가족이 함께",
+    "source": {
+      "title": "미첼 가족과 기계 전쟁",
+      "year": "2021",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "가족",
+      "유대",
+      "모험"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00153",
+    "content": "기술 vs 인간",
+    "source": {
+      "title": "미첼 가족과 기계 전쟁",
+      "year": "2021",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "기술",
+      "인간성",
+      "균형"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00154",
+    "content": "북극을 찾아",
+    "source": {
+      "title": "롱웨이 노스",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모험",
+      "여정",
+      "발견"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00155",
+    "content": "선물을 전해",
+    "source": {
+      "title": "클라우스",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "선물",
+      "친절",
+      "크리스마스"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00156",
+    "content": "선행이 선행을 낳아",
+    "source": {
+      "title": "클라우스",
+      "year": "2019",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "선행",
+      "확산",
+      "변화"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00157",
+    "content": "늑대와 인간",
+    "source": {
+      "title": "울프워커스",
+      "year": "2020",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "공존",
+      "자연",
+      "마법"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00158",
+    "content": "바다의 비밀",
+    "source": {
+      "title": "송 오브 더 씨",
+      "year": "2014",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "전설",
+      "가족",
+      "마법"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00159",
+    "content": "용기 있는 소녀",
+    "source": {
+      "title": "브레드위너",
+      "year": "2017",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "용기",
+      "가족",
+      "생존"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00160",
+    "content": "이야기의 힘",
+    "source": {
+      "title": "쿠보와 전설의 악기",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "이야기",
+      "가족",
+      "모험"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00161",
+    "content": "기억해",
+    "source": {
+      "title": "쿠보와 전설의 악기",
+      "year": "2016",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "기억",
+      "가족",
+      "사랑"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00162",
+    "content": "다른 세계",
+    "source": {
+      "title": "코랄린",
+      "year": "2009",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "판타지",
+      "용기",
+      "가족"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00163",
+    "content": "진짜와 가짜",
+    "source": {
+      "title": "코랄린",
+      "year": "2009",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "진실",
+      "선택",
+      "용기"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00164",
+    "content": "크리스마스 타운",
+    "source": {
+      "title": "팀버튼의 크리스마스 악몽",
+      "year": "1993",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "정체성",
+      "소속",
+      "발견"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00165",
+    "content": "죽음 너머 사랑",
+    "source": {
+      "title": "시체신부",
+      "year": "2005",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "죽음",
+      "희생"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00166",
+    "content": "되살려",
+    "source": {
+      "title": "프랑켄위니",
+      "year": "2012",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "사랑",
+      "과학",
+      "반려동물"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00167",
+    "content": "크리스마스를 구해",
+    "source": {
+      "title": "아서 크리스마스",
+      "year": "2011",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "크리스마스",
+      "사명",
+      "가족"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00168",
+    "content": "탈출이야",
+    "source": {
+      "title": "치킨 런",
+      "year": "2000",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "자유",
+      "탈출",
+      "팀워크"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00169",
+    "content": "치즈!",
+    "source": {
+      "title": "월레스와 그로밋",
+      "year": "2005",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "유머",
+      "발명",
+      "우정"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  },
+  {
+    "id": "an00170",
+    "content": "양들의 모험",
+    "source": {
+      "title": "숀 더 쉽",
+      "year": "2015",
+      "platform": "Cinema",
+      "verified": true
+    },
+    "keywords": [
+      "모험",
+      "유머",
+      "팀워크"
+    ],
+    "type": "animation",
+    "language": "ko",
+    "createdAt": "2025-11-11T01:54:44.447Z"
+  }
+]
