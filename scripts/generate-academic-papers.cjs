@@ -90,6 +90,266 @@ addPaper(
   ['인공지능', '의료', '진단']
 );
 
+addPaper(
+  'Safety and Efficacy of the BNT162b2 mRNA Covid-19 Vaccine',
+  ['Fernando P. Polack', 'Pfizer-BioNTech'],
+  2020,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa2034577',
+  ['코로나19', 'mRNA백신', 'Pfizer']
+);
+
+addPaper(
+  'Efficacy and Safety of the mRNA-1273 SARS-CoV-2 Vaccine',
+  ['Lindsey R. Baden', 'Moderna'],
+  2021,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa2035389',
+  ['코로나19', 'Moderna', '백신']
+);
+
+addPaper(
+  'CAR T cell therapy for solid tumors',
+  ['Carl June', 'University of Pennsylvania'],
+  2018,
+  '의학',
+  'Science',
+  'https://doi.org/10.1126/science.aar6711',
+  ['CAR-T', '세포치료', '암치료']
+);
+
+addPaper(
+  'Pembrolizumab versus Chemotherapy for PD-L1–Positive Non–Small-Cell Lung Cancer',
+  ['Martin Reck'],
+  2016,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa1606774',
+  ['면역치료', 'Pembrolizumab', '폐암']
+);
+
+addPaper(
+  'Nivolumab versus Docetaxel in Advanced Nonsquamous Non–Small-Cell Lung Cancer',
+  ['Julie Brahmer'],
+  2015,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa1507643',
+  ['Nivolumab', '면역치료', '폐암']
+);
+
+addPaper(
+  'Lecanemab in Early Alzheimer Disease',
+  ['Christopher H. van Dyck'],
+  2023,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa2212948',
+  ['알츠하이머', 'Lecanemab', '치매치료']
+);
+
+addPaper(
+  'Liquid biopsy for cancer detection and monitoring',
+  ['Bert Vogelstein', 'Johns Hopkins'],
+  2019,
+  '의학',
+  'Nature Reviews Clinical Oncology',
+  'https://doi.org/10.1038/s41571-019-0265-9',
+  ['액체생검', '암진단', '순환DNA']
+);
+
+addPaper(
+  'Single-cell RNA sequencing in clinical oncology',
+  ['Itai Tirosh'],
+  2020,
+  '의학',
+  'Nature Medicine',
+  'https://doi.org/10.1038/s41591-020-0833-7',
+  ['단일세포시퀀싱', '암', '정밀의료']
+);
+
+addPaper(
+  'AlphaFold: Accurate protein structure prediction',
+  ['John Jumper', 'DeepMind'],
+  2021,
+  '의학',
+  'Nature',
+  'https://doi.org/10.1038/s41586-021-03819-2',
+  ['AlphaFold', '단백질구조', '신약개발']
+);
+
+addPaper(
+  'Gene therapy for inherited retinal diseases',
+  ['Jean Bennett'],
+  2019,
+  '의학',
+  'Nature Reviews Genetics',
+  'https://doi.org/10.1038/s41576-019-0108-4',
+  ['유전자치료', '망막질환', '시력']
+);
+
+addPaper(
+  'Onasemnogene abeparvovec for spinal muscular atrophy',
+  ['Jerry Mendell'],
+  2017,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa1706198',
+  ['척수성근위축증', '유전자치료', 'Zolgensma']
+);
+
+addPaper(
+  'Checkpoint inhibitors in cancer immunotherapy',
+  ['Padmanee Sharma', 'James Allison'],
+  2015,
+  '의학',
+  'Science',
+  'https://doi.org/10.1126/science.aaa4971',
+  ['체크포인트억제제', '면역치료', '암']
+);
+
+addPaper(
+  'TAVR for Aortic Stenosis in Patients at Low Surgical Risk',
+  ['Michael Mack'],
+  2019,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa1814052',
+  ['TAVR', '대동맥판막', '심장']
+);
+
+addPaper(
+  'SGLT2 inhibitors in heart failure',
+  ['John McMurray'],
+  2019,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa1911303',
+  ['SGLT2억제제', '심부전', '당뇨']
+);
+
+addPaper(
+  'Dupilumab for Atopic Dermatitis',
+  ['Emma Guttman-Yassky'],
+  2016,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa1610020',
+  ['Dupilumab', '아토피', '피부염']
+);
+
+addPaper(
+  'Fecal Microbiota Transplantation for Clostridium difficile Infection',
+  ['Els van Nood'],
+  2013,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa1205037',
+  ['분변이식', '마이크로바이옴', '감염']
+);
+
+addPaper(
+  'PCSK9 inhibitors for LDL cholesterol reduction',
+  ['Marc Sabatine'],
+  2017,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa1615664',
+  ['PCSK9억제제', '콜레스테롤', '심혈관']
+);
+
+addPaper(
+  'Semaglutide for Weight Loss in Adults with Overweight or Obesity',
+  ['John Wilding'],
+  2021,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa2032183',
+  ['Semaglutide', '비만', '체중감량']
+);
+
+addPaper(
+  'CRISPR-Cas9 editing of CCR5 in autologous CD4 T cells',
+  ['Pablo Tebas'],
+  2014,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa1300662',
+  ['CRISPR', 'HIV', '유전자편집']
+);
+
+addPaper(
+  'Sipuleucel-T immunotherapy for castration-resistant prostate cancer',
+  ['Philip Kantoff'],
+  2010,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa1001294',
+  ['면역치료', '전립선암', 'Sipuleucel-T']
+);
+
+addPaper(
+  'Tisagenlecleucel in Children and Young Adults with B-Cell Lymphoblastic Leukemia',
+  ['Stephan Grupp'],
+  2018,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa1709866',
+  ['CAR-T', '백혈병', '소아암']
+);
+
+addPaper(
+  'Daratumumab plus Lenalidomide and Dexamethasone for Multiple Myeloma',
+  ['Meletios Dimopoulos'],
+  2016,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa1607751',
+  ['다발골수종', 'Daratumumab', '항체치료']
+);
+
+addPaper(
+  'Atezolizumab for First-Line Treatment of PD-L1–Selected Patients',
+  ['Martin Reck'],
+  2018,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa1716948',
+  ['Atezolizumab', '면역치료', '폐암']
+);
+
+addPaper(
+  'Tofacitinib for Treatment of Rheumatoid Arthritis',
+  ['Roy Fleischmann'],
+  2012,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa1109071',
+  ['Tofacitinib', '류마티스', 'JAK억제제']
+);
+
+addPaper(
+  'Remdesivir for COVID-19',
+  ['John Beigel', 'NIAID'],
+  2020,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa2007764',
+  ['Remdesivir', '코로나19', '항바이러스']
+);
+
+addPaper(
+  'Dexamethasone in Hospitalized Patients with Covid-19',
+  ['RECOVERY Collaborative Group'],
+  2020,
+  '의학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMoa2021436',
+  ['Dexamethasone', '코로나19', '스테로이드']
+);
+
 // === 3. 생물학 (Biology) ===
 addPaper(
   'The human microbiome project',
@@ -212,6 +472,106 @@ addPaper(
   'Physics Letters B',
   'https://doi.org/10.1016/j.physletb.2012.08.021',
   ['힉스입자', 'LHC', '발견']
+);
+
+addPaper(
+  'First M87 Event Horizon Telescope Results',
+  ['Event Horizon Telescope Collaboration'],
+  2019,
+  '물리학',
+  'Astrophysical Journal Letters',
+  'https://doi.org/10.3847/2041-8213/ab0ec7',
+  ['블랙홀촬영', 'M87', '이벤트호라이즌']
+);
+
+addPaper(
+  'Observation of a new boson at a mass of 125 GeV',
+  ['CMS Collaboration'],
+  2012,
+  '물리학',
+  'Physics Letters B',
+  'https://doi.org/10.1016/j.physletb.2012.08.021',
+  ['힉스입자', 'CMS', 'LHC']
+);
+
+addPaper(
+  'Quantum entanglement between two macroscopic objects',
+  ['Riedinger'],
+  2018,
+  '물리학',
+  'Nature',
+  'https://doi.org/10.1038/s41586-018-0036-z',
+  ['양자얽힘', '거시물체', '양자역학']
+);
+
+addPaper(
+  'Room-temperature superconductivity in a carbonaceous sulfur hydride',
+  ['Elliot Snider'],
+  2020,
+  '물리학',
+  'Nature',
+  'https://doi.org/10.1038/s41586-020-2801-z',
+  ['상온초전도', '고압', '수소화물']
+);
+
+addPaper(
+  'Gravitational waves from neutron star merger',
+  ['LIGO-Virgo Collaboration'],
+  2017,
+  '물리학',
+  'Physical Review Letters',
+  'https://doi.org/10.1103/PhysRevLett.119.161101',
+  ['중력파', '중성자별', '합병']
+);
+
+addPaper(
+  'Topological insulators and superconductors',
+  ['Xiao-Liang Qi', 'Shou-Cheng Zhang'],
+  2011,
+  '물리학',
+  'Reviews of Modern Physics',
+  'https://doi.org/10.1103/RevModPhys.83.1057',
+  ['위상절연체', '위상물질', '응집물리']
+);
+
+addPaper(
+  'Majorana fermions in superconducting nanowires',
+  ['Vincent Mourik'],
+  2012,
+  '물리학',
+  'Science',
+  'https://doi.org/10.1126/science.1222360',
+  ['마요라나페르미온', '양자컴퓨팅', '초전도']
+);
+
+addPaper(
+  'Graphene: Properties and applications',
+  ['Andre Geim', 'Konstantin Novoselov'],
+  2013,
+  '물리학',
+  'Nature Materials',
+  'https://doi.org/10.1038/nmat3318',
+  ['그래핀', '2차원물질', '나노물리']
+);
+
+addPaper(
+  'Two-dimensional gas of massless Dirac fermions in graphene',
+  ['Konstantin Novoselov'],
+  2005,
+  '물리학',
+  'Nature',
+  'https://doi.org/10.1038/nature04233',
+  ['그래핀', '디랙페르미온', '노벨상']
+);
+
+addPaper(
+  'Quantum simulation with ultracold atoms',
+  ['Immanuel Bloch'],
+  2012,
+  '물리학',
+  'Nature Physics',
+  'https://doi.org/10.1038/nphys2259',
+  ['양자시뮬레이션', '극저온원자', '양자컴퓨팅']
 );
 
 // === 7. 심리학 (Psychology) ===
@@ -429,6 +789,266 @@ addPaper(
   'Nature',
   'https://doi.org/10.1038/nature16961',
   ['알파고', '바둑', '강화학습']
+);
+
+addPaper(
+  'BERT: Pre-training of Deep Bidirectional Transformers',
+  ['Jacob Devlin', 'Google AI'],
+  2018,
+  '컴퓨터과학',
+  'NAACL',
+  'https://arxiv.org/abs/1810.04805',
+  ['BERT', 'NLP', '사전학습']
+);
+
+addPaper(
+  'Language Models are Few-Shot Learners (GPT-3)',
+  ['Tom Brown', 'OpenAI'],
+  2020,
+  '컴퓨터과학',
+  'NeurIPS',
+  'https://arxiv.org/abs/2005.14165',
+  ['GPT-3', '언어모델', 'Few-shot']
+);
+
+addPaper(
+  'Deep Residual Learning for Image Recognition (ResNet)',
+  ['Kaiming He', 'Microsoft Research'],
+  2015,
+  '컴퓨터과학',
+  'CVPR',
+  'https://arxiv.org/abs/1512.03385',
+  ['ResNet', 'CNN', '이미지인식']
+);
+
+addPaper(
+  'Generative Adversarial Networks (GAN)',
+  ['Ian Goodfellow'],
+  2014,
+  '컴퓨터과학',
+  'NeurIPS',
+  'https://arxiv.org/abs/1406.2661',
+  ['GAN', '생성모델', '적대적학습']
+);
+
+addPaper(
+  'An Image is Worth 16x16 Words: Transformers for Image Recognition (ViT)',
+  ['Alexey Dosovitskiy', 'Google Research'],
+  2020,
+  '컴퓨터과학',
+  'ICLR',
+  'https://arxiv.org/abs/2010.11929',
+  ['ViT', '트랜스포머', '이미지분류']
+);
+
+addPaper(
+  'You Only Look Once: Unified Real-Time Object Detection (YOLO)',
+  ['Joseph Redmon'],
+  2015,
+  '컴퓨터과학',
+  'CVPR',
+  'https://arxiv.org/abs/1506.02640',
+  ['YOLO', '객체탐지', '실시간']
+);
+
+addPaper(
+  'Distributed Representations of Words and Phrases (Word2Vec)',
+  ['Tomas Mikolov', 'Google'],
+  2013,
+  '컴퓨터과학',
+  'NeurIPS',
+  'https://arxiv.org/abs/1310.4546',
+  ['Word2Vec', '워드임베딩', 'NLP']
+);
+
+addPaper(
+  'Deep contextualized word representations (ELMo)',
+  ['Matthew Peters', 'Allen AI'],
+  2018,
+  '컴퓨터과학',
+  'NAACL',
+  'https://arxiv.org/abs/1802.05365',
+  ['ELMo', '문맥임베딩', 'NLP']
+);
+
+addPaper(
+  'Exploring the Limits of Transfer Learning (T5)',
+  ['Colin Raffel', 'Google'],
+  2019,
+  '컴퓨터과학',
+  'JMLR',
+  'https://arxiv.org/abs/1910.10683',
+  ['T5', '전이학습', 'NLP']
+);
+
+addPaper(
+  'Learning Transferable Visual Models From Natural Language Supervision (CLIP)',
+  ['Alec Radford', 'OpenAI'],
+  2021,
+  '컴퓨터과학',
+  'ICML',
+  'https://arxiv.org/abs/2103.00020',
+  ['CLIP', '비전-언어', '멀티모달']
+);
+
+addPaper(
+  'High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)',
+  ['Robin Rombach'],
+  2022,
+  '컴퓨터과학',
+  'CVPR',
+  'https://arxiv.org/abs/2112.10752',
+  ['Stable Diffusion', '이미지생성', 'Diffusion']
+);
+
+addPaper(
+  'Human-level control through deep reinforcement learning (DQN)',
+  ['Volodymyr Mnih', 'DeepMind'],
+  2015,
+  '컴퓨터과학',
+  'Nature',
+  'https://doi.org/10.1038/nature14236',
+  ['DQN', '강화학습', 'Atari']
+);
+
+addPaper(
+  'Proximal Policy Optimization Algorithms (PPO)',
+  ['John Schulman', 'OpenAI'],
+  2017,
+  '컴퓨터과학',
+  'arXiv',
+  'https://arxiv.org/abs/1707.06347',
+  ['PPO', '강화학습', '정책최적화']
+);
+
+addPaper(
+  'Long Short-Term Memory (LSTM)',
+  ['Sepp Hochreiter', 'Jürgen Schmidhuber'],
+  2015,
+  '컴퓨터과학',
+  'Neural Computation',
+  'https://doi.org/10.1162/neco.1997.9.8.1735',
+  ['LSTM', 'RNN', '시퀀스학습']
+);
+
+addPaper(
+  'U-Net: Convolutional Networks for Biomedical Image Segmentation',
+  ['Olaf Ronneberger'],
+  2015,
+  '컴퓨터과학',
+  'MICCAI',
+  'https://arxiv.org/abs/1505.04597',
+  ['U-Net', '이미지분할', '의료영상']
+);
+
+addPaper(
+  'Mask R-CNN',
+  ['Kaiming He', 'Facebook AI'],
+  2017,
+  '컴퓨터과학',
+  'ICCV',
+  'https://arxiv.org/abs/1703.06870',
+  ['Mask R-CNN', '인스턴스분할', '객체탐지']
+);
+
+addPaper(
+  'EfficientNet: Rethinking Model Scaling for CNNs',
+  ['Mingxing Tan', 'Google'],
+  2019,
+  '컴퓨터과학',
+  'ICML',
+  'https://arxiv.org/abs/1905.11946',
+  ['EfficientNet', '모델스케일링', '효율성']
+);
+
+addPaper(
+  'MobileNets: Efficient CNNs for Mobile Vision Applications',
+  ['Andrew Howard', 'Google'],
+  2017,
+  '컴퓨터과학',
+  'arXiv',
+  'https://arxiv.org/abs/1704.04861',
+  ['MobileNet', '모바일', '경량화']
+);
+
+addPaper(
+  'Zero-Shot Text-to-Image Generation (DALL-E)',
+  ['Aditya Ramesh', 'OpenAI'],
+  2021,
+  '컴퓨터과학',
+  'ICML',
+  'https://arxiv.org/abs/2102.12092',
+  ['DALL-E', '텍스트-이미지', '생성모델']
+);
+
+addPaper(
+  'Graph Attention Networks',
+  ['Petar Veličković'],
+  2017,
+  '컴퓨터과학',
+  'ICLR',
+  'https://arxiv.org/abs/1710.10903',
+  ['GAT', '그래프신경망', '어텐션']
+);
+
+addPaper(
+  'Semi-Supervised Classification with Graph Convolutional Networks',
+  ['Thomas Kipf', 'Max Welling'],
+  2016,
+  '컴퓨터과학',
+  'ICLR',
+  'https://arxiv.org/abs/1609.02907',
+  ['GCN', '그래프', '준지도학습']
+);
+
+addPaper(
+  'Auto-Encoding Variational Bayes (VAE)',
+  ['Diederik Kingma', 'Max Welling'],
+  2013,
+  '컴퓨터과학',
+  'ICLR',
+  'https://arxiv.org/abs/1312.6114',
+  ['VAE', '변분추론', '생성모델']
+);
+
+addPaper(
+  'Denoising Diffusion Probabilistic Models',
+  ['Jonathan Ho', 'Google Brain'],
+  2020,
+  '컴퓨터과학',
+  'NeurIPS',
+  'https://arxiv.org/abs/2006.11239',
+  ['DDPM', 'Diffusion', '생성모델']
+);
+
+addPaper(
+  'LLaMA: Open and Efficient Foundation Language Models',
+  ['Hugo Touvron', 'Meta AI'],
+  2023,
+  '컴퓨터과학',
+  'arXiv',
+  'https://arxiv.org/abs/2302.13971',
+  ['LLaMA', '언어모델', '오픈소스']
+);
+
+addPaper(
+  'GPT-4 Technical Report',
+  ['OpenAI'],
+  2023,
+  '컴퓨터과학',
+  'arXiv',
+  'https://arxiv.org/abs/2303.08774',
+  ['GPT-4', '대규모언어모델', 'ChatGPT']
+);
+
+addPaper(
+  'Segment Anything (SAM)',
+  ['Alexander Kirillov', 'Meta AI'],
+  2023,
+  '컴퓨터과학',
+  'ICCV',
+  'https://arxiv.org/abs/2304.02643',
+  ['SAM', '이미지분할', '파운데이션모델']
 );
 
 // === 14. 공학 (Engineering) ===
