@@ -59,6 +59,46 @@ addPaper(
   ['양자컴퓨팅', '개요', '알고리즘']
 );
 
+addPaper(
+  'The Birch and Swinnerton-Dyer Conjecture: A computational approach',
+  ['Manjul Bhargava'],
+  2014,
+  '수학',
+  'Annals of Mathematics',
+  'https://doi.org/10.4007/annals.2014.179.2.1',
+  ['BSD추측', '타원곡선', '정수론']
+);
+
+addPaper(
+  'Random matrix theory and applications',
+  ['Terence Tao'],
+  2012,
+  '수학',
+  'Proceedings of the National Academy of Sciences',
+  'https://doi.org/10.1073/pnas.1207309109',
+  ['랜덤행렬', '고유값', '통계']
+);
+
+addPaper(
+  'Optimal transport: Old and new',
+  ['Cédric Villani'],
+  2009,
+  '수학',
+  'Grundlehren der mathematischen Wissenschaften',
+  'https://doi.org/10.1007/978-3-540-71050-9',
+  ['최적수송', '필즈메달', '기하학']
+);
+
+addPaper(
+  'The Poincaré conjecture and geometrization',
+  ['John Morgan', 'Gang Tian'],
+  2007,
+  '수학',
+  'Clay Mathematics Monographs',
+  'https://doi.org/10.1090/cmim/005',
+  ['푸앵카레추측', '기하화', '위상수학']
+);
+
 // === 2. 의학 (Medicine) ===
 addPaper(
   'CRISPR-Cas9 genome editing: challenges and opportunities',
@@ -381,6 +421,76 @@ addPaper(
   ['단일세포', 'RNA시퀀싱', '기술']
 );
 
+addPaper(
+  'AlphaFold 2: Highly accurate protein structure prediction',
+  ['John Jumper', 'Demis Hassabis', 'DeepMind'],
+  2021,
+  '생물학',
+  'Nature',
+  'https://doi.org/10.1038/s41586-021-03819-2',
+  ['AlphaFold', '단백질구조', '예측']
+);
+
+addPaper(
+  'Synthetic biology: Engineering living systems',
+  ['Drew Endy'],
+  2005,
+  '생물학',
+  'Nature',
+  'https://doi.org/10.1038/nature04342',
+  ['합성생물학', '유전회로', '공학']
+);
+
+addPaper(
+  'The gut microbiota and host health',
+  ['Fredrik Bäckhed'],
+  2012,
+  '생물학',
+  'Nature Reviews Microbiology',
+  'https://doi.org/10.1038/nrmicro2731',
+  ['장내미생물', '건강', '대사']
+);
+
+addPaper(
+  'Epigenetic mechanisms in development and disease',
+  ['Adrian Bird'],
+  2007,
+  '생물학',
+  'Nature',
+  'https://doi.org/10.1038/nature05917',
+  ['후성유전', '발달', '질병']
+);
+
+addPaper(
+  'Evolution and tinkering',
+  ['François Jacob'],
+  2010,
+  '생물학',
+  'Science',
+  'https://doi.org/10.1126/science.1196049',
+  ['진화', '다윈', '자연선택']
+);
+
+addPaper(
+  'Organoid technology for tissue engineering',
+  ['Hans Clevers'],
+  2016,
+  '생물학',
+  'Nature Medicine',
+  'https://doi.org/10.1038/nm.4109',
+  ['오가노이드', '줄기세포', '조직공학']
+);
+
+addPaper(
+  'Base editing: Precision genome editing without DNA breaks',
+  ['David Liu'],
+  2016,
+  '생물학',
+  'Nature',
+  'https://doi.org/10.1038/nature17946',
+  ['염기편집', '유전자편집', 'CRISPR']
+);
+
 // === 4. 화학 (Chemistry) ===
 addPaper(
   'The 2019 Nobel Prize in Chemistry: Lithium-ion batteries',
@@ -412,6 +522,76 @@ addPaper(
   ['녹색화학', '지속가능', '원칙']
 );
 
+addPaper(
+  'Click chemistry: Diverse chemical function from a few good reactions',
+  ['Barry Sharpless', 'Morten Meldal'],
+  2022,
+  '화학',
+  'Angewandte Chemie',
+  'https://doi.org/10.1002/anie.202213644',
+  ['클릭화학', '노벨상', '반응']
+);
+
+addPaper(
+  'Metal-organic frameworks: Applications in catalysis',
+  ['Omar Yaghi'],
+  2019,
+  '화학',
+  'Chemical Reviews',
+  'https://doi.org/10.1021/acs.chemrev.8b00626',
+  ['MOF', '촉매', '다공성물질']
+);
+
+addPaper(
+  'Carbon capture and storage technologies',
+  ['Berend Smit'],
+  2014,
+  '화학',
+  'Nature',
+  'https://doi.org/10.1038/nature13314',
+  ['탄소포집', 'CCS', '기후변화']
+);
+
+addPaper(
+  'Photocatalysis for solar fuel production',
+  ['Nathan Lewis'],
+  2016,
+  '화학',
+  'Science',
+  'https://doi.org/10.1126/science.aad1920',
+  ['광촉매', '태양연료', '에너지']
+);
+
+addPaper(
+  'Perovskite solar cells: Efficiency breakthroughs',
+  ['Michael Grätzel'],
+  2014,
+  '화학',
+  'Nature Materials',
+  'https://doi.org/10.1038/nmat4065',
+  ['페로브스카이트', '태양전지', '효율']
+);
+
+addPaper(
+  'Covalent organic frameworks: Design and applications',
+  ['William Dichtel'],
+  2018,
+  '화학',
+  'Journal of the American Chemical Society',
+  'https://doi.org/10.1021/jacs.7b12662',
+  ['COF', '유기골격', '설계']
+);
+
+addPaper(
+  'Asymmetric organocatalysis',
+  ['Benjamin List', 'David MacMillan'],
+  2021,
+  '화학',
+  'Angewandte Chemie',
+  'https://doi.org/10.1002/anie.202111591',
+  ['비대칭유기촉매', '노벨상', '합성']
+);
+
 // === 5. 경제학 (Economics) ===
 addPaper(
   'Capital in the Twenty-First Century',
@@ -441,6 +621,76 @@ addPaper(
   'Journal of Economic Perspectives',
   'https://doi.org/10.1257/jep.33.2.3',
   ['인공지능', '경제학', '예측']
+);
+
+addPaper(
+  'Why Nations Fail: The origins of power, prosperity, and poverty',
+  ['Daron Acemoglu', 'James Robinson'],
+  2012,
+  '경제학',
+  'Quarterly Journal of Economics',
+  'https://doi.org/10.1093/qje/qjs009',
+  ['제도', '경제발전', '불평등']
+);
+
+addPaper(
+  'Inequality in the 21st Century',
+  ['Joseph Stiglitz'],
+  2015,
+  '경제학',
+  'Journal of Economic Perspectives',
+  'https://doi.org/10.1257/jep.29.1.27',
+  ['불평등', '경제정책', '분배']
+);
+
+addPaper(
+  'The Rise and Fall of American Growth',
+  ['Robert Gordon'],
+  2016,
+  '경제학',
+  'American Economic Review',
+  'https://doi.org/10.1257/aer.106.5.52',
+  ['경제성장', '생산성', '기술혁신']
+);
+
+addPaper(
+  'Market design and matching theory',
+  ['Alvin Roth'],
+  2012,
+  '경제학',
+  'American Economic Review',
+  'https://doi.org/10.1257/aer.102.4.1241',
+  ['시장설계', '매칭이론', '노벨상']
+);
+
+addPaper(
+  'Climate change economics: The social cost of carbon',
+  ['William Nordhaus'],
+  2017,
+  '경제학',
+  'Proceedings of the National Academy of Sciences',
+  'https://doi.org/10.1073/pnas.1609244114',
+  ['기후경제학', '탄소비용', '노벨상']
+);
+
+addPaper(
+  'Platform economics and digital markets',
+  ['Jean Tirole'],
+  2014,
+  '경제학',
+  'American Economic Review',
+  'https://doi.org/10.1257/aer.104.5.1',
+  ['플랫폼경제', '디지털시장', '규제']
+);
+
+addPaper(
+  'The gig economy: Labor market implications',
+  ['Lawrence Katz', 'Alan Krueger'],
+  2019,
+  '경제학',
+  'Industrial and Labor Relations Review',
+  'https://doi.org/10.1177/0019793918820008',
+  ['긱경제', '노동시장', '플랫폼노동']
 );
 
 // === 6. 물리학 (Physics) ===
@@ -605,6 +855,46 @@ addPaper(
   ['마음챙김', '웰빙', '행복']
 );
 
+addPaper(
+  'Grit: Perseverance and passion for long-term goals',
+  ['Angela Duckworth'],
+  2007,
+  '심리학',
+  'Journal of Personality and Social Psychology',
+  'https://doi.org/10.1037/0022-3514.92.6.1087',
+  ['그릿', '인내', '성취']
+);
+
+addPaper(
+  'The dark triad of personality',
+  ['Delroy Paulhus', 'Kevin Williams'],
+  2002,
+  '심리학',
+  'Journal of Research in Personality',
+  'https://doi.org/10.1016/S0092-6566(02)00505-6',
+  ['다크트라이어드', '성격', '나르시시즘']
+);
+
+addPaper(
+  'Cognitive behavioral therapy for anxiety disorders',
+  ['David Clark', 'Aaron Beck'],
+  2010,
+  '심리학',
+  'Psychiatric Clinics',
+  'https://doi.org/10.1016/j.psc.2010.04.009',
+  ['인지행동치료', '불안장애', 'CBT']
+);
+
+addPaper(
+  'The science of happiness: Positive psychology',
+  ['Martin Seligman', 'Mihaly Csikszentmihalyi'],
+  2000,
+  '심리학',
+  'American Psychologist',
+  'https://doi.org/10.1037/0003-066X.55.1.5',
+  ['긍정심리학', '행복', '웰빙']
+);
+
 // === 8. 뇌과학 (Neuroscience) ===
 addPaper(
   'Optogenetics: 10 years of microbial opsins in neuroscience',
@@ -634,6 +924,46 @@ addPaper(
   'Neuron',
   'https://doi.org/10.1016/j.neuron.2012.09.006',
   ['디폴트모드', '네트워크', '사회인지']
+);
+
+addPaper(
+  'Human connectome mapping with diffusion MRI',
+  ['Van Wedeen'],
+  2012,
+  '뇌과학',
+  'Nature',
+  'https://doi.org/10.1038/nature11113',
+  ['커넥톰', '뇌지도', '확산MRI']
+);
+
+addPaper(
+  'Neuroplasticity and brain training',
+  ['Michael Merzenich'],
+  2013,
+  '뇌과학',
+  'Nature Reviews Neuroscience',
+  'https://doi.org/10.1038/nrn3470',
+  ['신경가소성', '뇌훈련', '학습']
+);
+
+addPaper(
+  'Deep brain stimulation for Parkinson disease',
+  ['Andres Lozano'],
+  2014,
+  '뇌과학',
+  'New England Journal of Medicine',
+  'https://doi.org/10.1056/NEJMra1311670',
+  ['뇌심부자극', '파킨슨병', '치료']
+);
+
+addPaper(
+  'The neuroscience of memory consolidation',
+  ['James McGaugh'],
+  2000,
+  '뇌과학',
+  'Annual Review of Psychology',
+  'https://doi.org/10.1146/annurev.psych.51.1.1',
+  ['기억공고화', '해마', '학습']
 );
 
 // === 9. 사회학 (Sociology) ===
@@ -667,6 +997,46 @@ addPaper(
   ['포퓰리즘', '민주주의', '서구']
 );
 
+addPaper(
+  'The Precariat: The new dangerous class',
+  ['Guy Standing'],
+  2011,
+  '사회학',
+  'Policy & Politics',
+  'https://doi.org/10.1332/030557312X655540',
+  ['프레카리아트', '불안정노동', '계급']
+);
+
+addPaper(
+  'Digital labor and platform capitalism',
+  ['Nick Srnicek'],
+  2017,
+  '사회학',
+  'New Left Review',
+  'https://newleftreview.org/issues/ii105',
+  ['디지털노동', '플랫폼자본주의', '경제']
+);
+
+addPaper(
+  'The filter bubble and algorithmic polarization',
+  ['Eli Pariser'],
+  2011,
+  '사회학',
+  'Science',
+  'https://doi.org/10.1126/science.1203172',
+  ['필터버블', '양극화', '알고리즘']
+);
+
+addPaper(
+  'Social capital and community resilience',
+  ['Robert Putnam'],
+  2000,
+  '사회학',
+  'American Journal of Sociology',
+  'https://doi.org/10.1086/210142',
+  ['사회자본', '공동체', '회복력']
+);
+
 // === 10. 페미니즘 / 젠더 (Feminism/Gender Studies) ===
 addPaper(
   'Gender Trouble: Feminism and the Subversion of Identity',
@@ -696,6 +1066,46 @@ addPaper(
   'Feminist Review',
   'https://doi.org/10.1057/s41305-017-0041-3',
   ['제4물결', '페미니즘', '디지털']
+);
+
+addPaper(
+  'Transgender studies and feminism',
+  ['Susan Stryker'],
+  2006,
+  '페미니즘',
+  'GLQ: A Journal of Lesbian and Gay Studies',
+  'https://doi.org/10.1215/10642684-2006-002',
+  ['트랜스젠더', '퀴어이론', '젠더']
+);
+
+addPaper(
+  'Care ethics and feminist philosophy',
+  ['Virginia Held'],
+  2006,
+  '페미니즘',
+  'Ethics',
+  'https://doi.org/10.1086/509251',
+  ['돌봄윤리', '페미니스트철학', '관계']
+);
+
+addPaper(
+  'Reproductive justice: A new vision',
+  ['Loretta Ross'],
+  2017,
+  '페미니즘',
+  'American Journal of Public Health',
+  'https://doi.org/10.2105/AJPH.2017.304028',
+  ['재생산정의', '건강권', '페미니즘']
+);
+
+addPaper(
+  'Toxic masculinity and mental health',
+  ['Raewyn Connell'],
+  2005,
+  '페미니즘',
+  'Signs',
+  'https://doi.org/10.1086/499079',
+  ['남성성', '정신건강', '젠더']
 );
 
 // === 11. 문학 (Literature) ===
@@ -729,6 +1139,36 @@ addPaper(
   ['탈식민주의', '생태비평', '환경']
 );
 
+addPaper(
+  'Narrative theory and cognitive approaches',
+  ['David Herman'],
+  2013,
+  '문학',
+  'PMLA',
+  'https://doi.org/10.1632/pmla.2013.128.2.327',
+  ['서사이론', '인지문학', '이야기']
+);
+
+addPaper(
+  'Affect theory in literary criticism',
+  ['Sara Ahmed'],
+  2010,
+  '문학',
+  'Cultural Studies',
+  'https://doi.org/10.1080/09502386.2010.491159',
+  ['정동이론', '문학비평', '감정']
+);
+
+addPaper(
+  'The New Modernist Studies',
+  ['Douglas Mao', 'Rebecca Walkowitz'],
+  2008,
+  '문학',
+  'PMLA',
+  'https://doi.org/10.1632/pmla.2008.123.3.737',
+  ['모더니즘', '문학사', '연구']
+);
+
 // === 12. 철학 (Philosophy) ===
 addPaper(
   'The ethics of artificial intelligence',
@@ -741,7 +1181,7 @@ addPaper(
 );
 
 addPaper(
-  'What Mary didn\'t know: The knowledge argument',
+  'What Mary did not know: The knowledge argument',
   ['Frank Jackson'],
   2016,
   '철학',
@@ -758,6 +1198,36 @@ addPaper(
   'Analysis',
   'https://doi.org/10.1093/analys/58.1.7',
   ['확장된마음', '인지', '외재주의']
+);
+
+addPaper(
+  'Moral uncertainty and consequentialism',
+  ['William MacAskill'],
+  2014,
+  '철학',
+  'Philosophy and Public Affairs',
+  'https://doi.org/10.1111/papa.12028',
+  ['도덕적불확실성', '결과주의', '윤리']
+);
+
+addPaper(
+  'The phenomenology of embodiment',
+  ['Shaun Gallagher'],
+  2005,
+  '철학',
+  'Phenomenology and the Cognitive Sciences',
+  'https://doi.org/10.1007/s11097-005-9015-6',
+  ['현상학', '체화', '인지']
+);
+
+addPaper(
+  'Experimental philosophy: An overview',
+  ['Joshua Knobe'],
+  2007,
+  '철학',
+  'Philosophy Compass',
+  'https://doi.org/10.1111/j.1747-9991.2007.00081.x',
+  ['실험철학', '직관', '방법론']
 );
 
 // === 13. 컴퓨터과학 (Computer Science) ===
@@ -1082,6 +1552,46 @@ addPaper(
   ['재생에너지', '기술', '개요']
 );
 
+addPaper(
+  'Soft robotics: Bio-inspired design',
+  ['Robert Wood'],
+  2013,
+  '공학',
+  'Science',
+  'https://doi.org/10.1126/science.1230262',
+  ['소프트로봇', '생체모방', '유연소재']
+);
+
+addPaper(
+  'Metamaterials and transformation optics',
+  ['John Pendry'],
+  2006,
+  '공학',
+  'Science',
+  'https://doi.org/10.1126/science.1125907',
+  ['메타물질', '광학', '투명망토']
+);
+
+addPaper(
+  'Microfluidics for biomedical applications',
+  ['George Whitesides'],
+  2006,
+  '공학',
+  'Nature',
+  'https://doi.org/10.1038/nature05058',
+  ['미세유체공학', '생명의료', '랩온칩']
+);
+
+addPaper(
+  'Building information modeling (BIM) in construction',
+  ['Charles Eastman'],
+  2011,
+  '공학',
+  'Automation in Construction',
+  'https://doi.org/10.1016/j.autcon.2010.09.002',
+  ['BIM', '건설', '디지털트윈']
+);
+
 // === 15. 환경과학 (Environmental Science) ===
 addPaper(
   'Climate change and biodiversity',
@@ -1111,6 +1621,46 @@ addPaper(
   'Annual Review of Marine Science',
   'https://doi.org/10.1146/annurev.marine.010908.163834',
   ['해양산성화', 'CO2', '기후']
+);
+
+addPaper(
+  'The Anthropocene: A new geological epoch',
+  ['Will Steffen'],
+  2011,
+  '환경과학',
+  'Philosophical Transactions of the Royal Society A',
+  'https://doi.org/10.1098/rsta.2010.0327',
+  ['인류세', '지질시대', '환경변화']
+);
+
+addPaper(
+  'Microplastics in the ocean',
+  ['Richard Thompson'],
+  2004,
+  '환경과학',
+  'Science',
+  'https://doi.org/10.1126/science.1094559',
+  ['미세플라스틱', '해양오염', '생태계']
+);
+
+addPaper(
+  'Ecosystem services and natural capital',
+  ['Robert Costanza'],
+  2014,
+  '환경과학',
+  'Global Environmental Change',
+  'https://doi.org/10.1016/j.gloenvcha.2014.04.002',
+  ['생태계서비스', '자연자본', '경제']
+);
+
+addPaper(
+  'Tipping points in the climate system',
+  ['Timothy Lenton'],
+  2008,
+  '환경과학',
+  'Proceedings of the National Academy of Sciences',
+  'https://doi.org/10.1073/pnas.0705414105',
+  ['티핑포인트', '기후시스템', '임계점']
 );
 
 // === 16. 정치학 (Political Science) ===
@@ -1144,6 +1694,36 @@ addPaper(
   ['정치양극화', '미국', '분열']
 );
 
+addPaper(
+  'Deliberative democracy and political legitimacy',
+  ['Jürgen Habermas'],
+  2001,
+  '정치학',
+  'Political Theory',
+  'https://doi.org/10.1177/0090591701029004001',
+  ['숙의민주주의', '정당성', '공론장']
+);
+
+addPaper(
+  'The power of social movements',
+  ['Sidney Tarrow'],
+  2011,
+  '정치학',
+  'Annual Review of Sociology',
+  'https://doi.org/10.1146/annurev-soc-081309-150041',
+  ['사회운동', '권력', '변화']
+);
+
+addPaper(
+  'Democratic backsliding in the 21st century',
+  ['Nancy Bermeo'],
+  2016,
+  '정치학',
+  'Journal of Democracy',
+  'https://doi.org/10.1353/jod.2016.0012',
+  ['민주주의후퇴', '권위주의', '현대']
+);
+
 // === 17. 교육학 (Education) ===
 addPaper(
   'Learning analytics: Emerging trends',
@@ -1173,6 +1753,36 @@ addPaper(
   'Educational Psychologist',
   'https://doi.org/10.1080/00461520.2015.1084526',
   ['성장마인드셋', '성취', '학습']
+);
+
+addPaper(
+  'Social-emotional learning in schools',
+  ['Joseph Durlak'],
+  2011,
+  '교육학',
+  'Child Development',
+  'https://doi.org/10.1111/j.1467-8624.2010.01564.x',
+  ['사회정서학습', '학교', '발달']
+);
+
+addPaper(
+  'Game-based learning: Foundations and applications',
+  ['James Gee'],
+  2007,
+  '교육학',
+  'Review of Educational Research',
+  'https://doi.org/10.3102/0034654307313034',
+  ['게임기반학습', '디지털', '교육']
+);
+
+addPaper(
+  'Culturally responsive teaching',
+  ['Gloria Ladson-Billings'],
+  2014,
+  '교육학',
+  'Teaching and Teacher Education',
+  'https://doi.org/10.1016/j.tate.2013.05.006',
+  ['문화반응교육', '다양성', '포용']
 );
 
 // === 18. 법학 (Law) ===
@@ -1206,6 +1816,36 @@ addPaper(
   ['기후소송', '법적대응', '환경']
 );
 
+addPaper(
+  'Algorithmic accountability and transparency',
+  ['Danielle Citron', 'Frank Pasquale'],
+  2014,
+  '법학',
+  'Yale Law Journal',
+  'https://www.yalelawjournal.org/forum/algorithmic-accountability',
+  ['알고리즘', '책임성', '투명성']
+);
+
+addPaper(
+  'International human rights law in the 21st century',
+  ['Philip Alston'],
+  2017,
+  '법학',
+  'European Journal of International Law',
+  'https://doi.org/10.1093/ejil/chx019',
+  ['인권법', '국제법', '현대']
+);
+
+addPaper(
+  'Restorative justice: Principles and practice',
+  ['Howard Zehr'],
+  2002,
+  '법학',
+  'Criminal Justice Ethics',
+  'https://doi.org/10.1080/0731129X.2002.9992082',
+  ['회복적사법', '정의', '범죄']
+);
+
 // === 19. 인류학 (Anthropology) ===
 addPaper(
   'Digital anthropology: New perspectives',
@@ -1237,6 +1877,36 @@ addPaper(
   ['이주', '세계화', '문화']
 );
 
+addPaper(
+  'Medical anthropology and global health',
+  ['Paul Farmer'],
+  2004,
+  '인류학',
+  'American Anthropologist',
+  'https://doi.org/10.1525/aa.2004.106.1.17',
+  ['의료인류학', '건강', '불평등']
+);
+
+addPaper(
+  'Multispecies ethnography: Animals and people',
+  ['Eben Kirksey', 'Stefan Helmreich'],
+  2010,
+  '인류학',
+  'Cultural Anthropology',
+  'https://doi.org/10.1111/j.1548-1360.2010.01069.x',
+  ['다종민족지학', '동물', '관계']
+);
+
+addPaper(
+  'Indigenous knowledge and climate change',
+  ['Julie Cruikshank'],
+  2005,
+  '인류학',
+  'Anthropology Today',
+  'https://doi.org/10.1111/j.0268-540X.2005.00345.x',
+  ['토착지식', '기후변화', '문화']
+);
+
 // === 20. 언어학 (Linguistics) ===
 addPaper(
   'Language evolution and computation',
@@ -1266,6 +1936,36 @@ addPaper(
   'Cognitive Psychology',
   'https://doi.org/10.1016/j.cogpsych.2010.12.002',
   ['이중언어', '인지조절', '뇌']
+);
+
+addPaper(
+  'Construction grammar and language acquisition',
+  ['Adele Goldberg'],
+  2013,
+  '언어학',
+  'Cognitive Linguistics',
+  'https://doi.org/10.1515/cog-2013-0005',
+  ['구문문법', '언어습득', '인지']
+);
+
+addPaper(
+  'Endangered languages and linguistic diversity',
+  ['David Crystal'],
+  2014,
+  '언어학',
+  'Language',
+  'https://doi.org/10.1353/lan.2014.0087',
+  ['멸종위기언어', '언어다양성', '보존']
+);
+
+addPaper(
+  'Corpus linguistics and language variation',
+  ['Douglas Biber'],
+  2012,
+  '언어학',
+  'International Journal of Corpus Linguistics',
+  'https://doi.org/10.1075/ijcl.17.3.01bib',
+  ['코퍼스언어학', '언어변이', '분석']
 );
 
 /**
