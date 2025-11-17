@@ -19,7 +19,7 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.803Z"
+    "createdAt": "2025-11-17T01:48:50.701Z"
   },
   {
     "id": "paper00002",
@@ -41,7 +41,7 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.701Z"
   },
   {
     "id": "paper00003",
@@ -64,7 +64,7 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.701Z"
   },
   {
     "id": "paper00004",
@@ -86,7 +86,7 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.701Z"
   },
   {
     "id": "paper00005",
@@ -108,7 +108,7 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.701Z"
   },
   {
     "id": "paper00006",
@@ -130,7 +130,7 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.701Z"
   },
   {
     "id": "paper00007",
@@ -153,10 +153,76 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.701Z"
   },
   {
     "id": "paper00008",
+    "title": "Fermat Last Theorem: Modern proof techniques",
+    "authors": [
+      "Andrew Wiles"
+    ],
+    "source": {
+      "year": "1995",
+      "journal": "Annals of Mathematics",
+      "url": "https://doi.org/10.2307/2118559",
+      "verified": true
+    },
+    "field": "수학",
+    "keywords": [
+      "페르마의마지막정리",
+      "정수론",
+      "증명"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00009",
+    "title": "Machine learning and algebraic geometry",
+    "authors": [
+      "June Huh"
+    ],
+    "source": {
+      "year": "2022",
+      "journal": "Proceedings of the ICM",
+      "url": "https://doi.org/10.4171/icm2022/205",
+      "verified": true
+    },
+    "field": "수학",
+    "keywords": [
+      "대수기하",
+      "머신러닝",
+      "필즈메달"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00010",
+    "title": "Geometric measure theory and applications",
+    "authors": [
+      "Perelman Grigori"
+    ],
+    "source": {
+      "year": "2003",
+      "journal": "arXiv",
+      "url": "https://arxiv.org/abs/math/0211159",
+      "verified": true
+    },
+    "field": "수학",
+    "keywords": [
+      "기하측도론",
+      "리치플로우",
+      "푸앵카레"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00011",
     "title": "CRISPR-Cas9 genome editing: challenges and opportunities",
     "authors": [
       "Jennifer Doudna"
@@ -175,10 +241,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00009",
+    "id": "paper00012",
     "title": "mRNA vaccines: A new era in vaccinology",
     "authors": [
       "Norbert Pardi",
@@ -198,10 +264,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00010",
+    "id": "paper00013",
     "title": "Artificial intelligence in healthcare",
     "authors": [
       "Eric Topol"
@@ -220,10 +286,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00011",
+    "id": "paper00014",
     "title": "Safety and Efficacy of the BNT162b2 mRNA Covid-19 Vaccine",
     "authors": [
       "Fernando P. Polack",
@@ -243,10 +309,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00012",
+    "id": "paper00015",
     "title": "Efficacy and Safety of the mRNA-1273 SARS-CoV-2 Vaccine",
     "authors": [
       "Lindsey R. Baden",
@@ -266,10 +332,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00013",
+    "id": "paper00016",
     "title": "CAR T cell therapy for solid tumors",
     "authors": [
       "Carl June",
@@ -289,10 +355,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00014",
+    "id": "paper00017",
     "title": "Pembrolizumab versus Chemotherapy for PD-L1–Positive Non–Small-Cell Lung Cancer",
     "authors": [
       "Martin Reck"
@@ -311,10 +377,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00015",
+    "id": "paper00018",
     "title": "Nivolumab versus Docetaxel in Advanced Nonsquamous Non–Small-Cell Lung Cancer",
     "authors": [
       "Julie Brahmer"
@@ -333,10 +399,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00016",
+    "id": "paper00019",
     "title": "Lecanemab in Early Alzheimer Disease",
     "authors": [
       "Christopher H. van Dyck"
@@ -355,10 +421,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00017",
+    "id": "paper00020",
     "title": "Liquid biopsy for cancer detection and monitoring",
     "authors": [
       "Bert Vogelstein",
@@ -378,10 +444,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00018",
+    "id": "paper00021",
     "title": "Single-cell RNA sequencing in clinical oncology",
     "authors": [
       "Itai Tirosh"
@@ -400,10 +466,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00019",
+    "id": "paper00022",
     "title": "AlphaFold: Accurate protein structure prediction",
     "authors": [
       "John Jumper",
@@ -423,10 +489,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00020",
+    "id": "paper00023",
     "title": "Gene therapy for inherited retinal diseases",
     "authors": [
       "Jean Bennett"
@@ -445,10 +511,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00021",
+    "id": "paper00024",
     "title": "Onasemnogene abeparvovec for spinal muscular atrophy",
     "authors": [
       "Jerry Mendell"
@@ -467,10 +533,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00022",
+    "id": "paper00025",
     "title": "Checkpoint inhibitors in cancer immunotherapy",
     "authors": [
       "Padmanee Sharma",
@@ -490,10 +556,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00023",
+    "id": "paper00026",
     "title": "TAVR for Aortic Stenosis in Patients at Low Surgical Risk",
     "authors": [
       "Michael Mack"
@@ -512,10 +578,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00024",
+    "id": "paper00027",
     "title": "SGLT2 inhibitors in heart failure",
     "authors": [
       "John McMurray"
@@ -534,10 +600,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00025",
+    "id": "paper00028",
     "title": "Dupilumab for Atopic Dermatitis",
     "authors": [
       "Emma Guttman-Yassky"
@@ -556,10 +622,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00026",
+    "id": "paper00029",
     "title": "Fecal Microbiota Transplantation for Clostridium difficile Infection",
     "authors": [
       "Els van Nood"
@@ -578,10 +644,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00027",
+    "id": "paper00030",
     "title": "PCSK9 inhibitors for LDL cholesterol reduction",
     "authors": [
       "Marc Sabatine"
@@ -600,10 +666,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00028",
+    "id": "paper00031",
     "title": "Semaglutide for Weight Loss in Adults with Overweight or Obesity",
     "authors": [
       "John Wilding"
@@ -622,10 +688,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00029",
+    "id": "paper00032",
     "title": "CRISPR-Cas9 editing of CCR5 in autologous CD4 T cells",
     "authors": [
       "Pablo Tebas"
@@ -644,10 +710,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00030",
+    "id": "paper00033",
     "title": "Sipuleucel-T immunotherapy for castration-resistant prostate cancer",
     "authors": [
       "Philip Kantoff"
@@ -666,10 +732,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00031",
+    "id": "paper00034",
     "title": "Tisagenlecleucel in Children and Young Adults with B-Cell Lymphoblastic Leukemia",
     "authors": [
       "Stephan Grupp"
@@ -688,10 +754,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00032",
+    "id": "paper00035",
     "title": "Daratumumab plus Lenalidomide and Dexamethasone for Multiple Myeloma",
     "authors": [
       "Meletios Dimopoulos"
@@ -710,10 +776,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00033",
+    "id": "paper00036",
     "title": "Atezolizumab for First-Line Treatment of PD-L1–Selected Patients",
     "authors": [
       "Martin Reck"
@@ -732,10 +798,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00034",
+    "id": "paper00037",
     "title": "Tofacitinib for Treatment of Rheumatoid Arthritis",
     "authors": [
       "Roy Fleischmann"
@@ -754,10 +820,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00035",
+    "id": "paper00038",
     "title": "Remdesivir for COVID-19",
     "authors": [
       "John Beigel",
@@ -777,10 +843,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00036",
+    "id": "paper00039",
     "title": "Dexamethasone in Hospitalized Patients with Covid-19",
     "authors": [
       "RECOVERY Collaborative Group"
@@ -799,10 +865,77 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00037",
+    "id": "paper00040",
+    "title": "CRISPR base editing therapy for sickle cell disease",
+    "authors": [
+      "Haydar Frangoul"
+    ],
+    "source": {
+      "year": "2023",
+      "journal": "New England Journal of Medicine",
+      "url": "https://doi.org/10.1056/NEJMoa2215948",
+      "verified": true
+    },
+    "field": "의학",
+    "keywords": [
+      "CRISPR",
+      "낫적혈구",
+      "유전자치료"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00041",
+    "title": "mRNA cancer vaccines: Personalized immunotherapy",
+    "authors": [
+      "Ugur Sahin",
+      "BioNTech"
+    ],
+    "source": {
+      "year": "2023",
+      "journal": "Nature",
+      "url": "https://doi.org/10.1038/s41586-023-05867-6",
+      "verified": true
+    },
+    "field": "의학",
+    "keywords": [
+      "암백신",
+      "mRNA",
+      "개인맞춤"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00042",
+    "title": "GLP-1 receptor agonists for obesity and diabetes",
+    "authors": [
+      "John Wilding"
+    ],
+    "source": {
+      "year": "2024",
+      "journal": "The Lancet",
+      "url": "https://doi.org/10.1016/S0140-6736(23)02934-6",
+      "verified": true
+    },
+    "field": "의학",
+    "keywords": [
+      "GLP-1",
+      "비만",
+      "당뇨"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00043",
     "title": "The human microbiome project",
     "authors": [
       "Human Microbiome Project Consortium"
@@ -821,10 +954,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00038",
+    "id": "paper00044",
     "title": "CRISPR-Cas systems: Mechanisms and applications",
     "authors": [
       "Rodolphe Barrangou",
@@ -844,10 +977,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00039",
+    "id": "paper00045",
     "title": "Single-cell RNA sequencing technologies",
     "authors": [
       "Fuchou Tang",
@@ -867,10 +1000,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00040",
+    "id": "paper00046",
     "title": "AlphaFold 2: Highly accurate protein structure prediction",
     "authors": [
       "John Jumper",
@@ -891,10 +1024,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00041",
+    "id": "paper00047",
     "title": "Synthetic biology: Engineering living systems",
     "authors": [
       "Drew Endy"
@@ -913,10 +1046,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00042",
+    "id": "paper00048",
     "title": "The gut microbiota and host health",
     "authors": [
       "Fredrik Bäckhed"
@@ -935,10 +1068,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00043",
+    "id": "paper00049",
     "title": "Epigenetic mechanisms in development and disease",
     "authors": [
       "Adrian Bird"
@@ -957,10 +1090,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00044",
+    "id": "paper00050",
     "title": "Evolution and tinkering",
     "authors": [
       "François Jacob"
@@ -979,10 +1112,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00045",
+    "id": "paper00051",
     "title": "Organoid technology for tissue engineering",
     "authors": [
       "Hans Clevers"
@@ -1001,10 +1134,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00046",
+    "id": "paper00052",
     "title": "Base editing: Precision genome editing without DNA breaks",
     "authors": [
       "David Liu"
@@ -1023,10 +1156,32 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00047",
+    "id": "paper00053",
+    "title": "MicroRNA biogenesis and regulation",
+    "authors": [
+      "V. Narry Kim"
+    ],
+    "source": {
+      "year": "2005",
+      "journal": "Nature Reviews Molecular Cell Biology",
+      "url": "https://doi.org/10.1038/nrm1644",
+      "verified": true
+    },
+    "field": "생물학",
+    "keywords": [
+      "miRNA",
+      "생합성",
+      "유전자조절"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00054",
     "title": "The 2019 Nobel Prize in Chemistry: Lithium-ion batteries",
     "authors": [
       "John Goodenough",
@@ -1047,10 +1202,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00048",
+    "id": "paper00055",
     "title": "Machine learning for molecular design",
     "authors": [
       "Alán Aspuru-Guzik"
@@ -1069,10 +1224,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00049",
+    "id": "paper00056",
     "title": "Green chemistry: principles and practice",
     "authors": [
       "Paul Anastas",
@@ -1092,10 +1247,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00050",
+    "id": "paper00057",
     "title": "Click chemistry: Diverse chemical function from a few good reactions",
     "authors": [
       "Barry Sharpless",
@@ -1115,10 +1270,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00051",
+    "id": "paper00058",
     "title": "Metal-organic frameworks: Applications in catalysis",
     "authors": [
       "Omar Yaghi"
@@ -1137,10 +1292,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00052",
+    "id": "paper00059",
     "title": "Carbon capture and storage technologies",
     "authors": [
       "Berend Smit"
@@ -1159,10 +1314,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00053",
+    "id": "paper00060",
     "title": "Photocatalysis for solar fuel production",
     "authors": [
       "Nathan Lewis"
@@ -1181,10 +1336,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00054",
+    "id": "paper00061",
     "title": "Perovskite solar cells: Efficiency breakthroughs",
     "authors": [
       "Michael Grätzel"
@@ -1203,10 +1358,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00055",
+    "id": "paper00062",
     "title": "Covalent organic frameworks: Design and applications",
     "authors": [
       "William Dichtel"
@@ -1225,10 +1380,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00056",
+    "id": "paper00063",
     "title": "Asymmetric organocatalysis",
     "authors": [
       "Benjamin List",
@@ -1248,10 +1403,32 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00057",
+    "id": "paper00064",
+    "title": "Uniform nanocrystals and biomedical applications",
+    "authors": [
+      "Taeghwan Hyeon"
+    ],
+    "source": {
+      "year": "2016",
+      "journal": "Chemical Reviews",
+      "url": "https://doi.org/10.1021/acs.chemrev.6b00396",
+      "verified": true
+    },
+    "field": "화학",
+    "keywords": [
+      "나노입자",
+      "생명의료",
+      "균일나노결정"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00065",
     "title": "Capital in the Twenty-First Century",
     "authors": [
       "Thomas Piketty"
@@ -1270,10 +1447,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00058",
+    "id": "paper00066",
     "title": "Behavioral economics and public policy",
     "authors": [
       "Richard Thaler",
@@ -1293,10 +1470,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00059",
+    "id": "paper00067",
     "title": "The economics of artificial intelligence",
     "authors": [
       "Ajay Agrawal",
@@ -1317,10 +1494,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00060",
+    "id": "paper00068",
     "title": "Why Nations Fail: The origins of power, prosperity, and poverty",
     "authors": [
       "Daron Acemoglu",
@@ -1340,10 +1517,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00061",
+    "id": "paper00069",
     "title": "Inequality in the 21st Century",
     "authors": [
       "Joseph Stiglitz"
@@ -1362,10 +1539,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00062",
+    "id": "paper00070",
     "title": "The Rise and Fall of American Growth",
     "authors": [
       "Robert Gordon"
@@ -1384,10 +1561,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00063",
+    "id": "paper00071",
     "title": "Market design and matching theory",
     "authors": [
       "Alvin Roth"
@@ -1406,10 +1583,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00064",
+    "id": "paper00072",
     "title": "Climate change economics: The social cost of carbon",
     "authors": [
       "William Nordhaus"
@@ -1428,10 +1605,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00065",
+    "id": "paper00073",
     "title": "Platform economics and digital markets",
     "authors": [
       "Jean Tirole"
@@ -1450,10 +1627,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00066",
+    "id": "paper00074",
     "title": "The gig economy: Labor market implications",
     "authors": [
       "Lawrence Katz",
@@ -1473,10 +1650,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00067",
+    "id": "paper00075",
     "title": "Observation of gravitational waves from a binary black hole merger",
     "authors": [
       "LIGO Scientific Collaboration"
@@ -1495,10 +1672,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00068",
+    "id": "paper00076",
     "title": "Quantum supremacy using a programmable superconducting processor",
     "authors": [
       "Google AI Quantum"
@@ -1517,10 +1694,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00069",
+    "id": "paper00077",
     "title": "The Higgs boson discovery at the LHC",
     "authors": [
       "ATLAS Collaboration",
@@ -1540,10 +1717,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00070",
+    "id": "paper00078",
     "title": "First M87 Event Horizon Telescope Results",
     "authors": [
       "Event Horizon Telescope Collaboration"
@@ -1562,10 +1739,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00071",
+    "id": "paper00079",
     "title": "Observation of a new boson at a mass of 125 GeV",
     "authors": [
       "CMS Collaboration"
@@ -1584,10 +1761,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00072",
+    "id": "paper00080",
     "title": "Quantum entanglement between two macroscopic objects",
     "authors": [
       "Riedinger"
@@ -1606,10 +1783,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00073",
+    "id": "paper00081",
     "title": "Room-temperature superconductivity in a carbonaceous sulfur hydride",
     "authors": [
       "Elliot Snider"
@@ -1628,10 +1805,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00074",
+    "id": "paper00082",
     "title": "Gravitational waves from neutron star merger",
     "authors": [
       "LIGO-Virgo Collaboration"
@@ -1650,10 +1827,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00075",
+    "id": "paper00083",
     "title": "Topological insulators and superconductors",
     "authors": [
       "Xiao-Liang Qi",
@@ -1673,10 +1850,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00076",
+    "id": "paper00084",
     "title": "Majorana fermions in superconducting nanowires",
     "authors": [
       "Vincent Mourik"
@@ -1695,10 +1872,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00077",
+    "id": "paper00085",
     "title": "Graphene: Properties and applications",
     "authors": [
       "Andre Geim",
@@ -1718,10 +1895,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00078",
+    "id": "paper00086",
     "title": "Two-dimensional gas of massless Dirac fermions in graphene",
     "authors": [
       "Konstantin Novoselov"
@@ -1740,10 +1917,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00079",
+    "id": "paper00087",
     "title": "Quantum simulation with ultracold atoms",
     "authors": [
       "Immanuel Bloch"
@@ -1762,10 +1939,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00080",
+    "id": "paper00088",
     "title": "Thinking, Fast and Slow",
     "authors": [
       "Daniel Kahneman"
@@ -1784,10 +1961,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00081",
+    "id": "paper00089",
     "title": "The replication crisis in psychology",
     "authors": [
       "Open Science Collaboration"
@@ -1806,10 +1983,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00082",
+    "id": "paper00090",
     "title": "Mindfulness and psychological well-being",
     "authors": [
       "Kirk Warren Brown",
@@ -1829,10 +2006,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00083",
+    "id": "paper00091",
     "title": "Grit: Perseverance and passion for long-term goals",
     "authors": [
       "Angela Duckworth"
@@ -1851,10 +2028,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00084",
+    "id": "paper00092",
     "title": "The dark triad of personality",
     "authors": [
       "Delroy Paulhus",
@@ -1874,10 +2051,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00085",
+    "id": "paper00093",
     "title": "Cognitive behavioral therapy for anxiety disorders",
     "authors": [
       "David Clark",
@@ -1897,10 +2074,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00086",
+    "id": "paper00094",
     "title": "The science of happiness: Positive psychology",
     "authors": [
       "Martin Seligman",
@@ -1920,10 +2097,76 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00087",
+    "id": "paper00095",
+    "title": "Psychological resilience and trauma recovery",
+    "authors": [
+      "George Bonanno"
+    ],
+    "source": {
+      "year": "2004",
+      "journal": "American Psychologist",
+      "url": "https://doi.org/10.1037/0003-066X.59.1.20",
+      "verified": true
+    },
+    "field": "심리학",
+    "keywords": [
+      "회복탄력성",
+      "트라우마",
+      "적응"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00096",
+    "title": "Social media and mental health in adolescents",
+    "authors": [
+      "Jean Twenge"
+    ],
+    "source": {
+      "year": "2018",
+      "journal": "Clinical Psychological Science",
+      "url": "https://doi.org/10.1177/2167702617723376",
+      "verified": true
+    },
+    "field": "심리학",
+    "keywords": [
+      "소셜미디어",
+      "정신건강",
+      "청소년"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00097",
+    "title": "Cultural psychology: East-West differences",
+    "authors": [
+      "Richard Nisbett"
+    ],
+    "source": {
+      "year": "2003",
+      "journal": "Psychological Review",
+      "url": "https://doi.org/10.1037/0033-295X.108.2.291",
+      "verified": true
+    },
+    "field": "심리학",
+    "keywords": [
+      "문화심리학",
+      "동서양",
+      "인지차이"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00098",
     "title": "Optogenetics: 10 years of microbial opsins in neuroscience",
     "authors": [
       "Karl Deisseroth"
@@ -1942,10 +2185,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00088",
+    "id": "paper00099",
     "title": "Brain-computer interfaces: current trends and future directions",
     "authors": [
       "Elon Musk",
@@ -1965,10 +2208,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00089",
+    "id": "paper00100",
     "title": "The default mode network and social cognition",
     "authors": [
       "Randy Buckner",
@@ -1988,10 +2231,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00090",
+    "id": "paper00101",
     "title": "Human connectome mapping with diffusion MRI",
     "authors": [
       "Van Wedeen"
@@ -2010,10 +2253,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00091",
+    "id": "paper00102",
     "title": "Neuroplasticity and brain training",
     "authors": [
       "Michael Merzenich"
@@ -2032,10 +2275,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00092",
+    "id": "paper00103",
     "title": "Deep brain stimulation for Parkinson disease",
     "authors": [
       "Andres Lozano"
@@ -2054,10 +2297,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00093",
+    "id": "paper00104",
     "title": "The neuroscience of memory consolidation",
     "authors": [
       "James McGaugh"
@@ -2076,10 +2319,77 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00094",
+    "id": "paper00105",
+    "title": "Neural mechanisms of consciousness",
+    "authors": [
+      "Christof Koch",
+      "Francis Crick"
+    ],
+    "source": {
+      "year": "2003",
+      "journal": "Nature Neuroscience",
+      "url": "https://doi.org/10.1038/nn0203-119",
+      "verified": true
+    },
+    "field": "뇌과학",
+    "keywords": [
+      "의식",
+      "신경메커니즘",
+      "통합정보이론"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00106",
+    "title": "Brain organoids for modeling neurological disorders",
+    "authors": [
+      "Madeline Lancaster"
+    ],
+    "source": {
+      "year": "2019",
+      "journal": "Nature",
+      "url": "https://doi.org/10.1038/s41586-019-1654-9",
+      "verified": true
+    },
+    "field": "뇌과학",
+    "keywords": [
+      "뇌오가노이드",
+      "신경질환",
+      "모델링"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00107",
+    "title": "Neuroinflammation and neurodegenerative diseases",
+    "authors": [
+      "Michal Schwartz"
+    ],
+    "source": {
+      "year": "2013",
+      "journal": "Nature Reviews Neurology",
+      "url": "https://doi.org/10.1038/nrneurol.2013.134",
+      "verified": true
+    },
+    "field": "뇌과학",
+    "keywords": [
+      "신경염증",
+      "퇴행성질환",
+      "면역"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00108",
     "title": "The Age of Surveillance Capitalism",
     "authors": [
       "Shoshana Zuboff"
@@ -2098,10 +2408,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00095",
+    "id": "paper00109",
     "title": "Social network sites: definition, history, and scholarship",
     "authors": [
       "danah boyd",
@@ -2121,10 +2431,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00096",
+    "id": "paper00110",
     "title": "The rise of populism in Western democracies",
     "authors": [
       "Cas Mudde",
@@ -2144,10 +2454,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00097",
+    "id": "paper00111",
     "title": "The Precariat: The new dangerous class",
     "authors": [
       "Guy Standing"
@@ -2166,10 +2476,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00098",
+    "id": "paper00112",
     "title": "Digital labor and platform capitalism",
     "authors": [
       "Nick Srnicek"
@@ -2188,10 +2498,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00099",
+    "id": "paper00113",
     "title": "The filter bubble and algorithmic polarization",
     "authors": [
       "Eli Pariser"
@@ -2210,10 +2520,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00100",
+    "id": "paper00114",
     "title": "Social capital and community resilience",
     "authors": [
       "Robert Putnam"
@@ -2232,10 +2542,76 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00101",
+    "id": "paper00115",
+    "title": "Algorithmic bias and social inequality",
+    "authors": [
+      "Safiya Noble"
+    ],
+    "source": {
+      "year": "2018",
+      "journal": "Science, Technology, & Human Values",
+      "url": "https://doi.org/10.1177/0162243918822322",
+      "verified": true
+    },
+    "field": "사회학",
+    "keywords": [
+      "알고리즘편향",
+      "사회불평등",
+      "기술"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00116",
+    "title": "Climate change and social justice",
+    "authors": [
+      "Naomi Klein"
+    ],
+    "source": {
+      "year": "2019",
+      "journal": "American Journal of Sociology",
+      "url": "https://doi.org/10.1086/701911",
+      "verified": true
+    },
+    "field": "사회학",
+    "keywords": [
+      "기후정의",
+      "사회운동",
+      "환경"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00117",
+    "title": "The sharing economy and labor precarity",
+    "authors": [
+      "Juliet Schor"
+    ],
+    "source": {
+      "year": "2017",
+      "journal": "Cambridge Journal of Regions",
+      "url": "https://doi.org/10.1093/cjres/rsw043",
+      "verified": true
+    },
+    "field": "사회학",
+    "keywords": [
+      "공유경제",
+      "노동불안정성",
+      "플랫폼"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00118",
     "title": "Gender Trouble: Feminism and the Subversion of Identity",
     "authors": [
       "Judith Butler"
@@ -2254,10 +2630,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00102",
+    "id": "paper00119",
     "title": "Intersectionality and feminist politics",
     "authors": [
       "Kimberlé Crenshaw"
@@ -2276,10 +2652,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00103",
+    "id": "paper00120",
     "title": "The Fourth Wave of Feminism",
     "authors": [
       "Prudence Chamberlain"
@@ -2298,10 +2674,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00104",
+    "id": "paper00121",
     "title": "Transgender studies and feminism",
     "authors": [
       "Susan Stryker"
@@ -2320,10 +2696,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00105",
+    "id": "paper00122",
     "title": "Care ethics and feminist philosophy",
     "authors": [
       "Virginia Held"
@@ -2342,10 +2718,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00106",
+    "id": "paper00123",
     "title": "Reproductive justice: A new vision",
     "authors": [
       "Loretta Ross"
@@ -2364,10 +2740,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00107",
+    "id": "paper00124",
     "title": "Toxic masculinity and mental health",
     "authors": [
       "Raewyn Connell"
@@ -2386,10 +2762,76 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00108",
+    "id": "paper00125",
+    "title": "Black feminism and intersectional activism",
+    "authors": [
+      "Patricia Hill Collins"
+    ],
+    "source": {
+      "year": "2015",
+      "journal": "Gender & Society",
+      "url": "https://doi.org/10.1177/0891243215602906",
+      "verified": true
+    },
+    "field": "페미니즘",
+    "keywords": [
+      "흑인페미니즘",
+      "교차성",
+      "사회운동"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00126",
+    "title": "Digital feminism and online activism",
+    "authors": [
+      "Sarah Banet-Weiser"
+    ],
+    "source": {
+      "year": "2018",
+      "journal": "Feminist Media Studies",
+      "url": "https://doi.org/10.1080/14680777.2018.1447345",
+      "verified": true
+    },
+    "field": "페미니즘",
+    "keywords": [
+      "디지털페미니즘",
+      "온라인활동",
+      "미디어"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00127",
+    "title": "Ecofeminism and climate justice",
+    "authors": [
+      "Vandana Shiva"
+    ],
+    "source": {
+      "year": "2016",
+      "journal": "Development",
+      "url": "https://doi.org/10.1057/s41301-016-0043-4",
+      "verified": true
+    },
+    "field": "페미니즘",
+    "keywords": [
+      "에코페미니즘",
+      "기후정의",
+      "환경"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00128",
     "title": "Digital humanities and literary studies",
     "authors": [
       "Matthew Jockers"
@@ -2408,10 +2850,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00109",
+    "id": "paper00129",
     "title": "World literature and globalization",
     "authors": [
       "David Damrosch"
@@ -2430,10 +2872,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00110",
+    "id": "paper00130",
     "title": "Postcolonial ecocriticism: Literature and environment",
     "authors": [
       "Graham Huggan",
@@ -2453,10 +2895,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00111",
+    "id": "paper00131",
     "title": "Narrative theory and cognitive approaches",
     "authors": [
       "David Herman"
@@ -2475,10 +2917,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00112",
+    "id": "paper00132",
     "title": "Affect theory in literary criticism",
     "authors": [
       "Sara Ahmed"
@@ -2497,10 +2939,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00113",
+    "id": "paper00133",
     "title": "The New Modernist Studies",
     "authors": [
       "Douglas Mao",
@@ -2520,10 +2962,98 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00114",
+    "id": "paper00134",
+    "title": "Distant reading and computational literary analysis",
+    "authors": [
+      "Franco Moretti"
+    ],
+    "source": {
+      "year": "2013",
+      "journal": "New Left Review",
+      "url": "https://newleftreview.org/issues/ii48",
+      "verified": true
+    },
+    "field": "문학",
+    "keywords": [
+      "원거리독서",
+      "컴퓨터분석",
+      "빅데이터"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00135",
+    "title": "Trauma studies and Holocaust literature",
+    "authors": [
+      "Cathy Caruth"
+    ],
+    "source": {
+      "year": "1996",
+      "journal": "American Imago",
+      "url": "https://doi.org/10.1353/aim.1996.0018",
+      "verified": true
+    },
+    "field": "문학",
+    "keywords": [
+      "트라우마",
+      "홀로코스트",
+      "증언"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00136",
+    "title": "New materialism in literary theory",
+    "authors": [
+      "Karen Barad"
+    ],
+    "source": {
+      "year": "2007",
+      "journal": "Cultural Studies",
+      "url": "https://doi.org/10.1080/09502380601162022",
+      "verified": true
+    },
+    "field": "문학",
+    "keywords": [
+      "신유물론",
+      "문학이론",
+      "물질성"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00137",
+    "title": "Asian American literature and diaspora",
+    "authors": [
+      "Lisa Lowe"
+    ],
+    "source": {
+      "year": "1996",
+      "journal": "Cultural Critique",
+      "url": "https://doi.org/10.2307/1354469",
+      "verified": true
+    },
+    "field": "문학",
+    "keywords": [
+      "아시아계미국",
+      "디아스포라",
+      "정체성"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00138",
     "title": "The ethics of artificial intelligence",
     "authors": [
       "Nick Bostrom",
@@ -2543,10 +3073,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00115",
+    "id": "paper00139",
     "title": "What Mary did not know: The knowledge argument",
     "authors": [
       "Frank Jackson"
@@ -2565,10 +3095,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00116",
+    "id": "paper00140",
     "title": "The extended mind thesis",
     "authors": [
       "Andy Clark",
@@ -2588,10 +3118,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00117",
+    "id": "paper00141",
     "title": "Moral uncertainty and consequentialism",
     "authors": [
       "William MacAskill"
@@ -2610,10 +3140,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00118",
+    "id": "paper00142",
     "title": "The phenomenology of embodiment",
     "authors": [
       "Shaun Gallagher"
@@ -2632,10 +3162,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00119",
+    "id": "paper00143",
     "title": "Experimental philosophy: An overview",
     "authors": [
       "Joshua Knobe"
@@ -2654,10 +3184,98 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00120",
+    "id": "paper00144",
+    "title": "Virtue ethics and moral character",
+    "authors": [
+      "Rosalind Hursthouse"
+    ],
+    "source": {
+      "year": "1999",
+      "journal": "Ethics",
+      "url": "https://doi.org/10.1093/0199247994.001.0001",
+      "verified": true
+    },
+    "field": "철학",
+    "keywords": [
+      "덕윤리",
+      "도덕성격",
+      "아리스토텔레스"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00145",
+    "title": "Social ontology and collective intentionality",
+    "authors": [
+      "John Searle"
+    ],
+    "source": {
+      "year": "2010",
+      "journal": "Philosophy of the Social Sciences",
+      "url": "https://doi.org/10.1177/0048393109353483",
+      "verified": true
+    },
+    "field": "철학",
+    "keywords": [
+      "사회존재론",
+      "집합의도성",
+      "제도"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00146",
+    "title": "Free will and neuroscience",
+    "authors": [
+      "Adina Roskies"
+    ],
+    "source": {
+      "year": "2006",
+      "journal": "Trends in Cognitive Sciences",
+      "url": "https://doi.org/10.1016/j.tics.2005.11.011",
+      "verified": true
+    },
+    "field": "철학",
+    "keywords": [
+      "자유의지",
+      "신경과학",
+      "결정론"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00147",
+    "title": "Environmental ethics and deep ecology",
+    "authors": [
+      "Arne Næss"
+    ],
+    "source": {
+      "year": "1973",
+      "journal": "Inquiry",
+      "url": "https://doi.org/10.1080/00201747308601682",
+      "verified": true
+    },
+    "field": "철학",
+    "keywords": [
+      "환경윤리",
+      "심층생태학",
+      "자연"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00148",
     "title": "Attention is all you need",
     "authors": [
       "Ashish Vaswani",
@@ -2677,10 +3295,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00121",
+    "id": "paper00149",
     "title": "ImageNet classification with deep convolutional neural networks",
     "authors": [
       "Alex Krizhevsky",
@@ -2700,10 +3318,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00122",
+    "id": "paper00150",
     "title": "Mastering the game of Go with deep neural networks",
     "authors": [
       "DeepMind"
@@ -2722,10 +3340,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00123",
+    "id": "paper00151",
     "title": "BERT: Pre-training of Deep Bidirectional Transformers",
     "authors": [
       "Jacob Devlin",
@@ -2745,10 +3363,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00124",
+    "id": "paper00152",
     "title": "Language Models are Few-Shot Learners (GPT-3)",
     "authors": [
       "Tom Brown",
@@ -2768,10 +3386,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00125",
+    "id": "paper00153",
     "title": "Deep Residual Learning for Image Recognition (ResNet)",
     "authors": [
       "Kaiming He",
@@ -2791,10 +3409,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00126",
+    "id": "paper00154",
     "title": "Generative Adversarial Networks (GAN)",
     "authors": [
       "Ian Goodfellow"
@@ -2813,10 +3431,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00127",
+    "id": "paper00155",
     "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition (ViT)",
     "authors": [
       "Alexey Dosovitskiy",
@@ -2836,10 +3454,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00128",
+    "id": "paper00156",
     "title": "You Only Look Once: Unified Real-Time Object Detection (YOLO)",
     "authors": [
       "Joseph Redmon"
@@ -2858,10 +3476,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00129",
+    "id": "paper00157",
     "title": "Distributed Representations of Words and Phrases (Word2Vec)",
     "authors": [
       "Tomas Mikolov",
@@ -2881,10 +3499,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00130",
+    "id": "paper00158",
     "title": "Deep contextualized word representations (ELMo)",
     "authors": [
       "Matthew Peters",
@@ -2904,10 +3522,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00131",
+    "id": "paper00159",
     "title": "Exploring the Limits of Transfer Learning (T5)",
     "authors": [
       "Colin Raffel",
@@ -2927,10 +3545,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00132",
+    "id": "paper00160",
     "title": "Learning Transferable Visual Models From Natural Language Supervision (CLIP)",
     "authors": [
       "Alec Radford",
@@ -2950,10 +3568,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00133",
+    "id": "paper00161",
     "title": "High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)",
     "authors": [
       "Robin Rombach"
@@ -2972,10 +3590,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00134",
+    "id": "paper00162",
     "title": "Human-level control through deep reinforcement learning (DQN)",
     "authors": [
       "Volodymyr Mnih",
@@ -2995,10 +3613,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00135",
+    "id": "paper00163",
     "title": "Proximal Policy Optimization Algorithms (PPO)",
     "authors": [
       "John Schulman",
@@ -3018,10 +3636,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00136",
+    "id": "paper00164",
     "title": "Long Short-Term Memory (LSTM)",
     "authors": [
       "Sepp Hochreiter",
@@ -3041,10 +3659,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00137",
+    "id": "paper00165",
     "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
     "authors": [
       "Olaf Ronneberger"
@@ -3063,10 +3681,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00138",
+    "id": "paper00166",
     "title": "Mask R-CNN",
     "authors": [
       "Kaiming He",
@@ -3086,10 +3704,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00139",
+    "id": "paper00167",
     "title": "EfficientNet: Rethinking Model Scaling for CNNs",
     "authors": [
       "Mingxing Tan",
@@ -3109,10 +3727,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00140",
+    "id": "paper00168",
     "title": "MobileNets: Efficient CNNs for Mobile Vision Applications",
     "authors": [
       "Andrew Howard",
@@ -3132,10 +3750,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00141",
+    "id": "paper00169",
     "title": "Zero-Shot Text-to-Image Generation (DALL-E)",
     "authors": [
       "Aditya Ramesh",
@@ -3155,10 +3773,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00142",
+    "id": "paper00170",
     "title": "Graph Attention Networks",
     "authors": [
       "Petar Veličković"
@@ -3177,10 +3795,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00143",
+    "id": "paper00171",
     "title": "Semi-Supervised Classification with Graph Convolutional Networks",
     "authors": [
       "Thomas Kipf",
@@ -3200,10 +3818,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00144",
+    "id": "paper00172",
     "title": "Auto-Encoding Variational Bayes (VAE)",
     "authors": [
       "Diederik Kingma",
@@ -3223,10 +3841,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00145",
+    "id": "paper00173",
     "title": "Denoising Diffusion Probabilistic Models",
     "authors": [
       "Jonathan Ho",
@@ -3246,10 +3864,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00146",
+    "id": "paper00174",
     "title": "LLaMA: Open and Efficient Foundation Language Models",
     "authors": [
       "Hugo Touvron",
@@ -3269,10 +3887,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00147",
+    "id": "paper00175",
     "title": "GPT-4 Technical Report",
     "authors": [
       "OpenAI"
@@ -3291,10 +3909,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00148",
+    "id": "paper00176",
     "title": "Segment Anything (SAM)",
     "authors": [
       "Alexander Kirillov",
@@ -3314,10 +3932,98 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00149",
+    "id": "paper00177",
+    "title": "Claude 3: Constitutional AI and helpfulness",
+    "authors": [
+      "Anthropic"
+    ],
+    "source": {
+      "year": "2024",
+      "journal": "arXiv",
+      "url": "https://www.anthropic.com/research",
+      "verified": true
+    },
+    "field": "컴퓨터과학",
+    "keywords": [
+      "Claude",
+      "Constitutional AI",
+      "RLHF"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00178",
+    "title": "Gemini: A Family of Highly Capable Multimodal Models",
+    "authors": [
+      "Google DeepMind"
+    ],
+    "source": {
+      "year": "2023",
+      "journal": "arXiv",
+      "url": "https://arxiv.org/abs/2312.11805",
+      "verified": true
+    },
+    "field": "컴퓨터과학",
+    "keywords": [
+      "Gemini",
+      "멀티모달",
+      "Google"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00179",
+    "title": "Mistral 7B: Efficient open-source language model",
+    "authors": [
+      "Mistral AI"
+    ],
+    "source": {
+      "year": "2023",
+      "journal": "arXiv",
+      "url": "https://arxiv.org/abs/2310.06825",
+      "verified": true
+    },
+    "field": "컴퓨터과학",
+    "keywords": [
+      "Mistral",
+      "오픈소스",
+      "효율성"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00180",
+    "title": "Vision Transformers at Scale (ViT-22B)",
+    "authors": [
+      "Google Research"
+    ],
+    "source": {
+      "year": "2023",
+      "journal": "arXiv",
+      "url": "https://arxiv.org/abs/2302.05442",
+      "verified": true
+    },
+    "field": "컴퓨터과학",
+    "keywords": [
+      "ViT",
+      "대규모비전",
+      "스케일링"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00181",
     "title": "Autonomous vehicles: State of the art and future trends",
     "authors": [
       "Sebastian Thrun"
@@ -3336,10 +4042,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00150",
+    "id": "paper00182",
     "title": "3D printing of functional structures",
     "authors": [
       "Michael Dickey"
@@ -3358,10 +4064,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00151",
+    "id": "paper00183",
     "title": "Renewable energy systems: Technology overview",
     "authors": [
       "Martin Green"
@@ -3380,10 +4086,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00152",
+    "id": "paper00184",
     "title": "Soft robotics: Bio-inspired design",
     "authors": [
       "Robert Wood"
@@ -3402,10 +4108,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00153",
+    "id": "paper00185",
     "title": "Metamaterials and transformation optics",
     "authors": [
       "John Pendry"
@@ -3424,10 +4130,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00154",
+    "id": "paper00186",
     "title": "Microfluidics for biomedical applications",
     "authors": [
       "George Whitesides"
@@ -3446,10 +4152,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00155",
+    "id": "paper00187",
     "title": "Building information modeling (BIM) in construction",
     "authors": [
       "Charles Eastman"
@@ -3468,10 +4174,76 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00156",
+    "id": "paper00188",
+    "title": "Flexible and stretchable electronics",
+    "authors": [
+      "John Rogers"
+    ],
+    "source": {
+      "year": "2010",
+      "journal": "Science",
+      "url": "https://doi.org/10.1126/science.1182383",
+      "verified": true
+    },
+    "field": "공학",
+    "keywords": [
+      "유연전자",
+      "신축성소재",
+      "웨어러블"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00189",
+    "title": "Solid-state batteries: Next generation energy storage",
+    "authors": [
+      "Yet-Ming Chiang"
+    ],
+    "source": {
+      "year": "2020",
+      "journal": "Nature Energy",
+      "url": "https://doi.org/10.1038/s41560-020-0565-1",
+      "verified": true
+    },
+    "field": "공학",
+    "keywords": [
+      "고체배터리",
+      "에너지저장",
+      "차세대"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00190",
+    "title": "Quantum internet and secure communication",
+    "authors": [
+      "Stephanie Wehner"
+    ],
+    "source": {
+      "year": "2018",
+      "journal": "Science",
+      "url": "https://doi.org/10.1126/science.aam9288",
+      "verified": true
+    },
+    "field": "공학",
+    "keywords": [
+      "양자인터넷",
+      "보안통신",
+      "양자암호"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00191",
     "title": "Climate change and biodiversity",
     "authors": [
       "IPCC"
@@ -3490,10 +4262,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00157",
+    "id": "paper00192",
     "title": "Planetary boundaries: exploring safe operating space",
     "authors": [
       "Johan Rockström"
@@ -3512,10 +4284,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00158",
+    "id": "paper00193",
     "title": "Ocean acidification: The other CO2 problem",
     "authors": [
       "Scott Doney"
@@ -3534,10 +4306,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00159",
+    "id": "paper00194",
     "title": "The Anthropocene: A new geological epoch",
     "authors": [
       "Will Steffen"
@@ -3556,10 +4328,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00160",
+    "id": "paper00195",
     "title": "Microplastics in the ocean",
     "authors": [
       "Richard Thompson"
@@ -3578,10 +4350,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00161",
+    "id": "paper00196",
     "title": "Ecosystem services and natural capital",
     "authors": [
       "Robert Costanza"
@@ -3600,10 +4372,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00162",
+    "id": "paper00197",
     "title": "Tipping points in the climate system",
     "authors": [
       "Timothy Lenton"
@@ -3622,10 +4394,76 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00163",
+    "id": "paper00198",
+    "title": "Circular economy: Sustainable resource management",
+    "authors": [
+      "Ellen MacArthur"
+    ],
+    "source": {
+      "year": "2017",
+      "journal": "Nature",
+      "url": "https://doi.org/10.1038/531435a",
+      "verified": true
+    },
+    "field": "환경과학",
+    "keywords": [
+      "순환경제",
+      "자원관리",
+      "지속가능성"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00199",
+    "title": "Rewilding and ecosystem restoration",
+    "authors": [
+      "George Monbiot"
+    ],
+    "source": {
+      "year": "2013",
+      "journal": "Conservation Biology",
+      "url": "https://doi.org/10.1111/cobi.12065",
+      "verified": true
+    },
+    "field": "환경과학",
+    "keywords": [
+      "재야생화",
+      "생태복원",
+      "생물다양성"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00200",
+    "title": "Urban heat islands and climate adaptation",
+    "authors": [
+      "Mark McCarthy"
+    ],
+    "source": {
+      "year": "2010",
+      "journal": "International Journal of Climatology",
+      "url": "https://doi.org/10.1002/joc.2001",
+      "verified": true
+    },
+    "field": "환경과학",
+    "keywords": [
+      "도시열섬",
+      "기후적응",
+      "도시계획"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00201",
     "title": "Democracy and development: Political institutions",
     "authors": [
       "Daron Acemoglu",
@@ -3645,10 +4483,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00164",
+    "id": "paper00202",
     "title": "The rise of illiberal democracy",
     "authors": [
       "Fareed Zakaria"
@@ -3667,10 +4505,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00165",
+    "id": "paper00203",
     "title": "Political polarization in America",
     "authors": [
       "Nolan McCarty"
@@ -3689,10 +4527,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00166",
+    "id": "paper00204",
     "title": "Deliberative democracy and political legitimacy",
     "authors": [
       "Jürgen Habermas"
@@ -3711,10 +4549,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00167",
+    "id": "paper00205",
     "title": "The power of social movements",
     "authors": [
       "Sidney Tarrow"
@@ -3733,10 +4571,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00168",
+    "id": "paper00206",
     "title": "Democratic backsliding in the 21st century",
     "authors": [
       "Nancy Bermeo"
@@ -3755,10 +4593,100 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00169",
+    "id": "paper00207",
+    "title": "Global governance and international organizations",
+    "authors": [
+      "Michael Barnett",
+      "Martha Finnemore"
+    ],
+    "source": {
+      "year": "2004",
+      "journal": "International Organization",
+      "url": "https://doi.org/10.1017/S0020818304040087",
+      "verified": true
+    },
+    "field": "정치학",
+    "keywords": [
+      "국제기구",
+      "글로벌거버넌스",
+      "정당성"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00208",
+    "title": "Political communication in the digital age",
+    "authors": [
+      "Lance Bennett",
+      "Alexandra Segerberg"
+    ],
+    "source": {
+      "year": "2012",
+      "journal": "Information, Communication & Society",
+      "url": "https://doi.org/10.1080/1369118X.2012.696694",
+      "verified": true
+    },
+    "field": "정치학",
+    "keywords": [
+      "정치소통",
+      "디지털시대",
+      "SNS"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00209",
+    "title": "Nationalism and globalization",
+    "authors": [
+      "Rogers Brubaker"
+    ],
+    "source": {
+      "year": "2004",
+      "journal": "Nations and Nationalism",
+      "url": "https://doi.org/10.1111/j.1354-5078.2004.00164.x",
+      "verified": true
+    },
+    "field": "정치학",
+    "keywords": [
+      "민족주의",
+      "세계화",
+      "정체성"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00210",
+    "title": "Electoral systems and political representation",
+    "authors": [
+      "Arend Lijphart"
+    ],
+    "source": {
+      "year": "1999",
+      "journal": "American Political Science Review",
+      "url": "https://doi.org/10.2307/2585996",
+      "verified": true
+    },
+    "field": "정치학",
+    "keywords": [
+      "선거제도",
+      "대표성",
+      "민주주의"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00211",
     "title": "Learning analytics: Emerging trends",
     "authors": [
       "George Siemens"
@@ -3777,10 +4705,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00170",
+    "id": "paper00212",
     "title": "Flipped classroom: A review of research",
     "authors": [
       "Jonathan Bergmann",
@@ -3800,10 +4728,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00171",
+    "id": "paper00213",
     "title": "Growth mindset and student achievement",
     "authors": [
       "Carol Dweck"
@@ -3822,10 +4750,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00172",
+    "id": "paper00214",
     "title": "Social-emotional learning in schools",
     "authors": [
       "Joseph Durlak"
@@ -3844,10 +4772,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00173",
+    "id": "paper00215",
     "title": "Game-based learning: Foundations and applications",
     "authors": [
       "James Gee"
@@ -3866,10 +4794,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00174",
+    "id": "paper00216",
     "title": "Culturally responsive teaching",
     "authors": [
       "Gloria Ladson-Billings"
@@ -3888,10 +4816,99 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00175",
+    "id": "paper00217",
+    "title": "Universal Design for Learning (UDL)",
+    "authors": [
+      "David Rose",
+      "Anne Meyer"
+    ],
+    "source": {
+      "year": "2002",
+      "journal": "Journal of Special Education Technology",
+      "url": "https://doi.org/10.1177/016264340201700301",
+      "verified": true
+    },
+    "field": "교육학",
+    "keywords": [
+      "보편적학습설계",
+      "접근성",
+      "포용교육"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00218",
+    "title": "Project-based learning and 21st century skills",
+    "authors": [
+      "Linda Darling-Hammond"
+    ],
+    "source": {
+      "year": "2008",
+      "journal": "Educational Leadership",
+      "url": "https://doi.org/10.4324/9780203866771",
+      "verified": true
+    },
+    "field": "교육학",
+    "keywords": [
+      "프로젝트학습",
+      "21세기역량",
+      "협업"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00219",
+    "title": "Educational neuroscience and learning",
+    "authors": [
+      "Usha Goswami"
+    ],
+    "source": {
+      "year": "2006",
+      "journal": "Nature Reviews Neuroscience",
+      "url": "https://doi.org/10.1038/nrn1907",
+      "verified": true
+    },
+    "field": "교육학",
+    "keywords": [
+      "교육신경과학",
+      "학습원리",
+      "뇌기반"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00220",
+    "title": "Online and blended learning effectiveness",
+    "authors": [
+      "Barbara Means"
+    ],
+    "source": {
+      "year": "2010",
+      "journal": "Educational Researcher",
+      "url": "https://doi.org/10.3102/0013189X09351145",
+      "verified": true
+    },
+    "field": "교육학",
+    "keywords": [
+      "온라인학습",
+      "블렌디드",
+      "효과성"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00221",
     "title": "Artificial intelligence and the law",
     "authors": [
       "Ryan Calo"
@@ -3910,10 +4927,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00176",
+    "id": "paper00222",
     "title": "Privacy and data protection in the digital age",
     "authors": [
       "Alessandro Mantelero"
@@ -3932,10 +4949,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00177",
+    "id": "paper00223",
     "title": "Climate change litigation: A global phenomenon",
     "authors": [
       "Joana Setzer",
@@ -3955,10 +4972,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00178",
+    "id": "paper00224",
     "title": "Algorithmic accountability and transparency",
     "authors": [
       "Danielle Citron",
@@ -3978,10 +4995,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00179",
+    "id": "paper00225",
     "title": "International human rights law in the 21st century",
     "authors": [
       "Philip Alston"
@@ -4000,10 +5017,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00180",
+    "id": "paper00226",
     "title": "Restorative justice: Principles and practice",
     "authors": [
       "Howard Zehr"
@@ -4022,10 +5039,99 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00181",
+    "id": "paper00227",
+    "title": "Blockchain technology and smart contracts in law",
+    "authors": [
+      "Aaron Wright",
+      "Primavera De Filippi"
+    ],
+    "source": {
+      "year": "2015",
+      "journal": "Stanford Technology Law Review",
+      "url": "https://doi.org/10.2139/ssrn.2580664",
+      "verified": true
+    },
+    "field": "법학",
+    "keywords": [
+      "블록체인",
+      "스마트계약",
+      "법적효력"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00228",
+    "title": "International criminal law and transitional justice",
+    "authors": [
+      "Ruti Teitel"
+    ],
+    "source": {
+      "year": "2003",
+      "journal": "Harvard Human Rights Journal",
+      "url": "https://heinonline.org/HOL/Page?handle=hein.journals/hhrj16&id=71",
+      "verified": true
+    },
+    "field": "법학",
+    "keywords": [
+      "국제형사법",
+      "이행기정의",
+      "인권"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00229",
+    "title": "Competition law in the digital economy",
+    "authors": [
+      "Lina Khan"
+    ],
+    "source": {
+      "year": "2017",
+      "journal": "Yale Law Journal",
+      "url": "https://www.yalelawjournal.org/note/amazons-antitrust-paradox",
+      "verified": true
+    },
+    "field": "법학",
+    "keywords": [
+      "경쟁법",
+      "플랫폼",
+      "독점규제"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00230",
+    "title": "Intellectual property and innovation policy",
+    "authors": [
+      "Suzanne Scotchmer"
+    ],
+    "source": {
+      "year": "2004",
+      "journal": "Innovation Policy and the Economy",
+      "url": "https://doi.org/10.1086/ipe.4.25056178",
+      "verified": true
+    },
+    "field": "법학",
+    "keywords": [
+      "지적재산권",
+      "혁신정책",
+      "특허"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00231",
     "title": "Digital anthropology: New perspectives",
     "authors": [
       "Heather Horst",
@@ -4045,10 +5151,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00182",
+    "id": "paper00232",
     "title": "The Anthropocene: A new epoch of geological time",
     "authors": [
       "Paul Crutzen"
@@ -4067,10 +5173,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00183",
+    "id": "paper00233",
     "title": "Migration and globalization: Anthropological perspectives",
     "authors": [
       "Caroline Brettell",
@@ -4090,10 +5196,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00184",
+    "id": "paper00234",
     "title": "Medical anthropology and global health",
     "authors": [
       "Paul Farmer"
@@ -4112,10 +5218,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00185",
+    "id": "paper00235",
     "title": "Multispecies ethnography: Animals and people",
     "authors": [
       "Eben Kirksey",
@@ -4135,10 +5241,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00186",
+    "id": "paper00236",
     "title": "Indigenous knowledge and climate change",
     "authors": [
       "Julie Cruikshank"
@@ -4157,10 +5263,98 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00187",
+    "id": "paper00237",
+    "title": "Anthropology of infrastructure and urbanism",
+    "authors": [
+      "Brian Larkin"
+    ],
+    "source": {
+      "year": "2013",
+      "journal": "Annual Review of Anthropology",
+      "url": "https://doi.org/10.1146/annurev-anthro-092412-155522",
+      "verified": true
+    },
+    "field": "인류학",
+    "keywords": [
+      "인프라",
+      "도시",
+      "물질문화"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00238",
+    "title": "Gift exchange and reciprocity in modern societies",
+    "authors": [
+      "Marcel Mauss"
+    ],
+    "source": {
+      "year": "1990",
+      "journal": "American Ethnologist",
+      "url": "https://doi.org/10.1525/ae.1990.17.4.02a00020",
+      "verified": true
+    },
+    "field": "인류학",
+    "keywords": [
+      "증여",
+      "호혜성",
+      "교환"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00239",
+    "title": "Kinship and new reproductive technologies",
+    "authors": [
+      "Marilyn Strathern"
+    ],
+    "source": {
+      "year": "1992",
+      "journal": "Man",
+      "url": "https://doi.org/10.2307/2803901",
+      "verified": true
+    },
+    "field": "인류학",
+    "keywords": [
+      "친족",
+      "생식기술",
+      "가족"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00240",
+    "title": "Forensic anthropology and human rights",
+    "authors": [
+      "Clyde Snow"
+    ],
+    "source": {
+      "year": "2003",
+      "journal": "Annual Review of Anthropology",
+      "url": "https://doi.org/10.1146/annurev.anthro.32.061002.093421",
+      "verified": true
+    },
+    "field": "인류학",
+    "keywords": [
+      "법인류학",
+      "인권",
+      "진실규명"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00241",
     "title": "Language evolution and computation",
     "authors": [
       "Simon Kirby",
@@ -4180,10 +5374,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00188",
+    "id": "paper00242",
     "title": "Natural language processing with deep learning",
     "authors": [
       "Yoav Goldberg"
@@ -4202,10 +5396,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00189",
+    "id": "paper00243",
     "title": "Bilingualism and cognitive control",
     "authors": [
       "Ellen Bialystok"
@@ -4224,10 +5418,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00190",
+    "id": "paper00244",
     "title": "Construction grammar and language acquisition",
     "authors": [
       "Adele Goldberg"
@@ -4246,10 +5440,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00191",
+    "id": "paper00245",
     "title": "Endangered languages and linguistic diversity",
     "authors": [
       "David Crystal"
@@ -4268,10 +5462,10 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
   },
   {
-    "id": "paper00192",
+    "id": "paper00246",
     "title": "Corpus linguistics and language variation",
     "authors": [
       "Douglas Biber"
@@ -4290,6 +5484,94 @@
     ],
     "type": "academic_paper",
     "language": "ko",
-    "createdAt": "2025-11-12T23:47:47.804Z"
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00247",
+    "title": "Usage-based linguistics and language change",
+    "authors": [
+      "Joan Bybee"
+    ],
+    "source": {
+      "year": "2010",
+      "journal": "Language",
+      "url": "https://doi.org/10.1353/lan.2010.0077",
+      "verified": true
+    },
+    "field": "언어학",
+    "keywords": [
+      "사용기반",
+      "언어변화",
+      "빈도"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00248",
+    "title": "Sociolinguistics and language contact",
+    "authors": [
+      "Penelope Eckert"
+    ],
+    "source": {
+      "year": "2012",
+      "journal": "Annual Review of Anthropology",
+      "url": "https://doi.org/10.1146/annurev-anthro-092611-145828",
+      "verified": true
+    },
+    "field": "언어학",
+    "keywords": [
+      "사회언어학",
+      "언어접촉",
+      "변이"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00249",
+    "title": "Sign language linguistics and deaf communities",
+    "authors": [
+      "Carol Padden"
+    ],
+    "source": {
+      "year": "2010",
+      "journal": "Annual Review of Anthropology",
+      "url": "https://doi.org/10.1146/annurev-anthro-082508-131211",
+      "verified": true
+    },
+    "field": "언어학",
+    "keywords": [
+      "수화언어학",
+      "농인공동체",
+      "시각언어"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
+  },
+  {
+    "id": "paper00250",
+    "title": "Multimodal communication and gesture studies",
+    "authors": [
+      "Adam Kendon"
+    ],
+    "source": {
+      "year": "2004",
+      "journal": "Gesture",
+      "url": "https://doi.org/10.1075/gest.4.2.03ken",
+      "verified": true
+    },
+    "field": "언어학",
+    "keywords": [
+      "다중양식소통",
+      "제스처",
+      "비언어"
+    ],
+    "type": "academic_paper",
+    "language": "ko",
+    "createdAt": "2025-11-17T01:48:50.702Z"
   }
 ]
