@@ -6,6 +6,7 @@ import { MemoEditor } from './components/memo/MemoEditor';
 import { MemoDetail } from './components/memo/MemoDetail';
 import { GraphView } from './components/graph/GraphView';
 import { useMemoStore } from './stores/memoStore';
+import { useIdeaStore } from './stores/ideaStore';
 import { Memo, CreateMemoInput, UpdateMemoInput } from './types/memo';
 import { Idea } from './types/idea';
 import { db } from './db/schema';
@@ -16,6 +17,7 @@ type Tab = 'list' | 'graph';
 
 function App() {
   const {memos,isLoading,loadMemos,createMemo,updateMemo,setCurrentMemo}=useMemoStore();
+  const {searchIdeas}=useIdeaStore();
   const [view,setView]=useState<View>('list');
   const [tab,setTab]=useState<Tab>('list');
   const [editingMemo,setEditingMemo]=useState<Memo|undefined>();
@@ -60,23 +62,32 @@ function App() {
   };
 
   const handleSaveMemo=async(input:CreateMemoInput|UpdateMemoInput)=>{
+    let savedMemo: Memo | undefined;
+
     if(editingMemo){
       await updateMemo(editingMemo.id,input as UpdateMemoInput);
       await loadMemos();
-      const updated=memos.find(m=>m.id===editingMemo.id);
-      if(updated){
-        setViewingMemo(updated);
+      savedMemo = memos.find(m=>m.id===editingMemo.id);
+      if(savedMemo){
+        setViewingMemo(savedMemo);
         setView('detail');
       }else{
         setView('list');
       }
     }else{
-      const newMemo=await createMemo(input as CreateMemoInput);
-      setViewingMemo(newMemo);
+      savedMemo = await createMemo(input as CreateMemoInput);
+      setViewingMemo(savedMemo);
       setView('detail');
     }
+
+    // 자동으로 아이디어 검색 (새 메모이거나 수정된 경우)
+    if(savedMemo){
+      console.log('🤖 자동으로 연결된 지혜를 찾고 있습니다...');
+      await searchIdeas(savedMemo);
+      await loadAllIdeas();
+    }
+
     setEditingMemo(undefined);
-    await loadAllIdeas();
   };
 
   const handleCancel=()=>{

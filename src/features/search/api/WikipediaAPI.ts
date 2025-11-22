@@ -7,7 +7,7 @@ export async function searchWikipedia(keywords: string[]): Promise<Partial<Idea>
     const response = await fetch(
       `https://ko.wikipedia.org/w/api.php?` +
       `action=opensearch&search=${encodeURIComponent(query)}` +
-      `&limit=5&namespace=0&format=json&origin=*`
+      `&limit=10&namespace=0&format=json&origin=*`
     );
 
     if (!response.ok) throw new Error('Wikipedia API failed');
@@ -25,7 +25,7 @@ export async function searchWikipedia(keywords: string[]): Promise<Partial<Idea>
         const desc = item.description;
         return desc.length >= 30 && (desc.includes('.') || desc.includes('다') || desc.includes('이다'));
       })
-      .slice(0, 2);
+      .slice(0, 5);
 
     return filtered.map((item: any) => ({
       type: 'academic',

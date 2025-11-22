@@ -4,6 +4,7 @@ import { searchQuotes } from './api/QuotableAPI';
 import { searchWikipedia } from './api/WikipediaAPI';
 import { searchBooks } from './api/GoogleBooksAPI';
 import { koreanProverbs } from './api/ProverbsDB';
+import { koreanQuotes } from './api/KoreanQuotesDB';
 import { extractKeywords } from './KeywordExtractor';
 import { calculateSimilarity } from './SimilarityCalculator';
 import { v4 as uuidv4 } from 'uuid';
@@ -16,7 +17,7 @@ function searchKoreanProverbs(keywords: string[]): Partial<Idea>[] {
     )
   );
 
-  return matches.slice(0, 2).map(proverb => ({
+  return matches.slice(0, 5).map(proverb => ({
     type: 'proverb',
     content: proverb.content,
     source: {
@@ -25,6 +26,26 @@ function searchKoreanProverbs(keywords: string[]): Partial<Idea>[] {
     },
     similarity: 0.8 + Math.random() * 0.15,
     reasoning: proverb.keywords.join(', ') + '와 관련된 지혜입니다.'
+  }));
+}
+
+// 한국어 명언 검색
+function searchKoreanQuotes(keywords: string[]): Partial<Idea>[] {
+  const matches = koreanQuotes.filter(quote =>
+    quote.keywords.some(k =>
+      keywords.some(keyword => keyword.includes(k) || k.includes(keyword))
+    )
+  );
+
+  return matches.slice(0, 10).map(quote => ({
+    type: 'famous-quote',
+    content: quote.content,
+    source: {
+      author: quote.author,
+      category: quote.category,
+    },
+    similarity: 0.75 + Math.random() * 0.2,
+    reasoning: `"${keywords.join(', ')}"와 관련된 명언입니다. ${quote.author}의 지혜를 통해 새로운 관점을 얻을 수 있습니다.`
   }));
 }
 
@@ -52,12 +73,15 @@ export async function searchAllSources(
     const searchPromises: Promise<Partial<Idea>[]>[] = [];
 
     if (shouldSearch['famous-quote']) {
+      // 영어 명언 (Quotable API)
       searchPromises.push(
         searchQuotes(keywords).catch(err => {
-          console.error('명언 검색 오류:', err);
+          console.error('영어 명언 검색 오류:', err);
           return [];
         })
       );
+      // 한국어 명언 (로컬 DB)
+      searchPromises.push(Promise.resolve(searchKoreanQuotes(keywords)));
     }
 
     if (shouldSearch['academic']) {
@@ -116,8 +140,8 @@ export async function searchAllSources(
     // 유사도 순으로 정렬
     filtered.sort((a, b) => (b.similarity || 0) - (a.similarity || 0));
 
-    // 최대 10개로 제한
-    const limited = filtered.slice(0, 10);
+    // 최대 50개로 제한
+    const limited = filtered.slice(0, 50);
 
     // 완전한 Idea 객체로 변환
     const ideas: Idea[] = limited.map(item => ({

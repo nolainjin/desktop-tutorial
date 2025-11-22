@@ -6,7 +6,7 @@ export async function searchBooks(keywords: string[]): Promise<Partial<Idea>[]> 
     const query = keywords.join(' ');
     const response = await fetch(
       `https://www.googleapis.com/books/v1/volumes?` +
-      `q=${encodeURIComponent(query)}&langRestrict=ko&maxResults=5&orderBy=relevance`
+      `q=${encodeURIComponent(query)}&langRestrict=ko&maxResults=10&orderBy=relevance`
     );
 
     if (!response.ok) throw new Error('Books API failed');
@@ -21,7 +21,7 @@ export async function searchBooks(keywords: string[]): Promise<Partial<Idea>[]> 
         const desc = item.volumeInfo.description;
         return desc && desc.length >= 50;
       })
-      .slice(0, 2);
+      .slice(0, 5);
 
     return filtered.map((item: any) => {
       const volumeInfo = item.volumeInfo;

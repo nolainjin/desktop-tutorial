@@ -24,7 +24,7 @@ export async function searchQuotes(keywords: string[]): Promise<Partial<Idea>[]>
       .find(k => k) || 'life';
 
     const response = await fetch(
-      `https://api.quotable.io/quotes/random?tags=${englishKeyword}&limit=3`
+      `https://api.quotable.io/quotes/random?tags=${englishKeyword}&limit=10`
     );
 
     if (!response.ok) throw new Error('Quote API failed');
