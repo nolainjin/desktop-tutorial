@@ -7,6 +7,7 @@ import { koreanProverbs } from './api/ProverbsDB';
 import { koreanQuotes } from './api/KoreanQuotesDB';
 import { extractKeywords } from './KeywordExtractor';
 import { calculateSimilarity } from './SimilarityCalculator';
+import { filterAndRankByQuality } from '../evaluation/QualityEvaluator';
 import { v4 as uuidv4 } from 'uuid';
 
 // 한국 속담 검색
@@ -137,25 +138,31 @@ export async function searchAllSources(
     // 유사도 필터링 (0.3 이상만)
     const filtered = resultsWithSimilarity.filter(item => (item.similarity || 0) >= 0.3);
 
-    // 유사도 순으로 정렬
-    filtered.sort((a, b) => (b.similarity || 0) - (a.similarity || 0));
+    // 🎯 품질 평가 적용 (최소 품질 0.25)
+    console.log('🎯 품질 평가 시작...');
+    const qualityEvaluations = filterAndRankByQuality(memo, filtered, keywords, 0.25);
+
+    console.log(`📊 품질 평가 결과: ${filtered.length}개 중 ${qualityEvaluations.length}개 통과`);
 
     // 최대 50개로 제한
-    const limited = filtered.slice(0, 50);
+    const limited = qualityEvaluations.slice(0, 50);
 
-    // 완전한 Idea 객체로 변환
-    const ideas: Idea[] = limited.map(item => ({
-      id: uuidv4(),
-      memoId: memo.id,
-      type: item.type!,
-      content: item.content!,
-      source: item.source!,
-      similarity: item.similarity!,
-      reasoning: item.reasoning!,
-      createdAt: new Date()
-    }));
+    // 완전한 Idea 객체로 변환 (품질 점수 반영)
+    const ideas: Idea[] = limited.map(evaluation => {
+      const item = evaluation.idea;
+      return {
+        id: uuidv4(),
+        memoId: memo.id,
+        type: item.type!,
+        content: item.content!,
+        source: item.source!,
+        similarity: evaluation.scores.overallQuality, // 품질 점수를 유사도로 사용
+        reasoning: `${item.reasoning}\n\n[품질 평가: ${evaluation.reasoning}]`,
+        createdAt: new Date()
+      };
+    });
 
-    console.log(`✅ 총 ${ideas.length}개의 연결을 찾았습니다`);
+    console.log(`✅ 총 ${ideas.length}개의 고품질 연결을 찾았습니다`);
 
     return ideas;
   } catch (error) {
